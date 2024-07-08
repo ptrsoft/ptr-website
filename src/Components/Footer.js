@@ -1,116 +1,155 @@
-import React from 'react';
-import { FaFacebookF, FaTelegramPlane, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import React from 'react'
+
+
 
 const Footer = () => {
   return (
-    <div className='container' style={{ height: '59.9375rem', background: '#674FA3', padding: '4rem' }}>
-      <div className='footer_header' style={{ textAlign: 'center', color: '#fff' }}>
-        <span style={{ fontSize: '2rem', fontWeight: 'bold' }}>Ready to experience the flexibility and power of PTR Technologies</span>
-        <span style={{ display: 'block', marginTop: '1rem', fontSize: '1.2rem' }}>Sign up now and start customizing your applications and hiring on-demand engineering teams.</span>
-        <div style={{ marginTop: '1.56rem', display: 'flex', justifyContent: 'center', gap: '1.94rem' }}>
-          <button className='footer_btns' style={footerButtonStyle}>GET STARTED</button>
-          <button className='footer_btns' style={{ ...footerButtonStyle, backgroundColor: '#1FA4E5' }}>Request A Demo</button>
-        </div>
-        <div style={{ marginTop: '5.7rem', borderTop: '1px solid #fff', width: '100%' }}></div>
-      </div>
 
-      <footer style={{ width: '100%', display: 'flex', justifyContent: 'space-between', marginTop: '4rem', color: '#fff' }}>
-        <ul style={{ textAlign: 'start', display: 'flex', flexDirection: 'column', gap: '1rem', listStyle: 'none' }}>
-          <li><img width={132} src={`${process.env.PUBLIC_URL}/PTRWhite.png`} alt="Logo" /></li>
-          <li>we deliver fully open and customizable <br /> applications, empowering you to effortlessly add <br /> new features.</li>
-          <li style={{ display: 'flex', gap: '1rem' }}>
-            <FaFacebookF />
-            <FaTelegramPlane />
-            <FaInstagram />
-            <FaLinkedinIn />
-          </li>
-        </ul>
 
-        <div style={{ display: 'flex', gap: '4rem' }}>
-          <ul style={footerColumnStyle}>
-            <li style={footerColumnHeaderStyle}>Company</li>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Our Blog</li>
-            <li>Contact Us</li>
-            <li>Remote Work</li>
-            <li>Version Control</li>
-            <li>Project Task</li>
-          </ul>
 
-          <ul style={footerColumnStyle}>
-            <li style={footerColumnHeaderStyle}>Product</li>
-            <li>Integration</li>
-            <li>Customers</li>
-            <li>Pricing</li>
-            <li>Help Center</li>
-            <li>Backlog</li>
-            <li>Typetalk</li>
-            <li>Case Studies</li>
-            <li>Download</li>
-          </ul>
+    <>
+    
+    <footer className='bg-[#674FA3] pt-[89px] pb-[30px] pad-container'>
 
-          <ul style={footerColumnStyle}>
-            <li style={footerColumnHeaderStyle}>Legal</li>
-            <li>Terms of Use</li>
-            <li>Privacy Policy</li>
-            <li>Cookie Policy</li>
-            <li>Site Map</li>
-            <li>Contact Us</li>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Company</li>
-          </ul>
+<div className='flex flex-col items-center gap-[25px]'>
+  <div>
+<div className="text-center text-white text-5xl font-bold font-['Poppins']">Ready to experience the flexibility and power of PTR Technologies</div>
+<div className="text-white text-center text-xl font-normal font-['Poppins']">Sign up now and start customizing your applications and hiring on-demand engineering teams.</div>
+</div>
 
-          <ul style={footerColumnStyle}>
-            <li style={footerColumnHeaderStyle}>Resources</li>
-            <li>Developers</li>
-            <li>Compare</li>
-            <li>Diagram Examples</li>
-            <li>Release Notes</li>
-            <li>System Status</li>
-            <li>Online Community</li>
-            <li>Release Notes</li>
-          </ul>
-        </div>
-      </footer>
+<div className='flex gap-4'>
+<button className=" text-black text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-white rounded-lg" >
+GET STARTED
+</button>
 
-      <div style={{ marginTop: '4rem', borderTop: '1px solid #fff', width: '100%' }}></div>
-      <div style={{ textAlign: 'center', color: '#fff', marginTop: '1rem' }}>
-        <span>2024 All Rights Reserved</span>
-        <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <span>Privacy Policy</span>
-          <span>Terms of Service</span>
-          <span>Disclosure</span>
-        </div>
-      </div>
-      <div style={{ borderTop: '1px solid #fff', width: '100%', marginTop: '1rem' }}></div>
+<button className=" text-[#FFF] text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-[#2A9BED] rounded-lg" >
+Request A Demo
+</button>
+</div>
+
+</div>
+
+<div className='mt-[6rem] mb-[3rem]'> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1620 2" fill="none">
+<path d="M0 1L1620 0.999858" stroke="white"/>
+</svg>
+</div>
+
+<div className='flex  justify-between mb-[100px] items-start'>
+
+  <div className='flex gap-[21px] flex-col justify-start items-start'>
+<img className='' src='Images/WhiteLogo.png' />
+<div className="WeDeliverFullyOpenAndCustomizableApplicationsEmpoweringYouToEffortlesslyAddNewFeatures w-96 h-20 text-white text-sm font-medium font-['Poppins'] leading-normal">we deliver fully open and customizable applications, empowering you to effortlessly add new features.</div>
+
+
+<div className="Group141712 w-48 h-7 relative">
+    <div className="Group w-7 h-7 left-0 top-0 absolute">
+      img
     </div>
-  );
-};
+    <div className="Group w-7 h-7 left-[53.09px] top-0 absolute">
+      img
+    </div>
+    <div className="Group w-7 h-7 left-[106.19px] top-0 absolute">
+        <div className="Group w-6 h-6 left-[3.21px] top-[3.26px] absolute">
+          img
+        </div>
+    </div>
+    <div className="Group w-7 h-7 left-[159.29px] top-0 absolute">
+        <div className="Group w-4 h-4 left-[6.12px] top-[6.64px] absolute">
+          img
+        </div>
+    </div>
+</div>
 
-const footerButtonStyle = {
-  padding: '1rem 2rem',
-  border: 'none',
-  borderRadius: '0.5rem',
-  backgroundColor: '#fff',
-  color: '#674FA3',
-  fontSize: '1rem',
-  fontWeight: 'bold',
-  cursor: 'pointer'
-};
+</div>
 
-const footerColumnStyle = {
-  listStyle: 'none',
-  textAlign: 'start',
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem'
-};
 
-const footerColumnHeaderStyle = {
-  fontWeight: 'bold',
-  fontSize: '1.2rem'
-};
+<ul>
+  <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Company</li>
 
-export default Footer;
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>About Us</li>
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Careers</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Our Blog</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Contact Us</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Remote Work</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Version Control</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Project Task</li>
+
+</ul>
+
+<ul>
+  <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Product</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Integration</li>
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Customers</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Pricing</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Help Center</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Backlog</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Typetalk</li>
+
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Case Studies</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Download</li>
+
+</ul>
+
+<ul>
+  <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Legal</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Terms of Use</li>
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Privacy Policy</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Cookie Policy</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Site Map</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Contact Us</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Blog</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Careers</li>
+
+</ul>
+
+<ul>
+  <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Resources</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Developers</li>
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Compare</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Diagram Examples</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Release Notes</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>System Status</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Online Community</li>
+
+  <li className='text-white text-base font-medium font-[Poppins] leading-10'>Release Notes</li>
+
+</ul>
+
+
+</div>
+
+<div className='mt-[6rem]  mb-[31px]'> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1620 2" fill="none">
+<path d="M0 1L1620 0.999858" stroke="white"/>
+</svg>
+</div>
+<div className=" text-white text-base font-semibold font-['Poppins'] leading-tight">2024 All Rights Reserved</div>
+
+ </footer>
+ </>
+  )
+}
+
+export default Footer

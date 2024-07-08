@@ -1,32 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
-// import Logo from ""
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='header_Wrappper' style={{zIndex:'12222' , position:'relative'}}>
-   <header className='Container header'>
-<nav>
-    <ul>
-        <li> <img width={132} src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" />
+    <header className={`pad-container z-50 fixed flex justify-between pt-[2.2rem] pb-[2.2rem] items-center h-[3.375rem] transition-colors duration-500 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+      <img className='w-[9.9695rem]' alt='Logo' src='/Images/PTRLogo.png' />
+
+      <ul className='flex gap-[3.56rem]'>
+        <li className={`text-base font-poppins font-medium ${isActive('/home') ? 'border-b-2' : ''}`} style={isActive('/home') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/home">Home</Link>
         </li>
-        <li> <a href='#'></a> Home </li>
-        <li> <a href='#'></a> About Us </li>
-        <li> <a href='#'></a> Products </li>
-        <li> <a href='#'></a> Process </li>
-        <li> <a href='#'></a> Blogs </li>
-        <li> <a href='#'></a> Contact </li>
-    </ul>
-</nav>
+        <li className={`text-base font-poppins font-medium ${isActive('/about-us') ? 'border-b-2' : ''}`} style={isActive('/about-us') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/about-us">About Us</Link>
+        </li>
+        <li className={`text-base font-poppins font-medium ${isActive('/products') ? 'border-b-2' : ''}`} style={isActive('/products') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/architecture">Products</Link>
+        </li>
+        <li className={`text-base font-poppins font-medium ${isActive('/process') ? 'border-b-2' : ''}`} style={isActive('/process') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/process">Process</Link>
+        </li>
+        <li className={`text-base font-poppins font-medium ${isActive('/blogs') ? 'border-b-2' : ''}`} style={isActive('/blogs') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/blogs">Blogs</Link>
+        </li>
+        <li className={`text-base font-poppins font-medium ${isActive('/contact-us') ? 'border-b-2' : ''}`} style={isActive('/contact-us') ? { borderColor: '#666AE5' } : {}}>
+          <Link to="/contact-us">Contact</Link>
+        </li>
+      </ul>
 
-<div style={{display:'flex' , justifyContent:'center' , gap:'2em' ,alignItems:'center'}}>
-    <button className='login-btn'>Login</button>
-    
-    <button className='primary_btn'>Get In Touch</button>
-</div>
+      <div className='flex gap-[3rem]'>
+        <button className='login_btn'>Login</button>
+        <button className='get_in_touch_btn'>Get in touch</button>
+      </div>
+    </header>
+  );
+};
 
-   </header>
-   </div>
-  )
-}
-
-export default Header
+export default Header;

@@ -1,17 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Views/Home';
-import Header from './Components/Header';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { useLocation } from "react-router-dom";
+import Views from "./Views";
 function App() {
+  // const location = useLocation();
   return (
-    <div className="App">
-      <div className='bg-slate-500 h-[1000px]'>
-      <Header/>
+    <Router>
+      <div className="App">
+        {window.location.pathname !== "/auth/signup" &&
+          window.location.pathname !== "/auth/signin" &&
+          window.location.pathname !== "/auth/forgot-password" && <Header />}
+
+        <MainContent />
+        <Footer/>
       </div>
-    <Home/>
-    </div>
+    </Router>
   );
 }
-
+function MainContent() {
+  const location = useLocation();
+  return (
+    <>
+      {/* {location.pathname !== "/auth/signup" &&
+        location.pathname !== "/auth/signin" &&
+        location.pathname !== "/auth/forgot-password" && (
+          <Header key={location.pathname} />
+        )} */}
+      <Routes>
+        <Route path="*" element={<Views />} />
+      </Routes>
+    </>
+  );
+}
 export default App;
