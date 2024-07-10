@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`pad-container z-50 fixed flex justify-between pt-[2.2rem] pb-[2.2rem] items-center h-[3.375rem] transition-colors duration-500 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <header className={`pad-container z-50 fixed flex justify-between pt-[2.2rem] pb-[2.2rem] b items-center h-[3.375rem] transition-colors duration-500 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
       <img className='w-[9.9695rem]' alt='Logo' src='/Images/PTRLogo.png' />
 
       <ul className='flex gap-[3.56rem]'>
@@ -34,13 +34,13 @@ const Header = () => {
           <Link to="/about-us">About Us</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/products') ? 'border-b-2' : ''}`} style={isActive('/products') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/architecture">Products</Link>
+          <Link to="/not-found">Products</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/process') ? 'border-b-2' : ''}`} style={isActive('/process') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/process">Process</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/blogs') ? 'border-b-2' : ''}`} style={isActive('/blogs') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/blogs">Blogs</Link>
+          <Link to="/not-found">Blogs</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/contact-us') ? 'border-b-2' : ''}`} style={isActive('/contact-us') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/contact-us">Contact</Link>

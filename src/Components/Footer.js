@@ -8,7 +8,6 @@ const Footer = () => {
 
 
     <>
-    
     <footer className='bg-[#674FA3] pt-[89px] pb-[30px] pad-container'>
 
 <div className='flex flex-col items-center gap-[25px]'>
@@ -42,20 +41,20 @@ Request A Demo
 
 
 <div className="Group141712 w-48 h-7 relative">
-    <div className="Group w-7 h-7 left-0 top-0 absolute">
-      img
+    <div className="Group  h-7 left-0 top-0 absolute">
+      <img src='Images/instagram.png' />
     </div>
     <div className="Group w-7 h-7 left-[53.09px] top-0 absolute">
-      img
+    <img src='Images/facebook.png' />
     </div>
     <div className="Group w-7 h-7 left-[106.19px] top-0 absolute">
         <div className="Group w-6 h-6 left-[3.21px] top-[3.26px] absolute">
-          img
+        <img   src='Images/telegram.png' />
         </div>
     </div>
     <div className="Group w-7 h-7 left-[159.29px] top-0 absolute">
         <div className="Group w-4 h-4 left-[6.12px] top-[6.64px] absolute">
-          img
+          <img src='Images/linkdin.png' />
         </div>
     </div>
 </div>

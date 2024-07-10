@@ -7,14 +7,14 @@ const AboutUs = () => {
     {/* sec 1 */}
 <section className='pad-container gap-[3rem] bg-[#FEF4F9] flex flex-col pt-[8rem] items-center '>
     <div className='flex flex-col gap-4'>
-<div className="AboutUs w-64 text-center text-neutral-900 text-5xl font-bold font-['Poppins'] uppercase leading-10">About Us</div>
+<div className="AboutUs w-64 text-center text-neutral-900 text-4xl font-bold font-['Poppins'] uppercase leading-10">About Us</div>
 <div className="text-center text-gray-900 font-poppins text-xl font-medium leading-[0.9375rem] capitalize">Home  / Page  /  About Us</div>
 </div>
 <img src="./Images/AboutBanner.png" width="100%" alt='banner' />
-<div className=" text-center text-black text-4xl font-medium font-['Poppins'] capitalize leading-10">Welcome to PTR technologies, where innovation meets simplicity. <br/>We are a forward-thinking SaaS company dedicated to transforming the way businesses operate by providing cutting-edge software solutions that streamline processes, enhance productivity, and foster growth.</div>
+<div className=" text-center text-black text-[2rem] font-medium font-['Poppins'] capitalize leading-15">Welcome to PTR technologies, where innovation meets simplicity. <br/>We are a forward-thinking SaaS company dedicated to transforming the way businesses operate by providing cutting-edge software solutions that streamline processes, enhance productivity, and foster growth.</div>
 </section>
 
-<section className='pad-container bg-[#FEF4F9] pt-[8rem] flex justify-between'>
+<section className='pad-container bg-[#FEF4F9] pt-[8rem] pb-[100px] flex justify-between'>
 <AboutUsCard image="/Images/Mission.png" label="Our Mission" content="Our mission is to empower businesses of all sizes to achieve their full potential by delivering intuitive, reliable, and scalable and flexible software solutions. "/>
 <AboutUsCard image="/Images/BulbIcon.png" label="Our Vision" content="We envision a world where technology seamlessly integrates with daily business operations, driving efficiency and innovation. "/>
 <AboutUsCard image="/Images/Customer.png" label="Customer-Centricity" content="Our customers are at the heart of everything we do. We listen to their needs, understand their challenges, and deliver solutions that add real value."/>

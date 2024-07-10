@@ -43,16 +43,16 @@ const Home = () => {
 
 
 
-     <section className='pad-container pb-[8.75rem] pt-[8.75rem] flex justify-between items-center bg-[white]'>
+     <section className='pad-container pb-[5.75rem] pt-[8.75rem] flex justify-between items-center bg-[white]'>
 <div className='flex w-[51%] flex-col gap-[58px]'>
-<div className="ContinuousImprovements"><span className="text-neutral-800 text-[2.25rem] font-bold font-['Poppins'] capitalize leading-[2.125rem]">Our platform is built to provide<br/></span><span className="text-indigo-500 text-[2.25rem] font-bold font-['Poppins'] capitalize leading-[3.125rem]">maximum flexibility</span><span className="text-neutral-800 text-[2.25rem] font-bold font-['Poppins'] capitalize ">, ensuring it meets your unique business requirements.</span></div>
-<div className='flex flex-col gap-[3rem]'>
-<div className="flex  gap-[17px] text-neutral-800 text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Single Tenant App- Fully private, Fully Customizable</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Zero Tech debt- App with all artifacts</span></div>
-<div className="flex gap-[17px] text-neutral-800text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Complete Open - You own it, you change it with no limit</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Highest flexibility - Any cloud / Any Changes</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>One click E2E Engineering Team - Available On demand to make changes</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1.125rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Vendor Friendly -Deliver Apps to your own customers
+<div className="ContinuousImprovements"><span className="text-neutral-800 text-[2rem] font-bold font-['Poppins'] capitalize leading-[2rem]">Our platform is built to provide<br/></span><span className="text-indigo-500 text-[2rem] font-bold font-['Poppins'] capitalize leading-[3.125rem]">maximum flexibility</span><span className="text-neutral-800 text-[2rem] font-bold font-['Poppins'] capitalize ">, ensuring it meets your unique business requirements.</span></div>
+<div className='flex flex-col gap-[2rem]'>
+<div className="flex  gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Single Tenant App- Fully private, Fully Customizable</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Zero Tech debt- App with all artifacts</span></div>
+<div className="flex gap-[17px] text-neutral-800text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Complete Open - You own it, you change it with no limit</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Highest flexibility - Any cloud / Any Changes</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>One click E2E Engineering Team - Available On demand to make changes</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Vendor Friendly -Deliver Apps to your own customers
 </span></div>
 </div>
 </div>
@@ -68,20 +68,37 @@ const Home = () => {
 
 {/* tabs section 1 */}
 
-<section className='pad-container pt-[142px] pb-[162px] bg-[#F5F3EF]'>
+<section className='pad-container   relative pt-[142px] pb-[92px] bg-[#F5F3EF]'>
 
-<div className="TheIntelligenceRevolution text-center"><span className="text-neutral-800 text-5xl font-bold font-['Poppins'] capitalize leading-10">What </span><span className="text-indigo-500 text-5xl font-bold font-['Poppins'] capitalize leading-10">we offer</span><span className="text-neutral-800 text-5xl font-bold font-['Poppins'] capitalize leading-10"> & How </span><span className="text-indigo-500 text-5xl font-bold font-['Poppins'] capitalize leading-10">we do it?</span><span className="text-neutral-800 text-5xl font-bold font-['Poppins'] capitalize leading-10"> </span></div>
-<div className="text-center mt-[2rem]"><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">Open and Customizable</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Single Tenant Applications</span></div>
+<div className=" text-center"><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10">What </span><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">we offer</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> & How </span><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">we do it?</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> </span></div>
+
+
+
+{selectedButton === 1 &&  <div className="text-center mt-[2rem]"><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">Open and Customizable</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Single Tenant Applications</span></div>}
+{selectedButton === 2 &&  <div className="text-center mt-[2rem]"><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10">High Quality Application with</span> <span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Zero Tech Debt</span></div>}
+{selectedButton === 3 &&  <div className="text-center mt-[2rem]"><span className="text-neutral-800 text-3xl font-bold font-['Poppins'] capitalize leading-10">Apps built with Most </span>  <span className="text-indigo-500 text-3xl font-bold font-['Poppins'] capitalize leading-10"> modern cloud native</span> <span className="text-neutral-800 text-3xl font-bold font-['Poppins'] capitalize leading-10"> Single Tenant architectures </span> </div>}
+{selectedButton === 4 &&  <div className="text-center mt-[2rem]"><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">On-Demand</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Engineering Teams</span></div>}
+
+
+
+
+{/* devide lines */}
+<div className='absolute le top-[18.4rem] w-[100%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute  top-[26.4rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute  top-[33.6rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute  top-[41.1rem] z-0 w-[100%] h-[1px] bg-[#CACACA]'></div>
+
+<div className='absolute bottom-[8rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
 
 <div className='w-[100%]  h-[35rem] flex justify-between items-center'>
 
 {/* btn containewr */}
-<div className='flex  flex-col items-start gap-[2rem]'>
-<button onClick={() => handleButtonClick(1)} className="Btn1  h-[88px] w-[522] p-5 bg-rose-300 rounded-lg border border-black justify-start items-center gap-7 inline-flex">
-    <div className="Icon w-8  relative">
+{/* <div className='flex  flex-col items-start gap-[2rem]'>
+<button onClick={() => handleButtonClick(1)} className="Btn1  h-[] w-[] p-3 pr-6 bg-rose-300 rounded-lg border border-black justify-start items-center gap-4 inline-flex">
+    <div className="Icon w-[1.3rem] relative">
         <img src='Images/buttonIcon.svg' />
     </div>
-    <div className="CustomizableSingleTenantApps text-black text-2xl font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
+    <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
 </button>
 
 <button onClick={() => handleButtonClick(2)} className="Btn1  h-[88px] w-[522] p-5 bg-[#D4FADA] rounded-lg border border-black justify-start items-center gap-7 inline-flex">
@@ -106,9 +123,48 @@ const Home = () => {
 </button>
 
 
+</div> */}
+<div className='flex  flex-col items-start gap-[3rem]'>
+<button onClick={() => handleButtonClick(1)}   className={`Btn1 h-[4.4rem] pl-[1rem] w-[29rem] rounded-lg hover:border border-black justify-start items-center gap-4 inline-flex ${
+              selectedButton === 1 ? 'bg-rose-300 border' : 'bg-[#F3C4CD] hover:bg-rose-300'
+            }`} >
+    <div className="Icon w-[1.8rem] relative">
+        <img src='Images/buttonIcon.svg' />
+    </div>
+    <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
+</button>
+
+<button onClick={() => handleButtonClick(2)} className={`Btn1 h-[4.4rem] pl-[1rem] w-[29rem] rounded-lg hover:border border-black justify-start items-center gap-4 inline-flex ${
+              selectedButton === 2 ? 'bg-[#82D38F] border' : 'bg-[#D4FADA] hover:bg-[#82D38F]'
+            }`}>
+    <div className="Icon  w-[1.8rem]  relative">
+        <img src='Images/buttonIcon.svg' />
+    </div>
+    <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
+</button>
+
+<button onClick={() => handleButtonClick(3)}   className={`Btn1 h-[4.4rem] pl-[1rem] w-[29rem] rounded-lg hover:border border-black justify-start items-center gap-4 inline-flex ${
+              selectedButton === 3 ? 'bg-[#E9B986] border' : 'bg-[#FDE3C7] hover:bg-[#E9B986]'
+            }`}>
+<div className="Icon  w-[1.8rem]  relative">
+<img src='Images/buttonIcon.svg' />
+    </div>
+    <div className="CustomizableSingleTenantApps text-black text-[1.3rem]  font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
+</button>
+
+<button onClick={() => handleButtonClick(4)}   className={`Btn1 h-[4.4rem] pl-[1rem] w-[29rem] rounded-lg hover:border border-black justify-start items-center gap-4 inline-flex ${
+              selectedButton === 4 ? 'bg-[#9B8CEA] border' : 'bg-[#C9BFFE] hover:bg-[#9B8CEA]'
+            }`} >
+<div className="Icon  w-[1.8rem]  relative">
+        <img src='Images/buttonIcon.svg' />
+    </div>
+    <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
+</button>
+
+
 </div>
 {/* 2nd */}
-<div className='w-[23rem] '> 
+<div className='w-[23rem] z-10'> 
     {selectedButton === 1 && <img src='Images/Tenant.png' alt="Tenant 1" />}
           {selectedButton === 2 && <img src='Images/TechDebt.png' alt="Tenant 2" />}
           {selectedButton === 3 && <img src='Images/nativeArchitectures.png' alt="Tenant 3" />}
@@ -117,12 +173,19 @@ const Home = () => {
 
 
 {/* 3rd */}
-<div className=' gap-[75px] flex flex-col'>
+<div className=' gap-[75px] justify-start  h-[100%] pt-[8rem] flex flex-col'>
 {selectedButton === 1 && <div className="w-96  text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">Experience unparalleled flexibility with our single-tenant SAAS applications,that is open and tailored to your unique business needs. Explore our robust backend platform and cutting-edge technology, delivering microservices-based enterprise apps with comprehensive operations management.</div>}
-          {selectedButton === 2 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts. <br /> <br /> Here follows a typical use case development life cycle.</div>}
+          {selectedButton === 2 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts. <br /> <br /> Here follows a typical use case development life cycle.
+          
+          <button className=" w-36  mt-5 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
+Read More
+</button>
+<div className="w-96 text-black text-[0.8rem] relative top-7 font-medium font-['Poppins'] leading-loose">Here follows a typical UXD process cycle.</div>
+          
+          </div>}
           {selectedButton === 3 && <div className="w-96 text-black text-[0.8rem]  font-medium font-['Poppins'] leading-loose">Whether you're a writing a small mobility App or a large scale enterprise product, we have something for you. Explore our architecture central to learn about the principles, patterns, practices, and tools that we follow to deliver you the solution that is simple, promotes reusability and flexibility and of course very cost effective.</div>}
           {selectedButton === 4 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">Hire Certified Engineers Instantly <br /> <br /> Need additional engineering resources? Hire a complete engineering team on demand through our portal. Our pool of certified professionals is ready to join your project instantly, ensuring you have the talent you need, when you need it.We understand the importance of predictable outcomes. That’s why our teams work with a clear delivery plan and a billing model that is driven by results. You only pay for the value delivered, ensuring cost-effectiveness and transparency.</div>}
-<button className=" w-36 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
+<button className=" w-36 relative bottom-7 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
 Read More
 </button>
 
@@ -132,7 +195,6 @@ Read More
 </div>
 
 </section>
-
 
 
 

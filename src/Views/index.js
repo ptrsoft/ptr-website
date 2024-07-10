@@ -8,6 +8,7 @@ import ContactUs from "./Postlogin/ContactUs/page";
 import Login from "./PreLogin/Login";
 import SaasArchitecture from "./Postlogin/SaasArchitecture";
 import Architecture from "./Postlogin/Architecture";
+import PathNotFound from "./PathNotFound";
 
 // const Dashboards = lazy(() => import("./Postlogin/Dashboard"));
 
@@ -86,8 +87,9 @@ const Views = () => {
                     />
 
                     <Route exact path="/" element={<Home to="home" />} />
+                    <Route path="not-found" element={<PathNotFound />} />
 
-                    {/* <Route path="*" element={<PathNotFOund />} /> */}
+                    {/* <Route path="*" element={<PathNotFound />} /> */}
                 </Routes>
             </Suspense>
         </>

@@ -51,18 +51,19 @@ const ContactUs = () => {
         <div className='w-[50%] flex flex-col pl-[100px] items-end'>
 
 
-<div className='w-[100%] bg-[aqua] gap-[20px] h-[100%] flex flex-col pr-[64px] pl-[53px] pt-[46px]'>
+<div className='w-[100%] overflow-hidden relative  gap-[20px] h-[100%] flex flex-col pr-[64px] pl-[53px] pt-[46px]'>
 
-<div className="S text-white text-5xl font-bold font-['Poppins']">Say Hello!</div>
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src='Images/contactVector.png'/>
+<div className="z-20 text-white text-5xl font-bold font-['Poppins']">Say Hello!</div>
 
-<div className=" text-neutral-700 text-base font-normal font-['Poppins'] leading-relaxed">We’d love to hear from you! Whether you have a question about our products, need support, or just want to say hello, feel free to reach out to us.</div>
+<div className=" z-20 text-neutral-700 text-base font-normal font-['Poppins'] leading-relaxed">We’d love to hear from you! Whether you have a question about our products, need support, or just want to say hello, feel free to reach out to us.</div>
 
-<img src='Images/womenWithHeadphone.png'/>
+<img className='z-20' src='Images/womenWithHeadphone.png'/>
 
-<div>
-<div className="Enquries text-white text-4xl font-medium font-['Poppins']">Enquries</div>
-<div className=" text-white text-base font-medium font-['Poppins']">info@example.com ontact@example.com</div>
-<div>icons icons icons icons</div>
+<div className='z-20'>
+<div className="Enquries z-20 text-white text-4xl font-medium font-['Poppins']">Enquries</div>
+<div className="z-20 text-white text-base font-medium font-['Poppins']">info@example.com ontact@example.com</div>
+<div className='z-20'>icons icons icons icons</div>
 </div>
 
 </div>
