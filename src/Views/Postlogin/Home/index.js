@@ -13,7 +13,6 @@ const Home = () => {
     <>
     {/* // heroi section starts */}
 
-
 <section className='pad-container pt-[6rem] pb-[4rem] flex justify-between items-center bg-[#F5F3EF]'>
   <div className='relative  w-[49%]'>
     <img className='absolute top-6 left-[35rem]' src='Images/XXX.svg' alt='XXX' />
@@ -83,12 +82,12 @@ const Home = () => {
 
 
 {/* devide lines */}
-<div className='absolute le top-[18.4rem] w-[100%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute le top-[18.4rem] w-[85%] h-[1px] bg-[#CACACA]'></div>
 <div className='absolute  top-[26.4rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
 <div className='absolute  top-[33.6rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
-<div className='absolute  top-[41.1rem] z-0 w-[100%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute  top-[41.1rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
 
-<div className='absolute bottom-[8rem] z-0 w-[57%] h-[1px] bg-[#CACACA]'></div>
+<div className='absolute bottom-[8rem] z-0 w-[85%] h-[1px] bg-[#CACACA]'></div>
 
 <div className='w-[100%]  h-[35rem] flex justify-between items-center'>
 
@@ -164,7 +163,7 @@ const Home = () => {
 
 </div>
 {/* 2nd */}
-<div className='w-[23rem] z-10'> 
+<div className='w-[23rem] flex  relative bottom-6 z-10'> 
     {selectedButton === 1 && <img src='Images/Tenant.png' alt="Tenant 1" />}
           {selectedButton === 2 && <img src='Images/TechDebt.png' alt="Tenant 2" />}
           {selectedButton === 3 && <img src='Images/nativeArchitectures.png' alt="Tenant 3" />}
@@ -173,7 +172,7 @@ const Home = () => {
 
 
 {/* 3rd */}
-<div className=' gap-[75px] justify-start  h-[100%] pt-[8rem] flex flex-col'>
+<div className='z-20 gap-[75px] justify-start  h-[100%] pt-[6rem] flex flex-col'>
 {selectedButton === 1 && <div className="w-96  text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">Experience unparalleled flexibility with our single-tenant SAAS applications,that is open and tailored to your unique business needs. Explore our robust backend platform and cutting-edge technology, delivering microservices-based enterprise apps with comprehensive operations management.</div>}
           {selectedButton === 2 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts. <br /> <br /> Here follows a typical use case development life cycle.
           

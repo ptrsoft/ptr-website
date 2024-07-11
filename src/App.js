@@ -12,7 +12,6 @@ function App() {
         {window.location.pathname !== "/auth/signup" &&
           window.location.pathname !== "/auth/signin" &&
           window.location.pathname !== "/auth/forgot-password" && <Header />}
-
         <MainContent />
         <Footer/>
       </div>

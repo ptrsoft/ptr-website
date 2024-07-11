@@ -12,8 +12,8 @@ const Footer = () => {
 
 <div className='flex flex-col items-center gap-[25px]'>
   <div>
-<div className="text-center text-white text-5xl font-bold font-['Poppins']">Ready to experience the flexibility and power of PTR Technologies</div>
-<div className="text-white text-center text-xl font-normal font-['Poppins']">Sign up now and start customizing your applications and hiring on-demand engineering teams.</div>
+<div className="text-center text-white text-4xl font-bold font-['Poppins']">Ready to experience the flexibility and power of PTR Technologies</div>
+<div className="text-white mt-4 text-center text-xl font-normal font-['Poppins']">Sign up now and start customizing your applications and hiring on-demand engineering teams.</div>
 </div>
 
 <div className='flex gap-4'>
