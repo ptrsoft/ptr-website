@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useLocation } from "react-router-dom";
 import Views from "./Views";
+
+import Home from "./Views/Postlogin/Home";
+import AboutUs from "./Views/Postlogin/AboutUs";
+import Process from "./Views/Postlogin/Process";
+import ContactUs from "./Views/Postlogin/ContactUs/page";
+import Login from "./Views/PreLogin/Login";
+
+import usePageTitle from "./Hooks/usePageTitle";
+
+
 function App() {
-  // const location = useLocation();
+
   return (
     <Router>
       <div className="App">
@@ -20,6 +30,8 @@ function App() {
 }
 function MainContent() {
   const location = useLocation();
+  usePageTitle();
+
   return (
     <>
       {/* {location.pathname !== "/auth/signup" &&

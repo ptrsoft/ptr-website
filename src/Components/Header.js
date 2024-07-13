@@ -48,8 +48,8 @@ const Header = () => {
       </ul>
 
       <div className='flex gap-[3rem]'>
-        <button className='login_btn'>Login</button>
-        <button className='get_in_touch_btn'>Get in touch</button>
+        <button className='login_btn'> <Link to="/Login">Login</Link></button>
+        <button className='get_in_touch_btn'> <Link to="/contact-us">Get in touch</Link></button>
       </div>
     </header>
   );
