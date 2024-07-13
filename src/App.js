@@ -29,7 +29,6 @@ function App() {
   );
 }
 function MainContent() {
-  const location = useLocation();
   usePageTitle();
 
   return (

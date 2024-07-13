@@ -10,7 +10,7 @@ const usePageTitle = () => {
       case '/about-us':
         document.title = 'About Us';
         break;
-      case '/home':
+      case '/':
         document.title = 'Home';
         break;
       case '/products':

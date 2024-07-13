@@ -10,7 +10,6 @@ import SaasArchitecture from "./Postlogin/SaasArchitecture";
 import Architecture from "./Postlogin/Architecture";
 import PathNotFound from "./PathNotFound";
 
-// const Dashboards = lazy(() => import("./Postlogin/Dashboard"));
 
 const Views = () => {
     return (
@@ -50,12 +49,7 @@ const Views = () => {
 
 
                     {/* temrorrrry routes */}
-                    <Route
-                        exact
-                        path={"home"}
-                        element={<Home />}
-                    />
-
+                  
                     <Route
                         exact
                         path={"about-us"}

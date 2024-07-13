@@ -28,7 +28,7 @@ const Header = () => {
 
       <ul className='flex gap-[3.56rem]'>
         <li className={`text-base font-poppins font-medium ${isActive('/home') ? 'border-b-2' : ''}`} style={isActive('/home') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/about-us') ? 'border-b-2' : ''}`} style={isActive('/about-us') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/about-us">About Us</Link>
