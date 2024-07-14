@@ -59,7 +59,7 @@ const Page = () => {
 
   <div className='gap-[37px] flex flex-col'>
 <FormInput type="email" icon="Images/Email.svg" placeHolder="Enter your E-mail"/>
-<FormInput type={showPassword ? 'text' : 'password'} event={togglePasswordVisibility} icon="Images/lock.svg" passwordIcon= {showPassword ? "Images/lock.svg" : "Images/lock.svg"} placeHolder="Password"/>
+<FormInput type={showPassword ? 'text' : 'password'} event={togglePasswordVisibility} icon="Images/lock.svg" passwordIcon= {showPassword ? "Images/eye-off.png" : "Images/eye-off.png"} placeHolder="Password"/>
 
   </div>
 
