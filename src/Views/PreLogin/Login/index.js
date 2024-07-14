@@ -1,23 +1,36 @@
-import { Input } from 'postcss'
-import React from 'react'
+import React, { useState } from 'react'
 import FormInput from './components/Input'
 
-const index = () => {
+const Page = () => {
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+
+    
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    // Handle form submission logic here
+    console.log('Form submitted');
+  };
   return (
   <>
-  <div className='h-[] pb-[11rem] bg-green-400 w-[100%]'>
+  <div className=' login-banner pb-[11rem] bg'>
 {/* <img className='absolute z-0 top-0 left-0 bottom-0 right-0' src="Images/LoginWomenVector.png" alt="" /> */}
 
 
 
-<div className='flex flex-col items-center'>
+<div className='flex flex-col gap-4 items-center'>
 
-<div className="LoginPage pt-[247px]  text-center text-white text-5xl font-semibold font-['Poppins'] uppercase leading-10">Login Page</div>
+<div className="LoginPage pt-[189px]  text-center text-white text-5xl font-semibold font-['Poppins'] uppercase leading-10">Login Page</div>
 <div className="HomePagesBlogs text-white  text-xl font-medium font-['Poppins'] capitalize">Home / Pages / Blogs</div>
 
 </div>
 
-<form >
+<form  onSubmit={handleSubmit}>
 <div className='bg-white flex py-[89px] rounded-2xl px-[111px] flex-col gap-[40px] m-auto mt-[93px] w-fit'>
 
 {/* headings */}
@@ -46,13 +59,16 @@ const index = () => {
 
   <div className='gap-[37px] flex flex-col'>
 <FormInput type="email" icon="Images/Email.svg" placeHolder="Enter your E-mail"/>
-<FormInput type="password" icon="Images/lock.svg" passwordIcon="Images/lock.svg" placeHolder="Password"/>
+<FormInput type={showPassword ? 'text' : 'password'} event={togglePasswordVisibility} icon="Images/lock.svg" passwordIcon= {showPassword ? "Images/lock.svg" : "Images/lock.svg"} placeHolder="Password"/>
+
   </div>
 
 <div className='flex justify-between px-2'>
   
+  <div className='flex gap-2'>
   <input type="checkbox" name="" id="" />
-  
+  <div className=" text-neutral-500 text-base font-normal font-['Poppins']">Remember me</div>
+  </div>
   <div className=" text-sky-500 text-base font-normal font-['Poppins']">Forgot Password ?</div>
   </div>
 
@@ -95,4 +111,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Page

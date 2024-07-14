@@ -4,9 +4,6 @@ import React from 'react'
 
 const Footer = () => {
   return (
-
-
-
     <>
       <footer className='bg-[#674FA3] pt-[89px] pb-[30px] pad-container'>
 
@@ -39,12 +36,13 @@ const Footer = () => {
             <img className='' src='Images/WhiteLogo.png' />
             <div className="WeDeliverFullyOpenAndCustomizableApplicationsEmpoweringYouToEffortlesslyAddNewFeatures w-96 h-20 text-white text-sm font-medium font-['Poppins'] leading-normal">we deliver fully open and customizable applications, empowering you to effortlessly add new features.</div>
 
-
             <div className="Group141712 flex gap-6 ">
-              <img src='Images/instagram.png' />
-              <img src='Images/facebook.png' />
-              <img src='Images/telegram.png' />
-              <img src='Images/linkdin.png' />
+              <img src='Images/instagram.png' alt='Instagram Handle'/>
+              <img src='Images/facebook.png' alt='FaceBook Handle' />
+              <img src='Images/telegram.png'alt='social media handle' />
+              <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies">
+              <img src='Images/linkdin.png' alt='linkdin handle'/>
+              </a>
             </div>
 
           </div>

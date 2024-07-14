@@ -1,8 +1,7 @@
-import React, { lazy, Suspense } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import React, {  Suspense } from "react";
+import { Routes, Route,  } from "react-router-dom";
 import Home from "./Postlogin/Home";
 import AboutUs from "./Postlogin/AboutUs";
-import { PREFIX_APP_PATH, PREFIX_AUTH_PATH } from "../Config/Config";
 import Process from "./Postlogin/Process";
 import ContactUs from "./Postlogin/ContactUs/page";
 import Login from "./PreLogin/Login";

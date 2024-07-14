@@ -18,14 +18,14 @@ const AboutUs = () => {
 <AboutUsCard image="/Images/Mission.png" label="Our Mission" content="Our mission is to empower businesses of all sizes to achieve their full potential by delivering intuitive, reliable, and scalable and flexible software solutions. "/>
 <AboutUsCard image="/Images/BulbIcon.png" label="Our Vision" content="We envision a world where technology seamlessly integrates with daily business operations, driving efficiency and innovation. "/>
 <AboutUsCard image="/Images/Customer.png" label="Customer-Centricity" content="Our customers are at the heart of everything we do. We listen to their needs, understand their challenges, and deliver solutions that add real value."/>
-<AboutUsCard image="/Images/Integrity.png" label="Our Vision" content="We envision a world where technology seamlessly integrates with daily business operations, driving efficiency and innovation. "/>
+<AboutUsCard image="/Images/Integrity.png" label="Integrity" content="We envision a world where technology seamlessly integrates with daily business operations, driving efficiency and innovation. "/>
 </section>
 
 {/* col  */}
 <section className='pad-container relative flex items-center justify-between bg-[lightgray] h-[57.9375rem]'>
 
 {/* left */}
-  {/* <img src="Images/dotscontainer.png" alt="" className='w-[147px] h-[auto] absolute left-24 top-[17.5rem]' /> */}
+  <img src="Images/dotscontainer.png" alt="" className='w-[8rem] relative right-11' />
 <div className='flex w-[49%] flex-col gap--[3.12rem] '>
     <div className='flex flex-col '>
     <span className='text-black font-poppins text-3xl font-bold leading-[3.125rem] capitalize'>PTR Technologies</span> 
@@ -53,7 +53,7 @@ to provide businesses with user-friendly software that simplifies their workflow
 {/* right */}
 <div className='w-[49%] flex justify-end'>
 
-<img  width="90%" src='/Images/aboutUsAside.png'/>
+<img  alt='unable to load Images' width="90%" src='/Images/aboutUsAside.png'/>
 </div>
 </section>
 
@@ -82,7 +82,7 @@ to provide businesses with user-friendly software that simplifies their workflow
 
 <section className='bg-[#45455C] gap-8 flex flex-col justify-center items-center h-[27.5rem] pad-container'>
 
-<img src='/Images/rocket.png'/>
+<img alt='unable to load Images' src='/Images/rocket.png'/>
 <h1 className='text-white text-center font-poppins text-[3.125rem] font-semibold leading-[4.375rem] capitalize'>Accelerate your growth with PTR Technologies</h1>
 <button className='w-[14.5625rem] h-[3.4375rem] flex-shrink-0 rounded-[0.5rem] bg-[#00B8FF] text-[#F5F5F5] font-poppins text-[1.125rem] font-bold leading-[0.9375rem] uppercase'>get started now</button>
 </section>
@@ -115,7 +115,7 @@ Get started now
 
 <div className='w-[49%]'>
 
-<img style={{borderRadius:'18px'}} alt='our team' src='/Images/OurTeam.png'/>
+<img  style={{borderRadius:'18px'}} alt='our team' src='/Images/OurTeam.png'/>
 
 </div>
 

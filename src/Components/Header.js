@@ -24,10 +24,11 @@ const Header = () => {
 
   return (
     <header className={`pad-container z-50 fixed flex justify-between pt-[2.2rem] pb-[2.2rem] b items-center h-[3.375rem] transition-colors duration-500 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
+      <div className='flex gap-24 items-center justify-start'>
       <img className='w-[9.9695rem]' alt='Logo' src='/Images/PTRLogo.png' />
 
       <ul className='flex gap-[3.56rem]'>
-        <li className={`text-base font-poppins font-medium ${isActive('/home') ? 'border-b-2' : ''}`} style={isActive('/home') ? { borderColor: '#666AE5' } : {}}>
+        <li className={`text-base font-poppins font-medium ${isActive('/') ? 'border-b-2' : ''}`} style={isActive('/') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/">Home</Link>
         </li>
         <li className={`text-base font-poppins font-medium ${isActive('/about-us') ? 'border-b-2' : ''}`} style={isActive('/about-us') ? { borderColor: '#666AE5' } : {}}>
@@ -46,6 +47,7 @@ const Header = () => {
           <Link to="/contact-us">Contact</Link>
         </li>
       </ul>
+      </div>
 
       <div className='flex gap-[3rem]'>
         <button className='login_btn'> <Link to="/Login">Login</Link></button>

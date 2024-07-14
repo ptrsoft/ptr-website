@@ -7,14 +7,12 @@ const SaasArchitecture = () => {
 
     <div className="TheIntelligenceRevolution"><span className="text-indigo-500 text-5xl font-semibold font-['Poppins'] capitalize leading-10">Single-Tenant </span><span className="text-neutral-800 text-5xl font-semibold font-['Poppins'] capitalize leading-10">Flexibility</span></div>
     <div className=" text-center text-neutral-900 text-2xl font-medium font-['Poppins'] capitalize leading-loose">Each application is uniquely yours, providing unparalleled customization and control.For every <br /> application we instantly provision all App and Data Services for your application.A typical <br /> application services as below:</div>
-    <img src='Images/SassArc.png'/>
+    <img alt='unable to load Images' src='Images/SassArc.png'/>
     </section>
-
-
 <section className="pad-container gap-[20px]  bg-white flex flex-col items-center justify-center pt-[70px] pb-[70px]">
 <div className="TheIntelligenceRevolution"><span className="text-indigo-500 text-5xl font-semibold font-['Poppins'] capitalize leading-10">Microservices-Based </span><span className="text-neutral-800 text-5xl font-semibold font-['Poppins'] capitalize leading-10">Design</span></div>
 <div className="text-center text-neutral-900 text-2xl font-medium font-['Poppins'] capitalize leading-loose">We use a microservices architecture to ensure scalability, resilience, and efficient resource utilization. We accelerate Microservice development with PTR Appblocks , that cut development time and costs by 50%. Appblocks are common services that every enterprise product uses for common functionalities.</div>    
-<img className='w-[1300px]' src='Images/commonservices.png'/>
+<img alt='unable to load Images' className='w-[1300px]' src='Images/commonservices.png'/>
 </section>
 
 <section className="pad-container  pt-[70px]">
@@ -23,10 +21,10 @@ const SaasArchitecture = () => {
 {/* img contaienr */}
 
 <div className='flex items-start pt-9 pb-9 justify-between'>
-  <img className='w-[15rem]' src="Images/servicelifecyc;e.png" alt="" />
-  <img  className='w-[15rem]' src="images/servicestats.png" alt="" />
-  <img className='w-[15rem]'  src="images/serviceEndOutput.png" alt="" />
-  <img className='w-[15rem]' src="Images/servicelifecyc;e.png" alt="" />
+  <img alt='unable to load Images' className='w-[15rem]' src="Images/servicelifecyc;e.png" />
+  <img  alt='unable to load Images' className='w-[15rem]' src="images/servicestats.png"  />
+  <img alt='unable to load Images' className='w-[15rem]'  src="images/serviceEndOutput.png"  />
+  <img alt='unable to load Images' className='w-[15rem]' src="Images/servicelifecyc;e.png" />
 
 </div>
 
@@ -37,7 +35,7 @@ const SaasArchitecture = () => {
     <section className="pad-container flex flex-col">
     <div className="text-center"><span className="text-neutral-900 text-3xl font-medium font-['Poppins'] capitalize leading-loose">That </span><span className="text-indigo-500 text-3xl font-medium font-['Poppins'] capitalize leading-loose">reduce</span><span className="text-neutral-900 text-3xl font-medium font-['Poppins'] capitalize leading-loose"> our new Application </span><span className="text-indigo-500 text-3xl font-medium font-['Poppins'] capitalize leading-loose">development effort</span><span className="text-neutral-900 text-3xl font-medium font-['Poppins'] capitalize leading-loose"> significantly as below:<br/></span></div>
 <div className='flex justify-center items-center pt-6 pb-10'>
-    <img src="Images/Reduce.png" alt="" />
+    <img src="Images/Reduce.png" alt='unable to load Images' />
 </div>
     </section>
 
@@ -48,7 +46,7 @@ const SaasArchitecture = () => {
     <div className=" text-center text-neutral-900 text-2xl font-medium font-['Poppins'] capitalize leading-10">Our platform includes a full operations management suite, streamlining maintenance and updates.</div>
         </div>
 
-        <img src='Images/Operationsmanagement.png'/>
+        <img alt='unable to load Images' src='Images/Operationsmanagement.png'/>
     </section>
 
 

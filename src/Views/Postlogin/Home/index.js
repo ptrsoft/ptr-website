@@ -16,7 +16,7 @@ const Home = () => {
 <section className='pad-container pt-[6rem] pb-[4rem] flex justify-between items-center bg-[#F5F3EF]'>
   <div className='relative  w-[49%]'>
     <img className='absolute top-6 left-[35rem]' src='Images/XXX.svg' alt='XXX' />
-    <img alt='Hero Image' src='Images/Hero.png' />
+    <img alt='Hero Image' src='Images/Hero.png'  />
   </div>
 
   <div className='w-[49%] relative flex flex-col gap-[2rem]'>
@@ -31,7 +31,7 @@ const Home = () => {
     <div className="Rectangle8 cursor-pointer flex justify-start pl-6 items-center w-52 h-14 bg-neutral-800 rounded-full">
 <div className="GetStarted text-neutral-100 text-base font-semibold font-['Poppins'] uppercase leading-3">Get started</div>
 <div className="relative left-6 w-14 h-14 flex justify-center items-center bg-indigo-500 rounded-full">
-    <img src='Images/arrow.png'/>
+    <img alt='arrow' src='Images/arrow.png'/>
 </div>
 </div>
 
@@ -46,18 +46,18 @@ const Home = () => {
 <div className='flex w-[51%] flex-col gap-[58px]'>
 <div className="ContinuousImprovements"><span className="text-neutral-800 text-[2rem] font-bold font-['Poppins'] capitalize leading-[2rem]">Our platform is built to provide<br/></span><span className="text-indigo-500 text-[2rem] font-bold font-['Poppins'] capitalize leading-[3.125rem]">maximum flexibility</span><span className="text-neutral-800 text-[2rem] font-bold font-['Poppins'] capitalize ">, ensuring it meets your unique business requirements.</span></div>
 <div className='flex flex-col gap-[2rem]'>
-<div className="flex  gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Single Tenant App- Fully private, Fully Customizable</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Zero Tech debt- App with all artifacts</span></div>
-<div className="flex gap-[17px] text-neutral-800text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Complete Open - You own it, you change it with no limit</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Highest flexibility - Any cloud / Any Changes</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>One click E2E Engineering Team - Available On demand to make changes</span></div>
-<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img src='/Images/plus.svg'/><span>Vendor Friendly -Deliver Apps to your own customers
+<div className="flex  gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img  alt='unable to load Images'  src='/Images/plus.svg'/><span>Single Tenant App- Fully private, Fully Customizable</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img alt='unable to load Images'  src='/Images/plus.svg'/><span>Zero Tech debt- App with all artifacts</span></div>
+<div className="flex gap-[17px] text-neutral-800text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img alt='unable to load Images'  src='/Images/plus.svg'/><span>Complete Open - You own it, you change it with no limit</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img alt='unable to load Images'  src='/Images/plus.svg'/><span>Highest flexibility - Any cloud / Any Changes</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img alt='unable to load Images'  src='/Images/plus.svg'/><span>One click E2E Engineering Team - Available On demand to make changes</span></div>
+<div className="flex gap-[17px] text-neutral-800 text-[1rem] font-semibold font-['Poppins'] capitalize leading-none"> <img alt='unable to load Images'  src='/Images/plus.svg'/><span>Vendor Friendly -Deliver Apps to your own customers
 </span></div>
 </div>
 </div>
 
 <div className='w-[49%]'>
-    <img className='w-[100%]' src='Images/marketing.png'/>
+    <img className='w-[100%]' alt='unable to load Images' src='Images/marketing.png'/>
 </div>
     </section> 
 
@@ -128,7 +128,7 @@ const Home = () => {
               selectedButton === 1 ? 'bg-rose-300 border' : 'bg-[#F3C4CD] hover:bg-rose-300'
             }`} >
     <div className="Icon w-[1.8rem] relative">
-        <img src='Images/buttonIcon.svg' />
+        <img alt='icon' src='Images/buttonIcon.svg' />
     </div>
     <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
 </button>
@@ -137,7 +137,7 @@ const Home = () => {
               selectedButton === 2 ? 'bg-[#82D38F] border' : 'bg-[#D4FADA] hover:bg-[#82D38F]'
             }`}>
     <div className="Icon  w-[1.8rem]  relative">
-        <img src='Images/buttonIcon.svg' />
+        <img alt='icon' src='Images/buttonIcon.svg' />
     </div>
     <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
 </button>
@@ -146,7 +146,7 @@ const Home = () => {
               selectedButton === 3 ? 'bg-[#E9B986] border' : 'bg-[#FDE3C7] hover:bg-[#E9B986]'
             }`}>
 <div className="Icon  w-[1.8rem]  relative">
-<img src='Images/buttonIcon.svg' />
+<img alt='icon' src='Images/buttonIcon.svg' />
     </div>
     <div className="CustomizableSingleTenantApps text-black text-[1.3rem]  font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
 </button>
@@ -155,7 +155,7 @@ const Home = () => {
               selectedButton === 4 ? 'bg-[#9B8CEA] border' : 'bg-[#C9BFFE] hover:bg-[#9B8CEA]'
             }`} >
 <div className="Icon  w-[1.8rem]  relative">
-        <img src='Images/buttonIcon.svg' />
+        <img alt='icon' src='Images/buttonIcon.svg' />
     </div>
     <div className="CustomizableSingleTenantApps text-black text-[1.3rem] font-medium font-['Poppins'] capitalize leading-normal">Customizable Single-Tenant Apps</div>
 </button>
@@ -164,10 +164,10 @@ const Home = () => {
 </div>
 {/* 2nd */}
 <div className='w-[23rem] flex  relative bottom-6 z-10'> 
-    {selectedButton === 1 && <img src='Images/Tenant.png' alt="Tenant 1" />}
-          {selectedButton === 2 && <img src='Images/TechDebt.png' alt="Tenant 2" />}
-          {selectedButton === 3 && <img src='Images/nativeArchitectures.png' alt="Tenant 3" />}
-          {selectedButton === 4 && <img src='Images/EngineeringTeams.png' alt="Tenant 4" />}
+    {selectedButton === 1 && <img src='Images/Tenant.png'  alt='unable to load Images' />}
+          {selectedButton === 2 && <img src='Images/TechDebt.png' alt='unable to load Images' />}
+          {selectedButton === 3 && <img src='Images/nativeArchitectures.png'  alt='unable to load Images'/>}
+          {selectedButton === 4 && <img src='Images/EngineeringTeams.png'  alt='unable to load Images' />}
 </div>
 
 
@@ -199,7 +199,7 @@ Read More
 
 <section className='w-[100%] flex '>
     <div className='w-[50%] flex justify-center items-center pl-[6.915vw] bg-[#DAE3F2]'>
-        <img className='w-[591px]' src='Images/HowItWorks.png'/>
+        <img className='w-[591px]' alt='unable to load Images' src='Images/HowItWorks.png'/>
     </div>
 
 
@@ -243,15 +243,10 @@ of reliability and security and changeability."/>
 <button className="text-neutral-100 text-lg font-bold font-['Poppins'] uppercase  w-60 h-14 bg-indigo-500 rounded-full" >get more details</button>
     </div>
 
-    <div className='w-[50%] flex justify-center items-center  bg-[#D4FADA]'>
-        <img src='Images/whychooseus.png'/>
+    <div className='w-[50%] flex justify-center items-center pr-[7.915vw]  bg-[#D4FADA]'>
+        <img alt='unable to load Image ' src='Images/homechooseus.png'/>
     </div>
-
-
 </section>
-
-
-
         </>
   )
 }

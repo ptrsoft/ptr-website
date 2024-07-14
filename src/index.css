@@ -95,3 +95,36 @@ line-height: normal;
 .active-link::after {
   animation: underline-grow 0.5s forwards;
 }
+
+.login-banner{
+  width: 100%;
+  /* height: 1715.589px; */
+  background-image: url('Assets/loginBanner.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.contact-banner{
+  width: 100%;
+  /* height: 1715.589px; */
+  background-image: url('Assets/contactBanner.png');
+  background-size: cover;
+  background-position: top;
+}
+
+.form-banner{
+
+  /* height: 1715.589px; */
+  background-image: url('Assets/contactVector.png');
+  background-size: cover;
+  background-position: top;
+}
+
+
+li{
+  cursor: pointer;
+}
+
+footer img{
+  cursor: pointer;
+}
