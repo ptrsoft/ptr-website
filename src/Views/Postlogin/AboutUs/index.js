@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutUsCard from './components/AboutUsCard' 
 import AboutUsBox from './components/AboutUsBox' 
+import { Link } from 'react-router-dom'
 const AboutUs = () => {
   return (
     <>
@@ -84,7 +85,11 @@ to provide businesses with user-friendly software that simplifies their workflow
 
 <img alt='unable to load Images' src='/Images/rocket.png'/>
 <h1 className='text-white text-center font-poppins text-[3.125rem] font-semibold leading-[4.375rem] capitalize'>Accelerate your growth with PTR Technologies</h1>
-<button className='w-[14.5625rem] h-[3.4375rem] flex-shrink-0 rounded-[0.5rem] bg-[#00B8FF] text-[#F5F5F5] font-poppins text-[1.125rem] font-bold leading-[0.9375rem] uppercase'>get started now</button>
+<button className='w-[14.5625rem] h-[3.4375rem] flex-shrink-0 rounded-[0.5rem] bg-[#00B8FF] text-[#F5F5F5] font-poppins text-[1.125rem] font-bold leading-[0.9375rem] uppercase'>
+<Link to="/contact-us">
+  get started now
+</Link>
+  </button>
 </section>
 
 
@@ -106,7 +111,9 @@ We’d love to hear from you! Whether you have a question about our products, ne
 </span>
 
 <button className='w-[17.875rem] h-[3.4375rem] flex-shrink-0 rounded-[0.5rem] bg-[#4A26A7] text-[#F5F5F5] font-poppins text-[1.125rem] font-bold uppercase'>
+<Link to="/contact-us">
 Get started now
+</Link>
 </button>
 
 </div>

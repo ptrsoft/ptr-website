@@ -1,7 +1,5 @@
 import React from 'react'
-
-
-
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
@@ -15,7 +13,9 @@ const Footer = () => {
 
           <div className='flex gap-4'>
             <button className=" text-black text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-white rounded-lg" >
+            <Link to="/contact-us">
               GET STARTED
+            </Link>
             </button>
 
             <button className=" text-[#FFF] text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-[#2A9BED] rounded-lg" >

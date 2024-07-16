@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import TextBox from './components/TextBox'
 import TextRow from './components/TextRow'
+import { Link } from 'react-router-dom'
+
 const Home = () => {
   
     const [selectedButton, setSelectedButton] = useState(1);
@@ -29,14 +31,16 @@ const Home = () => {
       <span className="text-neutral-800 text-5xl font-bold capitalize leading-20 font-poppins"> Solutions</span>
     </div>
     <div className="text-neutral-800 text-base font-medium capitalize leading-loose font-poppins">At PTR SAAS, we deliver fully open and customizable applications, empowering you to effortlessly add new features.</div>
-
-    <div className="Rectangle8 cursor-pointer flex justify-start pl-6 items-center w-52 h-14 bg-neutral-800 rounded-full">
-<div className="GetStarted text-neutral-100 text-base font-semibold font-['Poppins'] uppercase leading-3">Get started</div>
+    <Link to="/contact-us">
+    <button  className="Rectangle8 cursor-pointer flex justify-start pl-6 items-center w-52 h-14 bg-neutral-800 rounded-full">
+<div className="GetStarted text-neutral-100 text-base font-semibold font-['Poppins'] uppercase leading-3">
+    Get started
+    </div>
 <div className="relative left-6 w-14 h-14 flex justify-center items-center bg-indigo-500 rounded-full">
     <img alt='arrow' src='Images/arrow.png'/>
 </div>
-</div>
-
+</button>
+</Link>
     <img className='absolute w-[27rem] right-[-3rem] bottom-[-9rem]' src='Images/HeroVector.png' alt='Hero Vector' />
   </div>
 </section>
@@ -212,19 +216,21 @@ const Home = () => {
 {selectedButton === 1 && <div className="w-96  text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">Experience unparalleled flexibility with our single-tenant SAAS applications,that is open and tailored to your unique business needs. Explore our robust backend platform and cutting-edge technology, delivering microservices-based enterprise apps with comprehensive operations management.</div>}
           {selectedButton === 2 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts. <br /> <br /> Here follows a typical use case development life cycle.
           
-          <button className=" w-36  mt-5 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
+          {/* <button className=" w-36  mt-5 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
 Read More
-</button>
+</button> */}
 <div className="w-96 text-black text-[0.8rem] relative top-7 font-medium font-['Poppins'] leading-loose">Here follows a typical UXD process cycle.</div>
           
           </div>}
-          {selectedButton === 3 && <div className="w-96 text-black text-[0.8rem]  font-medium font-['Poppins'] leading-loose">Whether you're a writing a small mobility App or a large scale enterprise product, we have something for you. Explore our architecture central to learn about the principles, patterns, practices, and tools that we follow to deliver you the solution that is simple, promotes reusability and flexibility and of course very cost effective.</div>}
+          {selectedButton === 3 && <div className="w-96 text-black text-[0.8rem]  font-medium font-['Poppins'] leading-loose">Whether you're a writing a small mobility App or a large scale enterprise product, we have something for you. Explore our architecture central to learn about the principles, patterns, practices, and tools that we follow to deliver you the solution that is simple, promotes reusability and flexibility and of course very cost effective.
+         
+            </div>}
+            
           {selectedButton === 4 && <div className="w-96 text-black text-[0.8rem] font-medium font-['Poppins'] leading-loose">Hire Certified Engineers Instantly <br /> <br /> Need additional engineering resources? Hire a complete engineering team on demand through our portal. Our pool of certified professionals is ready to join your project instantly, ensuring you have the talent you need, when you need it.We understand the importance of predictable outcomes. That’s why our teams work with a clear delivery plan and a billing model that is driven by results. You only pay for the value delivered, ensuring cost-effectiveness and transparency.</div>}
-<button className=" w-36 relative bottom-7 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
-   
-Read More
-    
-</button>
+          {selectedButton === 3 && <button className=" w-36 relative bottom-7 h-11 bg-indigo-500 rounded-full text-neutral-100 text-[0.9rem] font-bold font-['Poppins'] uppercase leading-3" >
+
+<Link to="/architecture">Read More</Link>
+</button>}
 
 </div>
 
@@ -251,8 +257,10 @@ Read More
 <TextRow h="Hire On-Demand Engineers" p="Browse our portal to find certified engineers with the skills you need. Hire a team instantly and get started on your project without delay."/>
 <TextRow h="Achieve Predictable Results" p="Work with your dedicated team to ensure your project is delivered on time and within budget. Our outcome-driven billing model ensures you only pay for the results."/>
 
-<button className="Rectangle8 w-48 h-14 bg-indigo-500 rounded-full text-neutral-100 text-lg font-bold font-['Poppins'] uppercase">
+<button  className="Rectangle8 w-48 h-14 bg-indigo-500 rounded-full text-neutral-100 text-lg font-bold font-['Poppins'] uppercase">
+    <Link to="/Login">
 get started
+    </Link>
 </button>
     </div>
 
@@ -278,7 +286,7 @@ of reliability and security and changeability."/>
 <TextBox h="Instant Availability " d="Scale your team instantly to meet project demands without lengthy hiring processes."/>
 <TextBox h="Outcome-Driven Billing" d="Enjoy a predictable and transparent billing model focused on delivering value."/>
     </div>
-<button className="text-neutral-100 text-lg font-bold font-['Poppins'] uppercase  w-60 h-14 bg-indigo-500 rounded-full" >get more details</button>
+{/* <button className="text-neutral-100 text-lg font-bold font-['Poppins'] uppercase  w-60 h-14 bg-indigo-500 rounded-full" >get more details</button> */}
     </div>
 
     <div className='w-[50%] flex justify-center items-center pr-[7.915vw]  bg-[#D4FADA]'>
