@@ -9,7 +9,11 @@ const Footer = () => {
 <div className="footer_top">
     <h2>Ready to experience the flexibility and power of PTR Technologies</h2>
     <span>Sign up now and start customizing your applications and hiring on-demand engineering teams.</span>
-    <button>GET STARTED</button>
+    <Link to="/contact-us">
+    <button>
+      GET STARTED
+      </button>
+      </Link>
 </div>
 
 {/* devider */}
