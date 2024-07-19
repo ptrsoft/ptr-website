@@ -36,7 +36,7 @@ const Footer = () => {
 
   <div className="Column">
     <h3>INDIA</h3>
-    <span>WorkFlo Hitex Bizness Square Jublee Enclave, SY Nos 66&67, Madhapur, Serlingampally Mandal, RR Dist, Hyderabad, Telangana - 5000081</span>
+    <span>WorkFlo Hitex Bizness Square Jublee Enclave, SY Nos 66&67, Madhapur, Serlingampally Mandal, RR Dist, Hyderabad, Telangana - 500081</span>
     <span> <a href="tel:+918892954321" >+91 8892954321</a> </span>
 
   </div> 

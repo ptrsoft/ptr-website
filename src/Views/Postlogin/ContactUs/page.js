@@ -63,13 +63,11 @@ const ContactUs = () => {
 
 <div className='z-20 flex flex-col gap-1'>
 <div className="Enquries z-20 text-white text-4xl font-medium font-['Poppins']">Enquries</div>
-<div className="z-20 text-white text-base font-medium font-['Poppins']">info@example.com Contact@example.com</div>
+<div className="z-20 text-white text-base font-medium font-['Poppins']">sales@ptrtechnology.com</div>
 <div className='z-20 flex gap-4 items-center justify-start'>
   <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies">
   <img  className='cursor-pointer'  src="Images/contactLinkding.png" alt="linkdin" />
   </a>
-  <img className='cursor-pointer'  src="Images/contactFacebook.png" alt="Facebook" />
-  <img  className='cursor-pointer' src="Images/contactInstagram.png" alt="Instagram" />  
   </div>
 </div>
 
