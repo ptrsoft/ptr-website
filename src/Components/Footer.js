@@ -1,139 +1,64 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import './Footer.css'
 const Footer = () => {
   return (
-    <>
-      <footer className='bg-[#674FA3] pt-[89px] pb-[30px] pad-container'>
+    <footer className='footer space-container'>
 
-        <div className='flex flex-col items-center gap-[25px]'>
-          <div>
-            <div className="text-center text-white text-4xl font-bold font-['Poppins']">Ready to experience the flexibility and power of PTR Technologies</div>
-            <div className="text-white mt-4 text-center text-xl font-normal font-['Poppins']">Sign up now and start customizing your applications and hiring on-demand engineering teams.</div>
-          </div>
+{/* footer top */}
+<div className="footer_top">
+    <h2>Ready to experience the flexibility and power of PTR Technologies</h2>
+    <span>Sign up now and start customizing your applications and hiring on-demand engineering teams.</span>
+    <button>GET STARTED</button>
+</div>
 
-          <div className='flex gap-4'>
-            <button className=" text-black text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-white rounded-lg" >
-            <Link to="/contact-us">
-              GET STARTED
-            </Link>
-            </button>
-
-            <button className=" text-[#FFF] text-lg font-semibold font-['Poppins'] leading-none w-64 h-14 bg-[#2A9BED] rounded-lg" >
-              Request A Demo
-            </button>
-          </div>
-
-        </div>
-
-        <div className='mt-[6rem] mb-[3rem]'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 2" fill="none">
-          <path d="M0 1L1620 0.999858" stroke="white" />
-        </svg>
-        </div>
-
-        <div className='flex  justify-between mb-[100px] items-start'>
-
-          <div className='flex gap-[21px] flex-col justify-start items-start'>
-            <img className='' src='Images/WhiteLogo.png' />
-            <div className="WeDeliverFullyOpenAndCustomizableApplicationsEmpoweringYouToEffortlesslyAddNewFeatures w-96 h-20 text-white text-sm font-medium font-['Poppins'] leading-normal">we deliver fully open and customizable applications, empowering you to effortlessly add new features.</div>
-
-            <div className="Group141712 flex gap-6 ">
-              <img src='Images/instagram.png' alt='Instagram Handle'/>
-              <img src='Images/facebook.png' alt='FaceBook Handle' />
-              <img src='Images/telegram.png'alt='social media handle' />
-              <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies">
-              <img src='Images/linkdin.png' alt='linkdin handle'/>
-              </a>
-            </div>
-
-          </div>
+{/* devider */}
+<div className='devider'></div>
 
 
-          <ul>
-            <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Company</li>
+<div className="footer_bottom">
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>About Us</li>
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Careers</li>
+  <div className="Column">
+    <img className='footer_logo' src="Images/WhiteLogo.png" alt="" />
+    <span>we deliver fully open and customizable applications, empowering you to effortlessly add new features.</span>
+    <span className='iiii'>
+        <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies/">
+    <img src="Images/linkdin.png" alt="" className="linkdin_img" />
+        </a>
+    </span>
+  </div>
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Our Blog</li>
+  <div className="Column">
+    <h3>USA</h3>
+    <span>601 HADDON AVENUE SUITE COLLINGSWOOD, NJ 08108 UNITED STATES</span>
+   <span> <a href="tel:+1(909)726-7508">+1 (909)726-7508</a></span>
+  </div>
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Contact Us</li>
+  <div className="Column">
+    <h3>INDIA</h3>
+    <span>WorkFlo Hitex Bizness Square Jublee Enclave, SY Nos 66&67, Madhapur, Serlingampally Mandal, RR Dist, Hyderabad, Telangana - 5000081</span>
+    <span> <a href="tel:+918892954321" >+91 8892954321</a> </span>
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Remote Work</li>
+  </div> 
+   <div className="Column">
+    <h3>Company</h3>
+    <span>About Us</span>
+    <span>Contact Us</span>
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Version Control</li>
+  </div>
 
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Project Task</li>
+</div>
 
-          </ul>
+<div className='devider'></div>
+<div className='rights'>
+<span>2024 All Rights Reserved</span>
 
-          <ul>
-            <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Product</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Integration</li>
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Customers</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Pricing</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Help Center</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Backlog</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Typetalk</li>
-
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Case Studies</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Download</li>
-
-          </ul>
-
-          <ul>
-            <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Legal</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Terms of Use</li>
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Privacy Policy</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Cookie Policy</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Site Map</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Contact Us</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Blog</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Careers</li>
-
-          </ul>
-
-          <ul>
-            <li className='text-white text-3xl font-bold font-[Poppins] leading-7 mb-[33px]'>Resources</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Developers</li>
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Compare</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Diagram Examples</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Release Notes</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>System Status</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Online Community</li>
-
-            <li className='text-white text-base font-medium font-[Poppins] leading-10'>Release Notes</li>
-
-          </ul>
-
-
-        </div>
-
-        <div className='mt-[6rem]  mb-[31px]'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 2" fill="none">
-          <path d="M0 1L1620 0.999858" stroke="white" />
-        </svg>
-        </div>
-        <div className=" text-white text-base font-semibold font-['Poppins'] leading-tight">2024 All Rights Reserved</div>
-
-      </footer>
-    </>
+<ul>
+    <li>Privacy Policy</li>
+    <li>Terms of Service</li>
+    <li>Disclosure</li>
+</ul>
+</div>
+    </footer>
   )
 }
 

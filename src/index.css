@@ -128,3 +128,31 @@ li{
 footer img{
   cursor: pointer;
 }
+
+
+
+/* utils */
+
+.space-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width:1300px){
+  .space-container{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .space-container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}@media screen and (max-width:600px){
+  .space-container{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
