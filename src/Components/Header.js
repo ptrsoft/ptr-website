@@ -35,10 +35,7 @@ const Header = () => {
           <Link to="/about-us">About Us</Link>
         </li>
        
-      
-        <li className={`text-base font-poppins font-medium ${isActive('/blogs') ? 'border-b-2' : ''}`} style={isActive('/blogs') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/not-found">Blogs</Link>
-        </li>
+    
         <li className={`text-base font-poppins font-medium ${isActive('/contact-us') ? 'border-b-2' : ''}`} style={isActive('/contact-us') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/contact-us">Contact</Link>
         </li>

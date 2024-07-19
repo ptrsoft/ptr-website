@@ -48,7 +48,6 @@ const Footer = () => {
       About Us
       </Link>
       </span>
-
     <span>
     <Link to="/contact-us">
       Contact Us
