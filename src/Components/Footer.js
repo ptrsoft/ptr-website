@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className='footer space-container'>
@@ -41,8 +42,18 @@ const Footer = () => {
   </div> 
    <div className="Column">
     <h3>Company</h3>
-    <span>About Us</span>
-    <span>Contact Us</span>
+    <span>
+      <Link to="/about-us">
+      
+      About Us
+      </Link>
+      </span>
+
+    <span>
+    <Link to="/contact-us">
+      Contact Us
+    </Link>
+      </span>
 
   </div>
 

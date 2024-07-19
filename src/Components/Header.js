@@ -34,12 +34,8 @@ const Header = () => {
         <li className={`text-base font-poppins font-medium ${isActive('/about-us') ? 'border-b-2' : ''}`} style={isActive('/about-us') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/about-us">About Us</Link>
         </li>
-        <li className={`text-base font-poppins font-medium ${isActive('/products') ? 'border-b-2' : ''}`} style={isActive('/products') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/not-found">Products</Link>
-        </li>
-        <li className={`text-base font-poppins font-medium ${isActive('/process') ? 'border-b-2' : ''}`} style={isActive('/process') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/process">Process</Link>
-        </li>
+       
+      
         <li className={`text-base font-poppins font-medium ${isActive('/blogs') ? 'border-b-2' : ''}`} style={isActive('/blogs') ? { borderColor: '#666AE5' } : {}}>
           <Link to="/not-found">Blogs</Link>
         </li>
@@ -50,7 +46,7 @@ const Header = () => {
       </div>
 
       <div className='flex gap-[3rem]'>
-        <button className='login_btn'> <Link to="/Login">Login</Link></button>
+        {/* <button className='login_btn'> <Link to="/Login">Login</Link></button> */}
         <button className='get_in_touch_btn'> <Link to="/contact-us">Get in touch</Link></button>
       </div>
     </header>

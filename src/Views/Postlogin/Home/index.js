@@ -78,14 +78,10 @@ const Home = () => {
 <div className=" text-center"><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10">What </span><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">we offer</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> & How </span><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">we do it?</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> </span></div>
 
 
-
 {selectedButton === 1 &&  <div className="text-center mt-[2rem]"><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">Open and Customizable</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Single Tenant Applications</span></div>}
 {selectedButton === 2 &&  <div className="text-center mt-[2rem]"><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10">High Quality Application with</span> <span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Zero Tech Debt</span></div>}
 {selectedButton === 3 &&  <div className="text-center mt-[2rem]"><span className="text-neutral-800 text-3xl font-bold font-['Poppins'] capitalize leading-10">Apps built with Most </span>  <span className="text-indigo-500 text-3xl font-bold font-['Poppins'] capitalize leading-10"> modern cloud native</span> <span className="text-neutral-800 text-3xl font-bold font-['Poppins'] capitalize leading-10"> Single Tenant architectures </span> </div>}
 {selectedButton === 4 &&  <div className="text-center mt-[2rem]"><span className="text-indigo-500 text-4xl font-bold font-['Poppins'] capitalize leading-10">On-Demand</span><span className="text-neutral-800 text-4xl font-bold font-['Poppins'] capitalize leading-10"> Engineering Teams</span></div>}
-
-
-
 
 {/* devide lines */}
 <div className='absolute le top-[18.4rem] w-[85%] h-[1px] bg-[#CACACA]'></div>
