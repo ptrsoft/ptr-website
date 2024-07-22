@@ -1,0 +1,260 @@
+.footer {
+    background-color: #674FA3;
+    padding-top: 88px;
+}
+
+.footer_top h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+
+
+.footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 92px;
+    gap: 20px;
+}
+
+.footer_top span {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.footer_top button {
+    width: 250px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    color: #040404;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 83.333% */
+    margin-top: 10px;
+}
+
+.devider {
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    
+}   
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 49px;
+    padding-bottom: 49px;
+}
+
+.Column h3{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 100% */
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    /* width: 24%; */
+}
+.footer_logo{
+    width: 200px;
+}
+.Column span{
+    color: #FFF;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 235.294% */
+}
+
+
+.rights{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #FFF;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 117.647% */
+}
+
+.rights ul{
+    display: flex;
+    gap: 30px;
+}
+
+
+.rights ul li{
+    color: #FFF;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 117.647% */
+}
+
+
+@media screen and (max-width:1300px) {
+    .footer_top h2{
+        font-size: 34px;
+    }
+    .footer_top span{
+        font-size: 18px;
+    }
+
+    .footer_top button {
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        color: #040404;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        margin-top: 8px;
+    }
+    .footer_logo{
+        width: 180px;
+    }
+    .Column h3{
+        font-size: 22px;
+        
+    }
+    .Column span{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .rights ul li {
+        font-size: 15px;
+    }
+     .rights {
+        font-size:15px ;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .footer_top h2{
+        font-size: 30px;
+    }
+    .footer_top{
+        gap: 15px;
+    }
+    .footer_top span{
+        font-size: 15px;
+    }
+     .footer_top{
+padding-bottom: 50px;
+    }
+
+    .footer_top button {
+        width: 180px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        color: #040404;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        margin-top: 8px;
+    }
+    .footer_logo{
+        width: 150px;
+    }
+    .Column h3{
+        font-size: 19px;
+        
+    }
+    .Column span{
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .rights ul li {
+        font-size: 11px;
+    }
+     .rights {
+        font-size:11px ;
+    }
+}
+
+
+@media screen and (max-width:776px) {
+    .footer_top h2 {
+        font-size: 20px;
+    }
+    .footer_top span {
+        font-size: 15px;
+    }
+    .footer_bottom{
+       flex-wrap: wrap;
+    }
+
+    .Column{
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer_top h2 {
+        font-size: 18px;
+    }
+    .footer_top span {
+        font-size: 15px;
+    }
+    .footer_bottom{
+       flex-wrap: wrap;
+    }
+
+    .Column{
+        width:100%;
+        gap: 5px;
+    }
+
+    .rights{
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+}

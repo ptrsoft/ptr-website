@@ -1,53 +1,62 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import '../Assets/Styles/Components/Header.css'
+import { Link , useLocation } from 'react-router-dom'
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+    const location = useLocation();
+    const [scrolled, setScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    return (
+      <header className={`header space-container ${scrolled ? 'scrolled' : ''}`}>
+        <div className='header_left'>
+          <img className='header_logo' alt='Logo' src='/Images/PTRLogo.png' />
+          <ul className='flex gap-[3.56rem]'>
+            <li className={location.pathname === '/' ? 'active' : ''}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={location.pathname === '/about-us' ? 'active' : ''}>
+              <Link to="/about-us">About Us</Link>
+            </li>
 
-  const isActive = (path) => {
-    return location.pathname === path;
+            <li className={location.pathname === '/contact-us' ? 'active' : ''}>
+              <Link to="/contact-us">Contact</Link>
+            </li>
+
+
+            {/* <li className={location.pathname === '/products' ? 'active' : ''}>
+              <Link to="/not-found">Products</Link>
+            </li> */}
+            {/* <li className={location.pathname === '/process' ? 'active' : ''}>
+              <Link to="/process">Process</Link>
+            </li> */}
+            {/* <li>
+              <Link to="/not-found">Blogs</Link>
+            </li> */}    {/* <li>
+              <Link to="/not-found">Blogs</Link>
+            </li> */}
+          </ul>
+        </div>
+        <button>
+          <Link to="/contact-us">Get In Touch</Link>
+        </button>
+      </header>
+    );
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return (
-    <header className={`pad-container z-50 fixed flex justify-between pt-[2.2rem] pb-[2.2rem] b items-center h-[3.375rem] transition-colors duration-500 ${scrolled ? 'bg-white' : 'bg-transparent'}`}>
-      <div className='flex gap-24 items-center justify-start'>
-      <img className='w-[9.9695rem]' alt='Logo' src='/Images/PTRLogo.png' />
-
-      <ul className='flex gap-[3.56rem]'>
-        <li className={`text-base font-poppins font-medium ${isActive('/') ? 'border-b-2' : ''}`} style={isActive('/') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/">Home</Link>
-        </li>
-        <li className={`text-base font-poppins font-medium ${isActive('/about-us') ? 'border-b-2' : ''}`} style={isActive('/about-us') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/about-us">About Us</Link>
-        </li>
-       
-    
-        <li className={`text-base font-poppins font-medium ${isActive('/contact-us') ? 'border-b-2' : ''}`} style={isActive('/contact-us') ? { borderColor: '#666AE5' } : {}}>
-          <Link to="/contact-us">Contact</Link>
-        </li>
-      </ul>
-      </div>
-
-      <div className='flex gap-[3rem]'>
-        {/* <button className='login_btn'> <Link to="/Login">Login</Link></button> */}
-        <button className='get_in_touch_btn'> <Link to="/contact-us">Get in touch</Link></button>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+  
+  export default Header;
+  

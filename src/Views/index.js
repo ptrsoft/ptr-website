@@ -1,5 +1,5 @@
-import React, {  Suspense } from "react";
-import { Routes, Route,  } from "react-router-dom";
+import React, { Suspense } from "react";
+import { Routes, Route, } from "react-router-dom";
 import Home from "./Postlogin/Home";
 import AboutUs from "./Postlogin/AboutUs";
 import Process from "./Postlogin/Process";
@@ -10,6 +10,7 @@ import Architecture from "./Postlogin/Architecture";
 import PathNotFound from "./PathNotFound";
 
 
+
 const Views = () => {
     return (
         <>
@@ -17,66 +18,40 @@ const Views = () => {
                 <Routes>
 
                     <Route
-            exact
-            path={"login"}
-            element={<Login />}
-          />
-
-                    {/* <Route
-            exact
-            path={`${PREFIX_AUTH_PATH}/signin`}
-            element={<Signin />}
-          /> */}
-                    {/* <Route
-            exact
-            path={`${PREFIX_AUTH_PATH}/signup`}
-            element={<Signup />}
-          /> */}
-
-                    {/* <Route
-            exact
-            path={`${PREFIX_AUTH_PATH}/forgot-password`}
-            element={<ForgotPassword />}
-          /> */}
-                    {/*     
-  <Route
-            exact
-            path={`${PREFIX_APP_PATH}/app/home`}
-            element={<Home />}
-          />
-*/}
-
-
+                        exact
+                        path={"login"}
+                        element={<Login />}
+                    />
                     {/* temrorrrry routes */}
-                  
+
                     <Route
                         exact
                         path={"about-us"}
                         element={<AboutUs />}
                     />
 
-<Route
+                    <Route
                         exact
                         path={"process"}
-                        element={<Process/>}
+                        element={<Process />}
                     />
-                    
-<Route
+
+                    <Route
                         exact
                         path={"contact-us"}
-                        element={<ContactUs/>}
+                        element={<ContactUs />}
                     />
 
-<Route
+                    <Route
                         exact
                         path={"saas-architecture"}
-                        element={<SaasArchitecture/>}
+                        element={<SaasArchitecture />}
                     />
 
-<Route
+                    <Route
                         exact
                         path={"architecture"}
-                        element={<Architecture/>}
+                        element={<Architecture />}
                     />
 
                     <Route exact path="/" element={<Home to="home" />} />

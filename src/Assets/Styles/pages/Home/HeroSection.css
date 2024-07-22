@@ -1,0 +1,192 @@
+/* Hero section styling starts */
+
+.hero_sec{
+    background-color: #F5F3EF;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+padding-top: 70px;
+
+    /* padding-top: 100px; */
+}
+
+.hero_sec_left{
+    width: 50%;
+    position: relative;
+}
+.xxx{
+    max-width: 68.94px;
+/* height: 18.69px; */
+position: absolute;
+right: 0;
+top: 10px;
+}
+.hero_sec_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.hero_vector{
+    width: 20%;
+    /* max-width: 370px; Set a max width to ensure it doesn't overflow */
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+.hero_img{
+    width: 100%;
+
+flex-shrink: 0;
+}
+
+.hero_sec_right_heading  {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: capitalize;
+}
+
+.hero_sec_right span{
+    color: #202020;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 187.5% */
+text-transform: capitalize;
+}
+
+
+@media screen and (max-width:1300px) {
+  
+  
+    .hero_sec_right_heading  {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 34px;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    text-transform: capitalize;
+}
+
+.hero_sec_right span{
+    color: #202020;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 187.5% */
+text-transform: capitalize;
+}
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    .hero_sec_right_heading   {
+        color: #202020;
+        font-family: Poppins;
+        font-size: 30px;
+    
+        font-style: normal;
+        font-weight: 700;
+        line-height: 39px;
+        text-transform: capitalize;
+    }
+    
+    .hero_sec_right span{
+        color: #202020;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-transform: capitalize;
+    }
+    
+    }
+
+@media screen and (max-width:768px) {
+    
+    .hero_sec_right_heading  {
+        color: #202020;
+        font-family: Poppins;
+        font-size: 25px;
+    
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: capitalize;
+    }
+    
+    .hero_sec_right span{
+        color: #202020;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-transform: capitalize;
+    }
+    
+    }
+@media screen and (max-width:600px) {
+    .hero_vector{
+        width: 30%;
+        /* max-width: 370px; Set a max width to ensure it doesn't overflow */
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+    }
+    .hero_sec{
+        background-color: #F5F3EF;
+        display: flex;
+        align-items: center;
+        min-height: 90vh;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+    }
+    
+    .hero_sec_left{
+        width: 100%;
+    }.hero_sec_right{
+        width: 100%;
+    }
+    .hero_sec_right_heading  {
+        color: #202020;
+        font-family: Poppins;
+        font-size: 25px;
+    
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: capitalize;
+    }
+    .hero_sec_right span{
+        color: #202020;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-transform: capitalize;
+    }
+    
+.xxx{
+    display: none;
+}
+
+    }
+
+    /* Hero section styling starts */

@@ -1,7 +1,11 @@
 import React from 'react'
-import './Footer.css'
-import { Link } from 'react-router-dom'
+import "../Assets/Styles/Components/Footer.css"
+import { Link, useNavigate } from 'react-router-dom'
 const Footer = () => {
+ const navigate = useNavigate()
+ const handleNavigate= ()=>{
+  navigate('/contact-us')
+ }
   return (
     <footer className='footer space-container'>
 
@@ -9,11 +13,7 @@ const Footer = () => {
 <div className="footer_top">
     <h2>Ready to experience the flexibility and power of PTR Technologies</h2>
     <span>Sign up now and start customizing your applications and hiring on-demand engineering teams.</span>
-    <Link to="/contact-us">
-    <button>
-      GET STARTED
-      </button>
-      </Link>
+    <button onClick={handleNavigate}>GET STARTED</button>
 </div>
 
 {/* devider */}
@@ -40,20 +40,19 @@ const Footer = () => {
 
   <div className="Column">
     <h3>INDIA</h3>
-    <span>WorkFlo Hitex Bizness Square Jublee Enclave, SY Nos 66&67, Madhapur, Serlingampally Mandal, RR Dist, Hyderabad, Telangana - 500081</span>
+    <span>WorkFlo Hitex Bizness Square Jublee Enclave, SY Nos 66&67, Madhapur, Serlingampally Mandal, RR Dist, Hyderabad, Telangana -  500081</span>
     <span> <a href="tel:+918892954321" >+91 8892954321</a> </span>
 
   </div> 
    <div className="Column">
     <h3>Company</h3>
     <span>
-      <Link to="/about-us">
-      
+      <Link to={'/about-us'}>
       About Us
       </Link>
       </span>
     <span>
-    <Link to="/contact-us">
+    <Link to={'/contact-us'}>
       Contact Us
     </Link>
       </span>
