@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   <img src="Images/whiteXXX.png" alt="" className='absolute top-28 left-64' />
   <div className=" text-center text-white text-5xl font-bold font-['Poppins'] uppercase leading-10">Contact Us</div>
-  <div className=" text-white text-xl font-medium font-['Poppins'] capitalize">Home / Service Details</div>
+  
   </div>
 </section>
 

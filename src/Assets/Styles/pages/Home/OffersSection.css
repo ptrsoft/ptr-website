@@ -1,6 +1,7 @@
 .OffersTab_sec{
     background-color: #F5F3EF;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .OffersTab_sec_top h2{
@@ -24,6 +25,7 @@ margin-bottom: 20px;
     border-bottom: 1px #CACACA solid;
     padding-top: 30px;
     padding-bottom: 30px;
+    
 
 }
 .btnLine{
@@ -214,7 +216,30 @@ line-height: 11px; /* 68.75% */
 text-transform: uppercase;
 }
 
-
+/* mobile accordians */
+.mobile_accordian{
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+.accordian_headings{
+    color: #000;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+text-transform: capitalize;
+}
+.accordian_para{
+    color: #000;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+margin-top: 20px;
+font-size: 13px;
+}
+.accordian_read_more_btn{
+    margin-top: 20px;
+}
 @media screen and (max-width:1300px) {
     .OffersTab_sec_top h2{
         color: #202020;
@@ -309,6 +334,17 @@ border: none;
 
 
 @media screen and (max-width:776px) {
+    .OffersTab_sec{
+        padding-top:20px;
+        padding-bottom:40px;
+        
+    }
+    .OffersTab_sec_bottom{
+        display: none;
+    }
+    .mobile_accordian{
+display: flex;
+    }
     .OffersTab_sec_top h2{
         color: #202020;
     text-align: center;
@@ -350,6 +386,7 @@ border: none;
     line-height: 23px;
 }
 
+
 }
 
 
@@ -380,9 +417,7 @@ border: none;
    .mobile_btns{
     display: block;
    }
-   .OffersTab_sec{
-    padding-top: 20px;
-   }
+ 
    .tabsMinHeadings{
     margin-top: 20px;
    }

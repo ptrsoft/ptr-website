@@ -9,7 +9,7 @@ const AboutUs = () => {
 <section className='pad-container gap-[3rem] bg-[#FEF4F9] flex flex-col pt-[8rem] items-center '>
     <div className='flex flex-col gap-4'>
 <div className="AboutUs w-64 text-center text-neutral-900 text-4xl font-bold font-['Poppins'] uppercase leading-10">About Us</div>
-<div className="text-center text-gray-900 font-poppins text-xl font-medium leading-[0.9375rem] capitalize">Home  / Page  /  About Us</div>
+
 </div>
 <img src="./Images/AboutBanner.png" width="100%" alt='banner' />
 <div className=" text-center text-black text-[2rem] font-medium font-['Poppins'] capitalize leading-15">Welcome to PTR technologies, where innovation meets simplicity. <br/>We are a forward-thinking SaaS company dedicated to transforming the way businesses operate by providing cutting-edge software solutions that streamline processes, enhance productivity, and foster growth.</div>
