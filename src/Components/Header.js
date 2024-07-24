@@ -24,7 +24,10 @@ const Header = () => {
     return (
       <header className={`header space-container ${scrolled ? 'scrolled' : ''}`}>
         <div className='header_left'>
+        <Link to="/">
           <img className='header_logo' alt='Logo' src='/Images/PTRLogo.png' />
+        </Link>
+
           <ul className='flex gap-[3.56rem]'>
             <li className={location.pathname === '/' ? 'active' : ''}>
               <Link to="/">Home</Link>
