@@ -1,0 +1,744 @@
+
+
+/* contact us top start */
+.ContactUs_top{
+    width: 100%;
+height: 45vh;
+flex-shrink: 0;
+background: url("../../../contactBanner.png") lightgray 50% / cover no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ContactUs_breadcrump{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 90px; /* 180% */
+text-transform: uppercase;
+}
+
+.ContactUs_breadcrump_para{
+    color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+/* contact us top enddd */
+
+/* ciontact us form section starts */
+.ContactUs_form_section{
+    background-color: #FFFFFF;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.ContactUs_form_section_left {
+width: 59%;
+min-height: 740px;
+
+}
+.ContactUs_form_section_left_top{
+display: flex;
+align-items: center;
+justify-content: start;
+gap: 40px;
+height: 200px;
+margin-bottom: 70px;
+
+}
+
+.ContactUs_form_section_left_top_icon {
+    width: 100px;
+height: auto;
+flex-shrink: 0;
+}
+.ContactUs_form_section_left_top_heading{
+    color: #202020;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 120% */
+}
+
+/* lleft bottom */
+.ContactUs_form_section_left_bottom{
+    background: #DCDCDC ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.ContactUs_form_section_left_bottom_input{
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+
+    color: #444;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-left: 34px;
+padding-right: 34px;
+outline: none;
+}
+
+.ContactUs_form_section_left_bottom_text_area{
+    width: 100%;
+    height: 211px;
+    flex-shrink: 0;
+
+    color: #444;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-top: 36px;
+padding-left: 34px;
+padding-right: 34px;
+outline: none;
+}
+/* left endf */
+
+/* ri9ght staert */
+.ContactUs_form_section_right{
+width: 37%;
+height: 746px;
+}
+
+.lets_talk_btn{
+    width: 190px;
+height: 60px;
+flex-shrink: 0;
+
+border-radius: 10px;
+background: #2A9BED;
+
+color: #FFF;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px; /* 81.818% */
+text-transform: uppercase;
+}
+.ContactUs_form_section_right_top{
+height: 200px;
+margin-bottom: 70px;
+}
+.ContactUs_form_section_right_top_para{
+    color: #000;
+text-align: justify;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 187.5% */
+text-transform: capitalize;
+}
+
+/* right bottom starts  */
+.ContactUs_form_section_right_bottom {
+    width: 100%;
+    padding: 50px;
+    background: url("../../../contactVector.png") lightgray 50% / cover no-repeat;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+}
+.ContactUs_form_section_right_bottom_hello{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+}
+.ContactUs_form_section_right_bottom_para{
+    color: #3F3F3F;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.ContactUs_form_section_right_bottom_img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+/* right bottom ends */
+
+/* ri9ght staert */
+
+/* ciontact us form section ends */
+
+
+/* contact us map start */
+.contact_us_map_section {
+    width: 100%;
+    height: 57vh;
+    background: lightgray no-repeat right center / cover;
+    background-image: url("../../../../../public/Images/Maps.png");
+}
+/* contact us map end */
+
+
+
+
+/* ContactUs_form_section_right_bottom_Enquries */
+.ContactUs_form_section_right_bottom_Enquries{
+
+}
+.ContactUs_form_section_right_bottom_Enquries_heading{
+    color: #FFF;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.ContactUs_form_section_right_bottom_Enquries_mail{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Enquries_social_container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin-top: 27px;
+}
+
+
+/* media queriz for 1300px  */
+@media screen and (max-width:1300px) {
+    .ContactUs_top {
+    width: 100%;
+    height: 40vh;
+}
+.ContactUs_breadcrump{
+font-size: 40px;
+line-height: 70px; /* 180% */
+}
+    .ContactUs_form_section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        display: flex;
+        justify-content: space-between;
+        gap: 1%;
+    }
+    .ContactUs_form_section_left_top {
+        height: 180px;
+        margin-bottom: 60px;
+    }
+    .ContactUs_form_section_right_top {
+        height: 180px;
+        margin-bottom: 60px;
+    }
+    .ContactUs_form_section_left_top_heading {
+        color: #202020;
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .ContactUs_form_section_right_top_para {
+        color: #000;
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .ContactUs_form_section_left_bottom {
+        background: #DCDCDC;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .ContactUs_form_section_left_bottom_input{
+        width: 100%;
+        height: 70px;
+        font-size: 16px;
+        font-style: normal;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .ContactUs_form_section_left_bottom_text_area {
+        width: 100%;
+        height: 170px;
+       
+        font-size: 16px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 0px;
+        outline: none;
+    }
+    .lets_talk_btn {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    /* enquesry section starts starts */
+    .ContactUs_form_section_right_bottom {
+        width: 100%;
+        padding: 40px;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ContactUs_form_section_right_bottom_hello {
+        font-size: 40px;
+    }
+    .ContactUs_form_section_right_bottom_para{
+        font-size: 14px;
+        line-height: 22px;
+
+    }
+
+    .ContactUs_form_section_right_bottom_Enquries_heading {
+    
+        font-size: 30px;
+    }
+    .ContactUs_form_section_right_bottom_Enquries_mail {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .ContactUs_form_section_right_bottom_Enquries {
+    
+    }
+    
+    /* enquesry section starts endz */
+    
+}
+
+/* media queriz for 1000px  */
+@media screen and (max-width:1000px) {
+    .ContactUs_top {
+        width: 100%;
+        height: 30vh;
+      
+    }
+    .ContactUs_breadcrump{
+        font-size: 30px;
+        line-height: 60px; /* 180% */
+        }
+        .ContactUs_form_section {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            gap: 1%;
+        
+        }
+        .ContactUs_form_section_left_top {
+            height: 150px;
+            margin-bottom: 50px;
+        } .ContactUs_form_section_right_top {
+            height: 150px;
+            margin-bottom: 50px;
+        }
+    .ContactUs_form_section_left_top_heading {
+        color: #202020;
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .ContactUs_form_section_right_top_para {
+        color: #000;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .ContactUs_form_section_left_bottom {
+        background: #DCDCDC;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+    }
+    .ContactUs_form_section_left{
+        min-height: auto;
+    }
+    .ContactUs_form_section_left_bottom_input{
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .ContactUs_form_section_left_bottom_text_area {
+        width: 100%;
+        height: 170px;
+       
+        font-size: 16px;
+        padding-top: 6px;
+        padding-left: 24px;
+        padding-right: 24px;
+        outline: none;
+    }
+    .lets_talk_btn {
+        width: 150px;
+        height: 40px;
+        font-size: 17px;
+        font-style: normal;
+    }
+    
+    /* enquesry section starts starts */
+    .ContactUs_form_section_right_bottom {
+        width: 100%;
+        padding: 30px;
+        height: 558px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ContactUs_form_section_right_bottom_hello {
+        font-size: 35px;
+    }
+    .ContactUs_form_section_right_bottom_para{
+        font-size: 12px;
+        line-height: 20px;
+
+    }
+
+    .ContactUs_form_section_right_bottom_Enquries_heading {
+    
+        font-size: 25px;
+    }
+    .ContactUs_form_section_right_bottom_Enquries_mail {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .ContactUs_form_section_right_bottom_Enquries {
+    
+    }
+    
+    /* enquesry section starts endz */
+    
+}
+
+
+/* media queriz for 776  */
+@media screen and (max-width:776px) {
+    .ContactUs_top {
+        width: 100%;
+        height: 26vh;
+    }
+    .ContactUs_breadcrump{
+        font-size: 20px;
+        line-height: 70px; /* 180% */
+        }
+        .ContactUs_form_section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            gap: 1%;
+        }
+        .ContactUs_form_section_left_top {
+            height: 100px;
+            margin-bottom: 50px;
+        } .ContactUs_form_section_right_top {
+            height: auto;
+            margin-bottom: 20px;
+        }
+    .ContactUs_form_section{
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 50px;
+    }
+    .ContactUs_form_section_left{
+        width: 100%;
+        height: auto;
+    }
+    .ContactUs_form_section_right{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .ContactUs_form_section_left_top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* height: 200px; */
+        margin-bottom: 10px;
+    }
+
+    .ContactUs_form_section_left_top_icon {
+        width: 50px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .ContactUs_form_section_left_top_heading br {
+        display: none;
+    }
+    .ContactUs_form_section_left_top_heading {
+        color: #202020;
+        font-size: 28px;
+        line-height: 33px;
+        height: auto;
+    }
+    .ContactUs_form_section_right_top_para {
+        color: #000;
+        font-size: 9px;
+        line-height: 17px;
+
+    }
+    .ContactUs_form_section_left_bottom {
+        background: #DCDCDC;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+    
+        gap: 22px;
+        flex-direction: column;
+    }
+    .ContactUs_form_section_left_bottom_input{
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .ContactUs_form_section_left_bottom_text_area {
+        width: 100%;
+        height: 170px;
+       
+        font-size: 16px;
+        padding-top: 6px;
+        padding-left: 24px;
+        padding-right: 24px;
+        outline: none;
+    }
+    .lets_talk_btn {
+        width: 150px;
+        height: 40px;
+        font-size: 17px;
+        font-style: normal;
+    }
+
+    /* enquesry section starts starts */
+    .ContactUs_form_section_right_bottom {
+        width: 100%;
+        padding: 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ContactUs_form_section_right_bottom_hello {
+        font-size: 35px;
+    }
+    .ContactUs_form_section_right_bottom_para{
+        font-size: 12px;
+        line-height: 20px;
+
+    }
+
+    .ContactUs_form_section_right_bottom_Enquries_heading {
+    
+        font-size: 25px;
+    }
+    .ContactUs_form_section_right_bottom_Enquries_mail {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .ContactUs_form_section_right_bottom_Enquries {
+    
+    }
+    
+    /* enquesry section starts endz */
+    
+
+    
+}
+
+
+/* media queriz for 600 */
+@media screen and (max-width:600px) {
+    .ContactUs_top {
+        width: 100%;
+        height: 26vh;
+    }
+    .ContactUs_breadcrump{
+        font-size: 18px;
+        line-height: 0px; /* 180% */
+        }
+        .ContactUs_form_section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ContactUs_form_section_left_top {
+            height: auto;
+            margin-bottom: 50px;
+        } .ContactUs_form_section_right_top {
+            height: auto;
+            margin-bottom: 20px;
+        }
+    .ContactUs_form_section{
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 20px;
+    }
+    .ContactUs_form_section_left{
+        width: 100%;
+        height: auto;
+    }
+    .ContactUs_form_section_right{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .ContactUs_form_section_left_top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* height: 200px; */
+        margin-bottom: 10px;
+    }
+
+    .ContactUs_form_section_left_top_icon {
+        width: 40px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .ContactUs_form_section_left_top_heading br {
+        display: none;
+    }
+    .ContactUs_form_section_left_top_heading {
+        color: #202020;
+        font-size: 20px;
+        line-height: 23px;
+        height: auto;
+    }
+    .ContactUs_form_section_right_top_para {
+        color: #000;
+        font-size: 9px;
+        line-height: 17px;
+
+    }
+    .ContactUs_form_section_left_bottom {
+        background: #DCDCDC;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+    }
+    .ContactUs_form_section_left_bottom_input{
+        width: 100%;
+        height: 43px;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ContactUs_form_section_left_bottom_text_area {
+        width: 100%;
+        height: 130px;
+       
+        font-size: 14px;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: none;
+    }
+    .lets_talk_btn {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+        font-style: normal;
+    }
+
+    
+    /* enquesry section starts starts */
+    .ContactUs_form_section_right_bottom {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ContactUs_form_section_right_bottom_hello {
+        font-size: 35px;
+    }
+    .ContactUs_form_section_right_bottom_para{
+        font-size: 12px;
+        line-height: 20px;
+
+    }
+
+    .ContactUs_form_section_right_bottom_Enquries_heading {
+    
+        font-size: 25px;
+    }
+    .ContactUs_form_section_right_bottom_Enquries_mail {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .ContactUs_form_section_right_bottom_Enquries {
+    
+    }
+    
+    /* enquesry section starts endz */
+    
+
+
+    
+}
