@@ -1,0 +1,869 @@
+
+
+/* accordian styyling for mobie  */
+
+.accordian_label {
+    color: #FFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.accordian_wrapper {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.process_section {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #FFFFFF;
+}
+
+.process_section_left {
+    display: flex;
+    width: 35%;
+    /* overflow: hidden; */
+    /* background-color: green; */
+}
+
+.process_section_left_box {
+    width: 100%;
+    flex-shrink: 0;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #EABFD4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* ----------- active btn -----------*/
+
+
+.process_section_left_box_btn {
+    display: flex;
+    width: 88%;
+    height: 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #484DD5;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.process_section_left_box_btn:hover {
+    opacity: 1;
+}
+
+/*-------- active btn----- */
+.process_section_left_box_btn_active {
+    display: flex;
+    width: 88%;
+    height: 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #484DD5;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+/* section right  */
+
+.process_section_right {
+    /* tempor width */
+    width: 61%;
+
+
+
+}
+
+.process_section_right_heading {
+    color: var(--Brand, #666AE5);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    /* 136.364% */
+    text-transform: capitalize;
+}
+
+.process_section_right_brief {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 40px;
+    border-radius: 20px;
+    background: #B1D9F4;
+
+    margin-top: 23px;
+}
+
+.process_section_right_brief_heading {
+    color: #1D1D1D;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 133.333% */
+    text-transform: capitalize;
+}
+
+.process_section_right_brief_para {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 186.667% */
+    text-transform: capitalize;
+}
+
+.process_section_right_img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* process list section  */
+.process_section_right_list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    gap: 20px;
+}
+
+.process_section_right_list_heading {
+    color: #373737;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.process_section_right_list_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.process_section_right_list_ul li {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 266.667% */
+    position: relative;
+    padding-left: 33px;
+    /* Add space for the image */
+    list-style: none;
+    /* Remove default list style */
+}
+
+.process_section_right_list_ul li::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    /* Width of the image */
+    height: 18px;
+    /* Height of the image */
+    background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+    background-size: contain;
+    /* Adjust to fit the image within the defined dimensions */
+    position: absolute;
+    left: 0;
+    top: 10px;
+    /* Adjust this value to align the image with the first line of text */
+    /* Remove transform to avoid vertical centering */
+}
+
+/* media queriez for 1600px */
+
+@media screen and (max-width:1600px) {
+
+    .process_section_left_box {
+        width: 100%;
+        flex-shrink: 0;
+        gap: 22px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #EABFD4;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* ----------- active btn -----------*/
+
+
+    .process_section_left_box_btn {
+
+        width: 88%;
+        height: 57px;
+        gap: 10px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    /*-------- active btn----- */
+    .process_section_left_box_btn_active {
+        width: 88%;
+        height: 57px;
+        gap: 10px;
+        font-size: 16px;
+        font-style: normal;
+    }
+
+
+
+    /* section right  */
+
+    .process_section_right {
+        /* tempor width */
+        width: 61%;
+
+
+
+    }
+
+    .process_section_right_heading {
+
+        font-size: 42px;
+        line-height: 58px;
+        /* 136.364% */
+    }
+
+    .process_section_right_brief {
+        width: 100%;
+        padding: 37px;
+        margin-top: 21px;
+    }
+
+    .process_section_right_brief_heading {
+
+        font-size: 28px;
+        line-height: 38px;
+        /* 133.333% */
+    }
+
+    .process_section_right_brief_para {
+        font-size: 14px;
+        line-height: 27px;
+        /* 186.667% */
+    }
+
+    .process_section_right_img {
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+    }
+
+    /* process list section  */
+    .process_section_right_list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 85px;
+        gap: 20px;
+    }
+
+    .process_section_right_list_heading {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .process_section_right_list_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_section_right_list_ul li {
+        color: #1E1E1E;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38px;
+        /* 266.667% */
+        position: relative;
+        padding-left: 31px;
+        /* Add space for the image */
+        list-style: none;
+        /* Remove default list style */
+    }
+
+    .process_section_right_list_ul li::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        /* Width of the image */
+        height: 16px;
+        /* Height of the image */
+        background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+        background-size: contain;
+        /* Adjust to fit the image within the defined dimensions */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        /* Adjust this value to align the image with the first line of text */
+        /* Remove transform to avoid vertical centering */
+    }
+}
+
+/* media screens for 1300px */
+
+
+@media screen and (max-width:1300px) {
+
+    .process_section_left_box {
+        width: 100%;
+        flex-shrink: 0;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #EABFD4;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* ----------- active btn -----------*/
+
+
+    .process_section_left_box_btn {
+
+        width: 88%;
+        height: 48px;
+        gap: 10px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    /*-------- active btn----- */
+    .process_section_left_box_btn_active {
+        width: 88%;
+        height: 48px;
+        gap: 10px;
+        font-size: 14px;
+        font-style: normal;
+    }
+
+
+
+    /* section right  */
+
+    .process_section_right {
+        /* tempor width */
+        width: 61%;
+
+
+
+    }
+
+    .process_section_right_heading {
+
+        font-size: 40px;
+        line-height: 55px;
+        /* 136.364% */
+    }
+
+    .process_section_right_brief {
+        width: 100%;
+        padding: 30px;
+        margin-top: 18px;
+    }
+
+    .process_section_right_brief_heading {
+
+        font-size: 25px;
+        line-height: 36px;
+        /* 133.333% */
+    }
+
+    .process_section_right_brief_para {
+        font-size: 12px;
+        line-height: 25px;
+        /* 186.667% */
+    }
+
+    .process_section_right_img {
+        width: 100%;
+        height: auto;
+        margin-top: 26px;
+    }
+
+    /* process list section  */
+    .process_section_right_list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        gap: 20px;
+    }
+
+    .process_section_right_list_heading {
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .process_section_right_list_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_section_right_list_ul li {
+        color: #1E1E1E;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+        /* 266.667% */
+        position: relative;
+        padding-left: 28px;
+        /* Add space for the image */
+        list-style: none;
+        /* Remove default list style */
+    }
+
+    .process_section_right_list_ul li::before {
+        content: '';
+        display: inline-block;
+        width: 14px;
+        /* Width of the image */
+        height: 14px;
+        /* Height of the image */
+        background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+        background-size: contain;
+        /* Adjust to fit the image within the defined dimensions */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        /* Adjust this value to align the image with the first line of text */
+        /* Remove transform to avoid vertical centering */
+    }
+}
+
+
+/* media screenz fior 1000px devizes */
+
+
+@media screen and (max-width:1000px) {
+
+    .process_section_left_box {
+        width: 100%;
+        flex-shrink: 0;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #EABFD4;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* ----------- active btn -----------*/
+
+
+    .process_section_left_box_btn {
+
+        width: 88%;
+        height: 40px;
+        gap: 10px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    /*-------- active btn----- */
+    .process_section_left_box_btn_active {
+        width: 88%;
+        height: 40px;
+        gap: 10px;
+        font-size: 12px;
+        font-style: normal;
+    }
+
+
+
+    /* section right  */
+
+    .process_section_right {
+        /* tempor width */
+        width: 61%;
+
+
+
+    }
+
+    .process_section_right_heading {
+
+        font-size: 34px;
+        line-height: 50px;
+        /* 136.364% */
+    }
+
+    .process_section_right_brief {
+        width: 100%;
+        padding: 25px;
+        margin-top: 16px;
+    }
+
+    .process_section_right_brief_heading {
+
+        font-size: 23px;
+        line-height: 34px;
+        /* 133.333% */
+    }
+
+    .process_section_right_brief_para {
+        font-size: 10px;
+        line-height: 23px;
+        /* 186.667% */
+    }
+
+    .process_section_right_img {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+    }
+
+    /* process list section  */
+    .process_section_right_list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        gap: 20px;
+    }
+
+    .process_section_right_list_heading {
+        font-size: 23px;
+        line-height: normal;
+    }
+
+    .process_section_right_list_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_section_right_list_ul li {
+        color: #1E1E1E;
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 266.667% */
+        position: relative;
+        padding-left: 24px;
+        /* Add space for the image */
+        list-style: none;
+        /* Remove default list style */
+    }
+
+    .process_section_right_list_ul li::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        /* Width of the image */
+        height: 12px;
+        /* Height of the image */
+        background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+        background-size: contain;
+        /* Adjust to fit the image within the defined dimensions */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        /* Adjust this value to align the image with the first line of text */
+        /* Remove transform to avoid vertical centering */
+    }
+}
+
+
+/* media scereen fior 776px devuzes */
+
+@media screen and (max-width:776px) {
+
+    .process_section_left_box {
+        width: 100%;
+        flex-shrink: 0;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background: #EABFD4;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* ----------- active btn -----------*/
+
+
+    .process_section_left_box_btn {
+
+        width: 88%;
+        height: 33px;
+        gap: 10px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    /*-------- active btn----- */
+    .process_section_left_box_btn_active {
+        width: 88%;
+        height: 33px;
+        gap: 10px;
+        font-size: 10px;
+        font-style: normal;
+    }
+
+
+
+    /* section right  */
+
+    .process_section_right {
+        /* tempor width */
+        width: 61%;
+
+
+
+    }
+
+    .process_section_right_heading {
+
+        font-size: 28px;
+        line-height: 40px;
+        /* 136.364% */
+    }
+
+    .process_section_right_brief {
+        width: 100%;
+        padding: 20px;
+        margin-top: 14px;
+    }
+
+    .process_section_right_brief_heading {
+
+        font-size: 20px;
+        line-height: 32px;
+        /* 133.333% */
+    }
+
+    .process_section_right_brief_para {
+        font-size: 8px;
+        line-height: 18px;
+        /* 186.667% */
+    }
+
+    .process_section_right_img {
+        width: 100%;
+        height: auto;
+        margin-top: 22px;
+    }
+
+    /* process list section  */
+    .process_section_right_list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+        gap: 20px;
+    }
+
+    .process_section_right_list_heading {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .process_section_right_list_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_section_right_list_ul li {
+        color: #1E1E1E;
+        font-family: Poppins;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+        /* 266.667% */
+        position: relative;
+        padding-left: 20px;
+        /* Add space for the image */
+        list-style: none;
+        /* Remove default list style */
+    }
+
+    .process_section_right_list_ul li::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        /* Width of the image */
+        height: 10px;
+        /* Height of the image */
+        background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+        background-size: contain;
+        /* Adjust to fit the image within the defined dimensions */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        /* Adjust this value to align the image with the first line of text */
+        /* Remove transform to avoid vertical centering */
+    }
+}
+
+
+/* media quriez for 600px devizes / mobiles */
+
+@media screen and (max-width:600px) {
+    .accordian_wrapper{
+display: flex;
+    }
+    .process_section_right_wrapper {
+        display: none;
+    }
+
+    .process_section_left {
+        display: none;
+    }
+
+
+    /* section right  */
+
+    .process_section_right {
+        /* tempor width */
+        width: 100%;
+    }
+
+    .process_section_right_heading {
+
+        font-size: 28px;
+        line-height: 40px;
+        /* 136.364% */
+    }
+
+    .process_section_right_brief {
+        width: 100%;
+        padding: 20px;
+        margin-top: 14px;
+    }
+
+    .process_section_right_brief_heading {
+
+        font-size: 20px;
+        line-height: 32px;
+        /* 133.333% */
+    }
+
+    .process_section_right_brief_para {
+        font-size: 8px;
+        line-height: 18px;
+        /* 186.667% */
+    }
+
+    .process_section_right_img {
+        width: 100%;
+        height: auto;
+        margin-top: 22px;
+    }
+
+    /* process list section  */
+    .process_section_right_list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+        gap: 20px;
+    }
+
+    .process_section_right_list_heading {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .process_section_right_list{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .process_section_right_list_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_section_right_list_ul li {
+        color: #1E1E1E;
+        font-family: Poppins;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+        /* 266.667% */
+        position: relative;
+        padding-left: 20px;
+        /* Add space for the image */
+        list-style: none;
+        /* Remove default list style */
+    }
+
+    .process_section_right_list_ul li::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        /* Width of the image */
+        height: 10px;
+        /* Height of the image */
+        background: url('../../../Images/blueTickIcon.svg') no-repeat center center;
+        background-size: contain;
+        /* Adjust to fit the image within the defined dimensions */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        /* Adjust this value to align the image with the first line of text */
+        /* Remove transform to avoid vertical centering */
+    }
+}
