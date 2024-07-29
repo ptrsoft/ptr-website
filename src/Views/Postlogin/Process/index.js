@@ -14,6 +14,7 @@ import actualDevelopment from "../../../Assets/Images/actualDevelopment.png"
 import tests from "../../../Assets/Images/tests.png"
 import promoteToStaging from "../../../Assets/Images/promoteToStaging.png"
 import publishOperate from "../../../Assets/Images/publishOperate.png"
+import developmentProcess from "../../../Assets/Images/developmentProcess.png"
 const Process = () => {
   const [tabNumber,setTabNumber] = useState("requirement")
 
@@ -51,35 +52,35 @@ const Process = () => {
   <button  onClick={() => handleTabs("requirement")}
     className={`tab-button ${tabNumber === "requirement" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  requirement
+ 1. requirement
   </button>
 
   <button 
    onClick={() => handleTabs("mockDevelopment")}
    className={`tab-button ${tabNumber === "mockDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  Mock development
+  2. Mock development
   </button>
   
   <button 
    onClick={() => handleTabs("actualDevelopment")}
    className={`tab-button ${tabNumber === "actualDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  actual development
+ 3. actual development
   </button>
   
   <button 
   onClick={() => handleTabs("tests")}
    className={`tab-button ${tabNumber === "tests" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  ci / cd / tests
+ 4. ci / cd / tests
   </button>
 
   <button 
   onClick={() => handleTabs("promoteToStaging")}
    className={`tab-button ${tabNumber === "promoteToStaging" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  promote to staging
+ 5. promote to staging
   </button>
 
 
@@ -88,7 +89,7 @@ const Process = () => {
   className={`tab-button ${tabNumber === "publishAndOperate" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
 
   >
-  publish & operate
+ 6. publish & operate
   </button>
 
 
@@ -320,14 +321,40 @@ UseCase Matrix Page</li>
 
   {/* accordian for mobile veiws */}
   <div className='accordian_wrapper'>
-      <Accordion defaultExpanded >
+    {/* dev process */}
+  <Accordion defaultExpanded >
         <AccordionSummary
       style={{background:"#484DD5"}}
+          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+          aria-controls="panel1-content"  
+          id="panel1-header"
+        > 
+        <span  className='accordian_label'>Development Process</span>
+        </AccordionSummary>
+        <AccordionDetails>
+        <span style={{fontSize:"27px"}} className='process_section_right_heading'>Our Software Development Process</span>
+        <div className="process_section_right_brief">
+  <span className="process_section_right_brief_heading">Brief :</span>
+
+{/* paragrapjhs */}
+<p className='process_section_right_brief_para'>At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use cases are reliable, scalable, and secure. Here follows a typical Use Case cycle.</p>
+</div>
+{/* imag */}
+<img className='process_section_right_img' src={developmentProcess} alt="unable to load image , check your internet connection" />
+{/* lisrt con */}
+
+        </AccordionDetails>
+      </Accordion>
+
+
+      <Accordion >
+        <AccordionSummary
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"  
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>1. Requirement</span>
+        <span style={{color:"#000"}}  className='accordian_label'>1. Requirement</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>1. Requirement</span>
@@ -372,7 +399,7 @@ UseCase Matrix Page</li>
       {/* mock devopment */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#F39CAD"}}
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -425,7 +452,7 @@ UseCase Matrix Page</li>
  {/* actual devlopment */}
  <Accordion >
         <AccordionSummary
-      style={{background:"#D4FADA"}}
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -484,7 +511,7 @@ with sample data</li>
       {/* Tests */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#FDE3C7"}}
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -545,7 +572,7 @@ UseCase Matrix Page</li>
       {/* promote to staging */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#C9BFFE"}}
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -592,7 +619,7 @@ UseCase Matrix Page</li>
       {/* publish & operate */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#484DD5"}}
+      style={{background:"#F3C4CD"}}
           expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"

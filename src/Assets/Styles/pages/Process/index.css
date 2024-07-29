@@ -16,8 +16,6 @@
     gap: 20px;
 }
 
-
-
 .process_section {
     display: flex;
     padding-top: 100px;
@@ -56,7 +54,9 @@
     display: flex;
     width: 88%;
     height: 59px;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 30px;
+    padding-right: 30px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
@@ -82,7 +82,8 @@
     display: flex;
     width: 88%;
     height: 59px;
-    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
