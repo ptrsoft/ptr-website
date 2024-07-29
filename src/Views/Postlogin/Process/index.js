@@ -323,11 +323,11 @@ UseCase Matrix Page</li>
       <Accordion defaultExpanded >
         <AccordionSummary
       style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
-          aria-controls="panel1-content"
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
+          aria-controls="panel1-content"  
           id="panel1-header"
         > 
-        <span className='accordian_label'>Requirement</span>
+        <span style={{color:"#000"}} className='accordian_label'>1. Requirement</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>1. Requirement</span>
@@ -372,12 +372,12 @@ UseCase Matrix Page</li>
       {/* mock devopment */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+      style={{background:"#F39CAD"}}
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span className='accordian_label'>Mock Development</span>
+        <span style={{color:"#000"}} className='accordian_label'>2. Mock Development</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>2. Mock Development</span>
@@ -425,12 +425,12 @@ UseCase Matrix Page</li>
  {/* actual devlopment */}
  <Accordion >
         <AccordionSummary
-      style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+      style={{background:"#D4FADA"}}
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span className='accordian_label'>actual development</span>
+        <span style={{color:"#000"}} className='accordian_label'>3. actual development</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>3. Actual Development</span>
@@ -484,12 +484,12 @@ with sample data</li>
       {/* Tests */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+      style={{background:"#FDE3C7"}}
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span className='accordian_label'>ci / cd / tests</span>
+        <span style={{color:"#000"}} className='accordian_label'>4. ci / cd / tests</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>4.CI / CD / Tests</span>
@@ -545,12 +545,12 @@ UseCase Matrix Page</li>
       {/* promote to staging */}
       <Accordion >
         <AccordionSummary
-      style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+      style={{background:"#C9BFFE"}}
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span className='accordian_label'>promote to staging</span>
+        <span style={{color:"#000"}} className='accordian_label'>5. promote to staging</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>5. Promote To Staging</span>
@@ -593,14 +593,14 @@ UseCase Matrix Page</li>
       <Accordion >
         <AccordionSummary
       style={{background:"#484DD5"}}
-          expandIcon={<ArrowDownwardIcon style={{color:"#FFF"}} />}
+          expandIcon={<ArrowDownwardIcon style={{color:"#000"}} />}
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span className='accordian_label'>publish & operate</span>
+        <span style={{color:"#000"}} className='accordian_label'>6. publish & operate</span>
         </AccordionSummary>
         <AccordionDetails>
-        <span className='process_section_right_heading'>6. Publish & Operate</span>
+        <span className='process_section_right_heading'>Publish & Operate</span>
         <div className="process_section_right_brief">
   <span className="process_section_right_brief_heading">Brief :</span>
 

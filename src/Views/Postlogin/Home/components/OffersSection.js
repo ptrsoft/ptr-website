@@ -56,7 +56,6 @@ const OffersSection = () => {
     </div>
     <h3 className='tabsMinHeadings'><span style={{ color: '#666AE5' }}> Open and Customizable</span> Single Tenant Applications</h3>
       <p className='accordian_para' >Experience unparalleled flexibility with our single-tenant SAAS applications,that is open and tailored to your unique business needs. Explore our robust backend platform and cutting-edge technology, delivering microservices-based enterprise apps with comprehensive operations management.</p>
-      
   </AccordionDetails>
 </Accordion>
 
@@ -75,7 +74,7 @@ const OffersSection = () => {
     </div>
     <h3 className='tabsMinHeadings'  >High Quality Application with <span style={{ color: '#666AE5' }}>Zero Tech Debt</span></h3>
 <p className='accordian_para'>At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts.</p>
-          
+     
   </AccordionDetails>
 </Accordion>
 
@@ -224,12 +223,6 @@ Need additional engineering resources? Hire a complete engineering team on deman
  Read More
 </button>
 } */}
-
-{selectedButton === 1 &&
-            <button onClick={handleSaasArc} className="read_more_btn">
-              Read More
-            </button>
-          }
 
           {selectedButton === 3 &&
             <button onClick={handleNavigate} className="read_more_btn">
