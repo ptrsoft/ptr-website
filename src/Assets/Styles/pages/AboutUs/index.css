@@ -1,0 +1,1625 @@
+.about_us_bread {
+    color: #121212;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 80% */
+    text-transform: uppercase;
+    padding-top: 160px;
+}
+
+/* about us banner */
+.about_us_banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.about_us_para {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 63px;
+    /* 157.5% */
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 24px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 94.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    /* 64% */
+    text-transform: uppercase;
+}
+
+.about_us_card_para {
+    color: #333;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+}
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f5ff;
+}
+
+.technologies_sec_content {
+    max-width: 60%;
+
+}
+
+.technologies_sec_content_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    /* 100% */
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_img {
+    max-width: 40%;
+}
+
+.technologies_sec_content_img img {
+    width: 100%;
+}
+
+/* technologies_sec ends //////////////////////////////// */
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    color: #1D1D1D;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+    /* 155.556% */
+    text-transform: capitalize;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 60px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    /* 208.333% */
+}
+
+/* our projects sec ends */
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 137px;
+height: 98px;
+flex-shrink: 0;
+}
+.growth_section_heading{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px; /* 140% */
+    text-transform: capitalize;
+}
+.growth_section_btn{
+    width: 233px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 8px;
+background: #00B8FF;
+
+color: #F5F5F5;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px; /* 83.333% */
+text-transform: uppercase;
+}
+
+/* Growth section endz */
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 49%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        color: #000;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        color: #3F3F3F;
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+
+        margin-top: 20px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 286px;
+        height: 55px;
+        flex-shrink: 0;
+        color: #F5F5F5;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    
+    border-radius: 8px;
+    background: #4A26A7;
+
+    margin-top: 40px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 300px;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+/* global padding */
+
+.global_padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* media quesirz for 1600  */
+@media screen and (max-width:1600px) {
+    .about_us_bread {
+        font-size: 45px;
+        padding-top: 130px;
+    }
+    
+    /* about us banner */
+    .about_us_banner img {
+        width: 100%;
+        height: auto;
+        margin-top: 36px;
+    }
+    
+    .about_us_para {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 53px;
+        /* 157.5% */
+        text-transform: capitalize;
+        margin-top: 36px;
+    }
+    /*  */
+    
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 24px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 88.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.about_us_card_para {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologies_sec_content {
+    max-width: 60%;
+    padding: 20px;
+}
+
+.technologies_sec_content_heading {
+    font-size: 45px;
+    line-height: 48px;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+
+/* technologies_sec ends //////////////////////////////// */
+
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 42px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    /* 208.333% */
+}
+/* our projects sec ends */
+
+
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 110px;
+height: auto;
+
+}
+.growth_section_heading{
+    font-size: 40px;
+}
+.growth_section_btn{
+    width: 210px;
+    height: 48px;
+font-size: 17px;
+}
+
+/* Growth section endz */
+
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 49%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 56px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px; /* 162.5% */
+        margin-top: 18px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 210px;
+        height: 48px;
+    font-size: 17px;  
+    margin-top: 33px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 300px;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+
+}
+
+
+
+/* media quesirz for 1300  */
+@media screen and (max-width:1300px) {
+    .global_padding{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .about_us_bread {
+        font-size: 40px;
+        padding-top: 120px;
+    }
+    
+    /* about us banner */
+    .about_us_banner img {
+        width: 100%;
+        height: auto;
+        margin-top: 33px;
+    }
+    
+    .about_us_para {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 43px;
+        /* 157.5% */
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    /*  */
+    
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 21px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 88.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.about_us_card_para {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologies_sec_content {
+    max-width: 60%;
+}
+
+.technologies_sec_content_heading {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+
+/* technologies_sec ends //////////////////////////////// */
+
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    font-size: 38px;
+    line-height: 50px;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 42px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 208.333% */
+}
+/* our projects sec ends */
+
+
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 100px;
+height: auto;
+
+}
+.growth_section_heading{
+    font-size: 35px;
+}
+.growth_section_btn{
+    width: 190px;
+    height: 38px;
+font-size: 15px;
+}
+
+/* Growth section endz */
+
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 49%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 50px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        font-size: 12px;
+        font-style: normal;
+        line-height: 20px; /* 162.5% */
+        margin-top: 15px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 190px;
+        height: 42px;
+    font-size: 15px;  
+    margin-top: 30px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 300px;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+
+}
+
+
+/* media quesirz for 1000  */
+@media screen and (max-width:1000px) {
+    .global_padding{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about_us_bread {
+        font-size: 35px;
+        padding-top: 100px;
+    }
+    
+    /* about us banner */
+    .about_us_banner img {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    .about_us_para {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38px;
+        /* 157.5% */
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    /*  */
+    
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 21px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 88.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.about_us_card_para {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technologies_sec_content {
+    max-width: 60%;
+}
+
+.technologies_sec_content_heading {
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+
+/* technologies_sec ends //////////////////////////////// */
+
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 42px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 208.333% */
+}
+/* our projects sec ends */
+
+
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 90px;
+height: auto;
+
+}
+.growth_section_heading{
+    font-size: 30px;
+}
+.growth_section_btn{
+    width: 160px;
+    height: 33px;
+font-size: 12px;
+}
+
+/* Growth section endz */
+
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 49%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        font-size: 10px;
+        font-style: normal;
+        line-height: 18px; /* 162.5% */
+        margin-top: 12px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 170px;
+        height: 38px;
+    font-size: 13px;  
+    margin-top: 25px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 200px;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+}
+
+
+/* media quesirz for 776  */
+@media screen and (max-width:776px) {
+    .global_padding{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about_us_bread {
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    /* about us banner */
+    .about_us_banner img {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    .about_us_para {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 33px;
+        /* 157.5% */
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    /*  */
+    
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 21px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 88.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.about_us_card_para {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.technologies_sec_content {
+    max-width: 100%;
+}
+
+.technologies_sec_content_heading {
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+.technologies_sec_content_img{
+   width: 100%;
+    
+    }
+/* technologies_sec ends //////////////////////////////// */
+
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 208.333% */
+}
+/* our projects sec ends */
+
+
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 80px;
+height: auto;
+
+}
+.growth_section_heading{
+    font-size: 25px;
+}
+.growth_section_btn{
+    width: 150px;
+    height: 32px;
+font-size: 11px;
+}
+
+/* Growth section endz */
+
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+    flex-direction: column;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 100%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        font-size: 10px;
+        font-style: normal;
+        line-height: 18px; /* 162.5% */
+        margin-top: 12px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 150px;
+        height: 38px;
+    font-size: 11px;  
+    margin-top: 25px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 200px;
+display: none;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+}
+
+
+
+/* media quesirz for 600  */
+@media screen and (max-width:600px) {
+    .global_padding{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about_us_bread {
+        font-size: 28px;
+        padding-top: 70px;
+    }
+    /* about us banner */
+    .about_us_banner img {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+    }
+    
+    .about_us_para {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        /* 157.5% */
+        text-transform: capitalize;
+        margin-top: 25px;
+    }
+    /*  */
+    
+
+/* about us grid cards */
+
+.about_us_card_grid {
+    margin-top: 18px;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.about_us_card_icon {
+    width: 60.011px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.about_us_card_heading {
+    font-size: 15px;
+    font-style: normal;
+    line-height: 15px;
+}
+
+.about_us_card_para {
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+
+/* technologies_sec starts //////////////////////////////// */
+.technologies_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.technologies_sec_content {
+    max-width: 100%;
+}
+
+.technologies_sec_content_heading {
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.technologies_sec_content_min_heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+
+.technologies_sec_content_para {
+    color: #1D1D1D;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 187.5% */
+    text-transform: capitalize;
+}
+.technologies_sec_content_img{
+    
+    }
+/* technologies_sec ends //////////////////////////////// */
+
+
+
+/* our projects sec starts */
+.our_projects_sec {}
+
+.our_projects_sec_heading {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* projects cards */
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+.project_grid_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+    background: #FFF;
+}
+
+.project_grid_container_img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.project_grid_container_label {
+    color: #202020;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 81.818% */
+}
+
+.project_grid_container_desc {
+    color: #3D3D3D;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* 208.333% */
+}
+/* our projects sec ends */
+
+
+
+/* Growth section start */
+.growth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #45455C;
+}
+.growth_section_img{
+    width: 70px;
+height: auto;
+
+}
+.growth_section_heading{
+    font-size: 12px;
+    line-height: 10px;
+}
+.growth_section_btn{
+    width: 130px;
+    height: 28px;
+font-size: 10px;
+}
+
+/* Growth section endz */
+
+
+
+/* our teams secton start */
+.ourteam_sec{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+    flex-direction: column;
+}
+.ourteam_sec_left , .ourteam_sec_right{
+    width: 100%;
+    }
+    .ourteam_sec_left{
+    
+    }
+    
+    .ourteam_sec_left_heading{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 150% */
+        text-transform: capitalize;
+    }
+    
+    .ourteam_sec_left_para{
+        font-size: 9px;
+        font-style: normal;
+        line-height: 17px; /* 162.5% */
+        margin-top: 8px;
+    }
+    
+    .ourteam_sec_left_btn{
+        width: 130px;
+        height: 34px;
+    font-size: 11px;  
+    margin-top: 20px;
+    }
+    .ourteam_sec_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourteam_sec_right img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .ourTeam_devider{
+        width: 1px;
+height: 200px;
+display: none;
+background-color: black;
+    }
+/* our teams secton ends */
+
+
+}

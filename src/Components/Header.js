@@ -41,11 +41,11 @@ const Header = () => {
             <ListItemText  className='mobile_links' primary="Home" />
           </ListItemButton>
         </ListItem>
-        {/* <ListItem>
+        <ListItem>
           <ListItemButton component={Link} to="/about-us">
             <ListItemText  className='mobile_links' primary="About Us" />
           </ListItemButton>
-        </ListItem> */}
+        </ListItem>
         <ListItem>
           <ListItemButton component={Link} to="/process">
             <ListItemText  className='mobile_links' primary="Process" />
