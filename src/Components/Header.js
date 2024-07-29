@@ -36,6 +36,10 @@ const Header = () => {
               <Link to="/about-us">About Us</Link>
             </li>
 
+            <li className={location.pathname === '/process' ? 'active' : ''}>
+              <Link to="/process">Process</Link>
+            </li>
+
             <li className={location.pathname === '/contact-us' ? 'active' : ''}>
               <Link to="/contact-us">Contact</Link>
             </li>

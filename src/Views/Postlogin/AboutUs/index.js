@@ -6,9 +6,9 @@ const AboutUs = () => {
   return (
     <>
     {/* sec 1 */}
-<section className='pad-container gap-[3rem] bg-[#FEF4F9] flex flex-col pt-[8rem] items-center '>
+<section className='pad-container gap-[3rem] bg-[#FEF4F9] flex flex-col pt-[5rem] items-center '>
     <div className='flex flex-col gap-4'>
-<div className="AboutUs w-64 text-center text-neutral-900 text-4xl font-bold font-['Poppins'] uppercase leading-10">About Us</div>
+{/* <div className="AboutUs w-64 text-center text-neutral-900 text-4xl font-bold font-['Poppins'] uppercase leading-10">About Us</div> */}
 
 </div>
 <img src="./Images/AboutBanner.png" width="100%" alt='banner' />

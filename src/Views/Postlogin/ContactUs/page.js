@@ -92,7 +92,6 @@ const ContactUs = () => {
   return (
     <div className='ContactUs'>
     <div className="ContactUs_top">
-    <h2 className="ContactUs_breadcrump">Contact Us</h2>
     </div>
     {/* contact us top end */}
 
