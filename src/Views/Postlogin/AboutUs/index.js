@@ -2,6 +2,8 @@ import React from 'react'
 import AboutUsCard from './components/AboutUsCard' 
 import AboutUsBox from './components/AboutUsBox' 
 import { Link } from 'react-router-dom'
+
+import Procurement from "../../../Assets/Images/Procurement.png"
 const AboutUs = () => {
   return (
     <>
@@ -64,7 +66,7 @@ to provide businesses with user-friendly software that simplifies their workflow
 </h1>
 
 <div className='boxes flex-wrap gap-4  flex justify-between'>
-<AboutUsBox icon="Images/Procurement.png" label="Procurement" para="Streamlined Supply Management"/>
+<AboutUsBox icon={Procurement} label="Procurement" para="Streamlined Supply Management"/>
 <AboutUsBox icon="Images/Inventry.png" label="Inventory" para="Optimized Stock Control"/>
 <AboutUsBox label="POS" icon="Images/POS.png" para="Seamless Sales Transactions"/>
 <AboutUsBox label="Ecommerce" icon="Images/ecommerce.png" para="Effortless Online Shopping"/>
