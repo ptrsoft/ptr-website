@@ -83,8 +83,22 @@
       
       /* Rest of your CSS */
       
-    
-    
+    .header_right_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .responsive_menu{
+        display: none;
+    }
+    .mobile_links{
+        color: #202020;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    }
     @media screen and (max-width:1300px) {
         
         .header{
@@ -140,6 +154,9 @@
     }
     
     @media screen and (max-width:1024px) {
+        .responsive_menu{
+            display: flex;
+        }
         
         .header{
             display: flex;
@@ -149,7 +166,7 @@
             }
             
             .header_logo{
-                width: 140.512px;
+                width: 120.512px;
             height: auto;
             flex-shrink: 0;
             }
@@ -197,4 +214,32 @@
     
     @media screen and (max-width:1024px){
         
+    }
+
+
+    @media screen and (max-width:600px) {
+        .header_right_box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        .header button{
+            display: inline-flex;
+        padding: 12px 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        border-radius: 100px;
+        background: #666AE5;
+        
+        color: #F5F5F5;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 10px; /* 62.5% */
+        text-transform: uppercase;
+        }
     }
