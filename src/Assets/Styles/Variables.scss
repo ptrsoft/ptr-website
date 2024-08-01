@@ -1,0 +1,19 @@
+// colors
+$brandColor: #666AE5 ;
+$blackColor: #202020 ;
+$bodyColor: #F5F3EF ;
+
+.primary_btn{
+    width: 149px;
+    height: 45px;
+    flex-shrink: 0;   
+    border-radius: 100px;
+background: $brandColor;
+color: #F5F5F5;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 11px; /* 68.75% */
+text-transform: uppercase;
+}

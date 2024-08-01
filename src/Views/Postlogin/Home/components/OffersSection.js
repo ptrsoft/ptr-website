@@ -56,6 +56,9 @@ const OffersSection = () => {
     </div>
     <h3 className='tabsMinHeadings'><span style={{ color: '#666AE5' }}> Open and Customizable</span> Single Tenant Applications</h3>
       <p className='accordian_para' >Experience unparalleled flexibility with our single-tenant SAAS applications,that is open and tailored to your unique business needs. Explore our robust backend platform and cutting-edge technology, delivering microservices-based enterprise apps with comprehensive operations management.</p>
+      <button onClick={handleSaasArc} className="read_more_btn accordian_read_more_btn">
+              Read More
+            </button>
   </AccordionDetails>
 </Accordion>
 
@@ -225,6 +228,11 @@ Need additional engineering resources? Hire a complete engineering team on deman
 } */}
 
           {selectedButton === 3 &&
+            <button onClick={handleNavigate} className="read_more_btn">
+              Read More
+            </button>
+          }
+          {selectedButton === 1 &&
             <button onClick={handleNavigate} className="read_more_btn">
               Read More
             </button>
