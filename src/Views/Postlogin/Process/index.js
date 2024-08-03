@@ -44,10 +44,12 @@ const Process = () => {
 {/* process left */}
 <div className="process_section_left">
 
+
 {/* left top will be added soooon */}
 
   {/* left bottom  */}
 <div className="process_section_left_box">
+  
   {/* buttons */}
   <button  onClick={() => handleTabs("requirement")}
     className={`tab-button ${tabNumber === "requirement" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}

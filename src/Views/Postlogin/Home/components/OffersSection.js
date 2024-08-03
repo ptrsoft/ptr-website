@@ -30,6 +30,9 @@ const OffersSection = () => {
    const handleSaasArc = () => {
     navigate('/saas-architecture')
   }
+  const handleProcess = () =>{
+    navigate("/process")
+  }
   return (
     <div className='OffersTab_sec space-container '>
 
@@ -77,6 +80,10 @@ const OffersSection = () => {
     </div>
     <h3 className='tabsMinHeadings'  >High Quality Application with <span style={{ color: '#666AE5' }}>Zero Tech Debt</span></h3>
 <p className='accordian_para'>At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use case is reliable, scalable, and secure and contains all software artifacts.</p>
+<p className='accordian_para'>Here follows a typical use case development life cycle.</p>
+<button onClick={handleProcess} className="read_more_btn accordian_read_more_btn">
+              Read More
+            </button>
      
   </AccordionDetails>
 </Accordion>
@@ -236,6 +243,14 @@ Need additional engineering resources? Hire a complete engineering team on deman
             <button onClick={handleNavigate} className="read_more_btn">
               Read More
             </button>
+          } 
+          {selectedButton === 2 &&
+          <div style={{width:"100%"}}>
+          <p>Here follows a typical use case development life cycle.</p>
+            <button style={{marginTop:"20px"}} onClick={handleProcess} className="read_more_btn">
+              Read More
+            </button>
+            </div>
           } 
 
           {/* {selectedButton === 4 &&

@@ -49,11 +49,21 @@ const Footer = () => {
    <div className="Column">
     <h3>Company</h3>
     <span>
+      <Link to={'/'}>
+      Home
+      </Link>
+      </span>
+      <span>
       <Link to={'/about-us'}>
       About Us
       </Link>
       </span>
     <span>
+    <Link to={'/process'}>
+      Process
+    </Link>
+      </span>
+      <span>
     <Link to={'/contact-us'}>
       Contact Us
     </Link>

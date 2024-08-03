@@ -157,4 +157,7 @@ footer img{
     padding-right: 3%;
   }
 }
+button:hover{
+opacity: 0.8;
+}
 
