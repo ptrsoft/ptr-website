@@ -16,7 +16,7 @@ import promoteToStaging from "../../../Assets/Images/promoteToStaging.png"
 import publishOperate from "../../../Assets/Images/publishOperate.png"
 import developmentProcess from "../../../Assets/Images/developmentProcess.png"
 const Process = () => {
-  const [tabNumber,setTabNumber] = useState("requirement")
+  const [tabNumber,setTabNumber] = useState("devProcess")
 
   const handleTabs = (activTab)=>{
     setTabNumber(activTab)
@@ -24,6 +24,7 @@ const Process = () => {
 
   const briefContent = 
    {
+    devProcess:"At PTR Technology, For Every Use Case That We Develop, We Follow A Robust And Efficient Software Development Process Designed To Deliver High-Quality Solutions Tailored To Meet Our Clients' Unique Needs. Our Approach Combines Industry Best Practices With Innovative Techniques To Ensure That Every Use Cases Are Reliable, Scalable, And Secure. Here Follows A Typical Use Case Cycle.",
     requirement:'Requirement is the stage in which Project Manager will collect as much information from  Project Owner and create a business model to carry out development process. Which will be periodically reviewed by project owner and once business and functional module is finalized project manager will proceed with Scrum planning.'
  ,
     mockDevelopment:"Project manager will review the functional design with UI and API team. API  team will provide API specs to review. UI team will then create UI screens,  create Mock API then integrate Mock API with UI Screens. API team will create data design, and create Test data. Once PM reviews MocK integration API team  will consolidate API with Test data."
@@ -51,38 +52,45 @@ const Process = () => {
 <div className="process_section_left_box">
   
   {/* buttons */}
+
+  <button  onClick={() => handleTabs("devProcess")}
+    className={`tab-button ${tabNumber === "devProcess" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
+  >
+ Development Process
+  </button>
+
   <button  onClick={() => handleTabs("requirement")}
     className={`tab-button ${tabNumber === "requirement" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- 1. requirement
+Stage 1. requirement
   </button>
 
   <button 
    onClick={() => handleTabs("mockDevelopment")}
    className={`tab-button ${tabNumber === "mockDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  2. Mock development
+  Stage 2. Mock development
   </button>
   
   <button 
    onClick={() => handleTabs("actualDevelopment")}
    className={`tab-button ${tabNumber === "actualDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- 3. actual development
+ Stage 3. actual development
   </button>
   
   <button 
   onClick={() => handleTabs("tests")}
    className={`tab-button ${tabNumber === "tests" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- 4. ci / cd / tests
+ Stage 4. ci / cd / tests
   </button>
 
   <button 
   onClick={() => handleTabs("promoteToStaging")}
    className={`tab-button ${tabNumber === "promoteToStaging" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- 5. promote to staging
+ Stage 5. promote to staging
   </button>
 
 
@@ -91,18 +99,18 @@ const Process = () => {
   className={`tab-button ${tabNumber === "publishAndOperate" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
 
   >
- 6. publish & operate
+ Stage 6. publish & operate
   </button>
 
 
 </div>
 </div>
 
-
 <div className="process_section_right">
 {/* wrapper starts */}
 <div className="process_section_right_wrapper">
 {/* headings */}
+{tabNumber === "devProcess" && <span className='process_section_right_heading'>Our Software Development Process</span>}
 {tabNumber === "requirement" && <span className='process_section_right_heading'>1. Requirement</span>}
 {tabNumber === "mockDevelopment" && <span className='process_section_right_heading'>2. Mock Development</span>}
 {tabNumber === "actualDevelopment" && <span className='process_section_right_heading'>3. Actual Development</span>}
@@ -110,11 +118,15 @@ const Process = () => {
 {tabNumber === "promoteToStaging" && <span className='process_section_right_heading'>5. Promote To Staging</span>}
 {tabNumber === "publishAndOperate" && <span className='process_section_right_heading'>6. Publish & Operate</span>}
 
+{/* briefs cointent */}
+
 <div className="process_section_right_brief">
-  <span className="process_section_right_brief_heading">Brief :</span>
+{tabNumber !== "devProcess" &&
+  <span className="process_section_right_brief_heading">Brief :</span>}
 
 {/* paragrapjhs */}
 {tabNumber === "requirement" &&<p className='process_section_right_brief_para'>{briefContent.requirement}</p>}
+{tabNumber === "devProcess" &&<p className='process_section_right_brief_para'>{briefContent.devProcess}</p>}
 {tabNumber === "mockDevelopment" && <p className='process_section_right_brief_para'>{briefContent.mockDevelopment}</p>}
  {tabNumber === "actualDevelopment" && <p className='process_section_right_brief_para'>{briefContent.actualDevelopment}</p>}
  {tabNumber === "tests" && <p className='process_section_right_brief_para'>{briefContent.tests}</p>}
@@ -125,6 +137,7 @@ const Process = () => {
 
   {/* /image  */}
 
+  {tabNumber === "devProcess" && <img className='process_section_right_img' src={developmentProcess} alt="unable to load image , check your internet connection" />}
   {tabNumber === "requirement" && <img className='process_section_right_img' src={Requirement} alt="unable to load image , check your internet connection" />}
   {tabNumber === "mockDevelopment" && <img className='process_section_right_img' src={MockDevelopment} alt="unable to load image , check your internet connection" />}
   {tabNumber === "actualDevelopment" && <img className='process_section_right_img' src={actualDevelopment} alt="unable to load image , check your internet connection" />}
@@ -336,7 +349,6 @@ UseCase Matrix Page</li>
         <AccordionDetails>
         <span style={{fontSize:"27px"}} className='process_section_right_heading'>Our Software Development Process</span>
         <div className="process_section_right_brief">
-  <span className="process_section_right_brief_heading">Brief :</span>
 
 {/* paragrapjhs */}
 <p className='process_section_right_brief_para'>At PTR Technology, for every use case that we develop, we follow a robust and efficient software development process designed to deliver high-quality solutions tailored to meet our clients' unique needs. Our approach combines industry best practices with innovative techniques to ensure that every use cases are reliable, scalable, and secure. Here follows a typical Use Case cycle.</p>
@@ -356,7 +368,7 @@ UseCase Matrix Page</li>
           aria-controls="panel1-content"  
           id="panel1-header"
         > 
-        <span style={{color:"#000"}}  className='accordian_label'>1. Requirement</span>
+        <span style={{color:"#000"}}  className='accordian_label'>Stage 1. Requirement</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>1. Requirement</span>
@@ -406,7 +418,7 @@ UseCase Matrix Page</li>
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>2. Mock Development</span>
+        <span style={{color:"#000"}} className='accordian_label'>Stage 2. Mock Development</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>2. Mock Development</span>
@@ -459,7 +471,7 @@ UseCase Matrix Page</li>
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>3. actual development</span>
+        <span style={{color:"#000"}} className='accordian_label'>Stage 3. actual development</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>3. Actual Development</span>
@@ -518,7 +530,7 @@ with sample data</li>
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>4. ci / cd / tests</span>
+        <span style={{color:"#000"}} className='accordian_label'>Stage 4. ci / cd / tests</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>4.CI / CD / Tests</span>
@@ -579,7 +591,7 @@ UseCase Matrix Page</li>
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>5. promote to staging</span>
+        <span style={{color:"#000"}} className='accordian_label'>Stage 5. promote to staging</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>5. Promote To Staging</span>
@@ -626,7 +638,7 @@ UseCase Matrix Page</li>
           aria-controls="panel1-content"
           id="panel1-header"
         > 
-        <span style={{color:"#000"}} className='accordian_label'>6. publish & operate</span>
+        <span style={{color:"#000"}} className='accordian_label'>Stage 6. publish & operate</span>
         </AccordionSummary>
         <AccordionDetails>
         <span className='process_section_right_heading'>Publish & Operate</span>

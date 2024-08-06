@@ -29,8 +29,10 @@
 .process_section_left {
     display: flex;
     width: 35%;
+    flex-direction: column;
     /* overflow: hidden; */
     /* background-color: green; */
+    gap: 20px;
 }
 
 .process_section_left_box {
@@ -54,7 +56,7 @@
     display: flex;
     width: 88%;
     height: 59px;
-    justify-content: start;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
@@ -82,6 +84,7 @@
     display: flex;
     width: 88%;
     height: 59px;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
@@ -96,6 +99,8 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    opacity: 1;
+}.process_section_left_box_btn_active:hover{
     opacity: 1;
 }
 

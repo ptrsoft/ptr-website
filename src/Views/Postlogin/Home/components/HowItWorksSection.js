@@ -38,10 +38,10 @@ const HowItsWorkSection = () => {
                             <div className='text_box_head'>
                                 <img className='blue_tick' src='/Images/blueRight.svg' alt='icon' />
 
-                                Sign Up and Get Started:
+                                Customize Your Application
                             </div>
                             <div className='text_box_para'>
-                                Create an account on our platform and gain access to our suite of open and customizable applications.
+                            Use our intuitive tools to add new features and tailor the application to your specific requirements.
                             </div>
                         </div>
                     </div>
@@ -50,10 +50,10 @@ const HowItsWorkSection = () => {
                             <div className='text_box_head'>
                                 <img className='blue_tick' src='/Images/blueRight.svg' alt='icon' />
 
-                                Sign Up and Get Started:
+                                Hire On-Demand Engineers
                             </div>
                             <div className='text_box_para'>
-                                Create an account on our platform and gain access to our suite of open and customizable applications.
+                            Browse our portal to find certified engineers with the skills you need. Hire a team instantly and get started on your project without delay.
                             </div>
                         </div>
                     </div>
@@ -62,10 +62,10 @@ const HowItsWorkSection = () => {
                             <div className='text_box_head'>
                                 <img className='blue_tick' src='/Images/blueRight.svg' alt='icon' />
 
-                                Sign Up and Get Started:
+                                Achieve Predictable Results 
                             </div>
                             <div className='text_box_para'>
-                                Create an account on our platform and gain access to our suite of open and customizable applications.
+                            Work with your dedicated team to ensure your project is delivered on time and within budget. Our outcome-driven billing model ensures you only pay for the results.
                             </div>
                         </div>
                     </div>
