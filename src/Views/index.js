@@ -8,6 +8,7 @@ import Login from "./PreLogin/Login";
 import SaasArchitecture from "./Postlogin/SaasArchitecture";
 import Architecture from "./Postlogin/Architecture";
 import PathNotFound from "./PathNotFound";
+import Technology from "./Postlogin/Technology";
 
 
 
@@ -32,10 +33,14 @@ const Views = () => {
 
                     <Route
                         exact
+                        path={"Technologies"}
+                        element={<Technology />}
+                    />
+                     <Route
+                        exact
                         path={"process"}
                         element={<Process />}
                     />
-
                     <Route
                         exact
                         path={"contact-us"}

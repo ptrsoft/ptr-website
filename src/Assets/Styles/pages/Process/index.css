@@ -24,15 +24,19 @@
     justify-content: space-between;
     align-items: start;
     background-color: #FFFFFF;
+    height: auto;
 }
 
 .process_section_left {
     display: flex;
     width: 35%;
     flex-direction: column;
+    
+    position: sticky;
+    top: 4rem;
     /* overflow: hidden; */
     /* background-color: green; */
-    gap: 20px;
+    gap: 15px;
 }
 
 .process_section_left_box {
@@ -56,27 +60,29 @@
     display: flex;
     width: 88%;
     height: 59px;
-    justify-content: center;
+    justify-content: start;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: #484DD5;
-    color: #FFF;
+    background: #FFF;
+    color: black    ;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    opacity: 0.8;
+   
     transition: opacity 0.3s ease;
 }
 
 .process_section_left_box_btn:hover {
-    opacity: 1;
+   background-color: #DFACC5;
+   /* border: 0.1px solid black; */
+
 }
 
 /*-------- active btn----- */
@@ -84,34 +90,37 @@
     display: flex;
     width: 88%;
     height: 59px;
-    justify-content: center;
+    justify-content: start;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: #484DD5;
-    color: #FFF;
+    background: #EC8DBB;
+    /* border: 1px solid black; */
+    color: black;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    opacity: 1;
 }.process_section_left_box_btn_active:hover{
     opacity: 1;
 }
 
-
+::-webkit-scrollbar{
+    display: none;
+}
 
 /* section right  */
 
 .process_section_right {
     /* tempor width */
     width: 61%;
-
+/* height: 100vh; */
+/* overflow: scroll; */
 
 
 }
@@ -219,6 +228,39 @@
     /* Remove transform to avoid vertical centering */
 }
 
+
+
+
+/* updating changes */
+.process_section_left_box_info{
+    color: #171717;
+text-align: start;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 195.833% */
+text-transform: capitalize;
+margin-top: 14px;
+}
+
+.process_section_left_devlopment_btn{
+    background-color: #484DD5;
+    opacity: 0.8;
+    color: #FFF;
+}
+.process_section_left_devlopment_btn:hover{
+    background-color: #484DD5;
+    opacity: 1;
+}
+.process_section_left_devlopment_btn_active{
+    background-color: #484DD5;
+    color: #FFF;
+    opacity: 1;
+
+}
+
+
 /* media queriez for 1600px */
 
 @media screen and (max-width:1600px) {
@@ -226,15 +268,15 @@
     .process_section_left_box {
         width: 100%;
         flex-shrink: 0;
-        gap: 22px;
+        gap: 18px;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         background: #EABFD4;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     /* ----------- active btn -----------*/

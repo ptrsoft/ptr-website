@@ -92,6 +92,7 @@ const ContactUs = () => {
   return (
     <div className='ContactUs'>
     <div className="ContactUs_top">
+    {/* <h2 className="ContactUs_breadcrump">Contact Us</h2> */}
     </div>
     {/* contact us top end */}
 
@@ -180,18 +181,6 @@ about our offerings, please don't hesitate to reach out.</p>
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-
-<iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.0730293502547!2d-75.07402752419868!3d39.91738187152422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c95aa2882f85%3A0x9eac389f3d02cbf3!2s601%20Haddon%20Ave%2C%20Collingswood%2C%20NJ%2008108%2C%20USA!5e0!3m2!1sen!2sin!4v1722808935027!5m2!1sen!2sin"
-      width="100%"
-        height="100%"
-        style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Google Map"
-    ></iframe>
-       
   </section>
     {/* contact us map end */}
     

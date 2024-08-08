@@ -44,7 +44,18 @@ const Process = () => {
 
 {/* process left */}
 <div className="process_section_left">
+  
+  <div className="process_section_left_devlopment_sec">
 
+<button 
+style={{margin:"auto" ,justifyContent:"center"}}
+onClick={() => handleTabs("devProcess")}
+    className={`tab-button ${tabNumber === "devProcess" ? 'process_section_left_box_btn_active  process_section_left_devlopment_btn_active' : 'process_section_left_box_btn process_section_left_devlopment_btn  '}`}
+    >
+ Development Process
+  </button>
+    </div>
+  <p className='process_section_left_box_info'>To know the details of every stage, please click below.</p>
 
 {/* left top will be added soooon */}
 
@@ -53,44 +64,38 @@ const Process = () => {
   
   {/* buttons */}
 
-  <button  onClick={() => handleTabs("devProcess")}
-    className={`tab-button ${tabNumber === "devProcess" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
-  >
- Development Process
-  </button>
-
   <button  onClick={() => handleTabs("requirement")}
     className={`tab-button ${tabNumber === "requirement" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-Stage 1. requirement
+Stage 1: requirement
   </button>
 
   <button 
    onClick={() => handleTabs("mockDevelopment")}
    className={`tab-button ${tabNumber === "mockDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
-  Stage 2. Mock development
+  Stage 2: Mock development
   </button>
   
   <button 
    onClick={() => handleTabs("actualDevelopment")}
    className={`tab-button ${tabNumber === "actualDevelopment" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- Stage 3. actual development
+ Stage 3: actual development
   </button>
   
   <button 
   onClick={() => handleTabs("tests")}
    className={`tab-button ${tabNumber === "tests" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- Stage 4. ci / cd / tests
+ Stage 4: ci / cd / tests
   </button>
 
   <button 
   onClick={() => handleTabs("promoteToStaging")}
    className={`tab-button ${tabNumber === "promoteToStaging" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
   >
- Stage 5. promote to staging
+ Stage 5: promote to staging
   </button>
 
 
@@ -99,7 +104,7 @@ Stage 1. requirement
   className={`tab-button ${tabNumber === "publishAndOperate" ? 'process_section_left_box_btn_active' : 'process_section_left_box_btn'}`}
 
   >
- Stage 6. publish & operate
+ Stage 6: publish & operate
   </button>
 
 

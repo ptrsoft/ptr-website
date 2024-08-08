@@ -8,28 +8,28 @@ const usePageTitle = () => {
   useEffect(() => {
     switch (location.pathname) {
       case '/about-us':
-        document.title = 'About Us';
+        document.title = 'About Us | PTR Technologies';
         break;
       case '/':
-        document.title = 'Home';
+        document.title = 'Home | PTR Technologies';
         break;
       case '/products':
-        document.title = 'Products';
+        document.title = 'Products | PTR Technologies';
         break;
       case '/process':
-        document.title = 'Process';
+        document.title = 'Process | PTR Technologies';
         break;
       case '/blogs':
-        document.title = 'Blogs';
+        document.title = 'Blogs | PTR Technologies';
         break;
       case '/contact-us':
-        document.title = 'Contact Us';
+        document.title = 'Contact Us | PTR Technologies';
         break;
         case '/Login':
-            document.title = 'Login ';
+            document.title = 'Login | PTR Technologies';
             break;
       default:
-        document.title = 'My App';
+        document.title = 'PTR Technologies';
         break;
     }
   }, [location.pathname]);

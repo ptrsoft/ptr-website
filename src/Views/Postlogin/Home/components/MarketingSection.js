@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 // importing styling from assets / styles / pages /
 import "../../../../Assets/Styles/pages/Home/MarketingSection.css"
@@ -45,6 +47,17 @@ your unique business requirements.</h2>
     <img src='/Images/plus.svg' alt="" />
     <span>Vendor Friendly -Deliver Apps to your own customers
 
+    </span>
+</div>
+
+<div className='marketing_sec_left_text_row'>
+    <img src='/Images/plus.svg' alt="" />
+    <span className='links'>Please look at our 
+        {/* <Link to={"/products"} className="marketing_sec_left_text_row_links" href="/products"> products</Link>,  */}
+        <Link  to={"/process"} className='marketing_sec_left_text_row_links' > process </Link> , 
+        <Link  to={"/technologies"} className='marketing_sec_left_text_row_links' > technologies </Link>
+        
+         that delivers you highest flexibility.
     </span>
 </div>
 

@@ -240,7 +240,7 @@ Need additional engineering resources? Hire a complete engineering team on deman
             </button>
           }
           {selectedButton === 1 &&
-            <button onClick={handleNavigate} className="read_more_btn">
+            <button onClick={handleSaasArc} className="read_more_btn">
               Read More
             </button>
           } 

@@ -47,8 +47,14 @@ font-family: Poppins;
 font-size: 15px;
 font-style: normal;
 font-weight: 600;
-line-height: 15px; /* 83.333% */
+line-height: 28px; 
+/* 83.333% */
 text-transform: capitalize;
+}
+
+.marketing_sec_left_text_row_links:hover{
+color: purple;
+text-decoration: underline;
 }
 
 /* rigth */
@@ -108,7 +114,7 @@ text-transform: capitalize;
     font-size: 11px;
     font-style: normal;
     font-weight: 600;
-    line-height: 15px; /* 83.333% */
+    /* line-height: 15px; 83.333% */
     text-transform: capitalize;
     }
     
@@ -171,7 +177,7 @@ text-transform: capitalize;
     font-size: 9px;
     font-style: normal;
     font-weight: 600;
-    line-height: 15px; /* 83.333% */
+    /* line-height: 15px; 83.333% */
     text-transform: capitalize;
     }
     
@@ -234,7 +240,7 @@ text-transform: capitalize;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 15px; /* 83.333% */
+    /* line-height: 15px; 83.333% */
     text-transform: capitalize;
     }
     
@@ -300,7 +306,7 @@ text-transform: capitalize;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 15px; /* 83.333% */
+    /* line-height: 15px; 83.333% */
     text-transform: capitalize;
     }
     

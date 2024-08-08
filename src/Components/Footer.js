@@ -58,6 +58,11 @@ const Footer = () => {
       About Us
       </Link>
       </span>
+      <span>
+      <Link to={'/technologies'}>
+      Technologies
+      </Link>
+      </span>
     <span>
     <Link to={'/process'}>
       Process

@@ -76,7 +76,7 @@
 .Column{
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 22px;
     /* width: 24%; */
 }
 .footer_logo{

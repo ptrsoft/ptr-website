@@ -29,8 +29,6 @@ with Fully Customizable
 <GetStartedBtn onClick={handleContactClick}/>
 
 <img  className='hero_vector' src='Images/HeroVector.png' alt='Hero Vector' />
-
-
 </div>
 
    </section>

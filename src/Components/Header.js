@@ -47,6 +47,11 @@ const Header = () => {
           </ListItemButton>
         </ListItem>
         <ListItem>
+          <ListItemButton component={Link} to="/technologies">
+            <ListItemText  className='mobile_links' primary="Technologies" />
+          </ListItemButton>
+        </ListItem> 
+        <ListItem>
           <ListItemButton component={Link} to="/process">
             <ListItemText  className='mobile_links' primary="Process" />
           </ListItemButton>
@@ -91,6 +96,9 @@ const Header = () => {
           </li>
           <li className={location.pathname === '/about-us' ? 'active' : ''}>
             <Link to="/about-us">About Us</Link>
+          </li>
+           <li className={location.pathname === '/technologies' ? 'active' : ''}>
+            <Link to="/technologies">Technologies</Link>
           </li>
           <li className={location.pathname === '/process' ? 'active' : ''}>
             <Link to="/process">Process</Link>
