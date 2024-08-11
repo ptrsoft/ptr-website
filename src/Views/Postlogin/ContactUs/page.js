@@ -89,6 +89,29 @@
 import React from 'react'
 import "../../../Assets/Styles/pages/ContactUs/index.css"
 const ContactUs = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "e97b7200-d10a-447c-9542-f8deb900c2ad");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      event.target.reset(); 
+    }
+  };
   return (
     <div className='ContactUs'>
     <div className="ContactUs_top">
@@ -109,16 +132,43 @@ const ContactUs = () => {
 {/* ContactUs_form section left top endzz */}
 
 {/* consact us form sec left bottom start */}
-<div className='ContactUs_form_section_left_bottom'>
-
-  <input placeholder='Your Name' className='ContactUs_form_section_left_bottom_input' type="text"/>
-  <input placeholder='Your Phone Number' className='ContactUs_form_section_left_bottom_input' type="tel"/>
-  <input placeholder='Your Email' className='ContactUs_form_section_left_bottom_input' type="email"/>
-
-<textarea className='ContactUs_form_section_left_bottom_text_area' placeholder='Message Here'></textarea>
+<form onSubmit={onSubmit} className='ContactUs_form_section_left_bottom'>
+<input
+    name="Name"
+    required
+    placeholder="Your Name"
+    className="ContactUs_form_section_left_bottom_input"
+    type="text"
+    title="Please enter your name"
+  />
+  <input
+    name="Number"
+    minLength={10}
+    maxLength={10}
+    pattern="[0-9]{10}"
+    required
+    placeholder="Your Phone Number"
+    className="ContactUs_form_section_left_bottom_input"
+    type="text" // Changed to text to ensure pattern validation works
+    title="Please enter a valid 10-digit phone number"
+  />
+  <input
+    name="Email"
+    required
+    placeholder="Your Email"
+    className="ContactUs_form_section_left_bottom_input"
+    type="email"
+    title="Please enter a valid email address"
+  />
+  <textarea
   
-  <button className='lets_talk_btn'>Let's Talks</button>
-</div>
+    name="Message"
+    className="ContactUs_form_section_left_bottom_text_area"
+    placeholder="Message Here"
+    title="Please enter a message"
+  ></textarea>
+  <button type='submit' className='lets_talk_btn'>Let's Talks</button>
+</form>
 {/* consact us form sec left bottom end */}
 
 </div>
