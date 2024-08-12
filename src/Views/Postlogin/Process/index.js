@@ -15,6 +15,8 @@ import tests from "../../../Assets/Images/tests.png"
 import promoteToStaging from "../../../Assets/Images/promoteToStaging.png"
 import publishOperate from "../../../Assets/Images/publishOperate.png"
 import developmentProcess from "../../../Assets/Images/developmentProcess.png"
+
+import {Helmet} from "react-helmet-async"
 const Process = () => {
   const [tabNumber,setTabNumber] = useState("devProcess")
 
@@ -40,6 +42,11 @@ const Process = () => {
 
   return (
   <>
+     <Helmet>
+<title>Process</title>
+<meta name='description' content='Our Software Development Process'/>
+<link rel="canonical" href="/process" />
+    </Helmet>
   <section className='process_section space-container'>
 
 {/* process left */}

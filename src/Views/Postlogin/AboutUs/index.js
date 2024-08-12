@@ -19,6 +19,7 @@ import AboutUsCard from './components/AboutUsCard'
 import AboutUsBox from './components/AboutUsBox'
 import { useNavigate } from 'react-router-dom'
 
+import {Helmet} from "react-helmet-async"
 const AboutUs = () => {
   const navigate = useNavigate()
   const handleNavigate = ()=>{
@@ -26,6 +27,11 @@ const AboutUs = () => {
   }
   return (
     <>
+     <Helmet>
+<title>About Us</title>
+<meta name='description' content='we offer a suite of software solutions designed to meet the diverse needs of modern businesses'/>
+<link rel="canonical" href="/about-us" />
+    </Helmet>
     <section className='space-container global_padding'>
 
    

@@ -88,6 +88,8 @@
 
 import React from 'react'
 import "../../../Assets/Styles/pages/ContactUs/index.css"
+
+import {Helmet} from "react-helmet-async"
 const ContactUs = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -114,6 +116,11 @@ const ContactUs = () => {
   };
   return (
     <div className='ContactUs'>
+       <Helmet>
+<title>Contact Us</title>
+<meta name='description' content='We are Here To Provide 24X7 Support'/>
+<link rel="canonical" href="/contact-us" />
+    </Helmet>
     <div className="ContactUs_top">
     {/* <h2 className="ContactUs_breadcrump">Contact Us</h2> */}
     </div>

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Views from "./Views";
-import usePageTitle from "./Hooks/usePageTitle";
 import ScrollToTop from "./Hooks/ScrollToTop";
 
 
@@ -23,7 +22,6 @@ function App() {
   );
 }
 function MainContent() {
-  usePageTitle();
 
   return (
     <>

@@ -9,6 +9,7 @@ import Azure from "../../../Assets/Images/Azure.png"
 import pattern from "../../../Assets/Images/pattern.png"
 import appServices from "../../../Assets/Images/appServices.png"
 
+import {Helmet} from "react-helmet-async"
 
 
 
@@ -17,6 +18,13 @@ import GetStartedBtn from '../../../Components/GetStartedBtn'
 
 const Architecture = () => {
   return (
+    <>
+      <Helmet>
+<title>Architecture</title>
+<meta name='description' content='Explore our architecture central to learn about the principles, patterns, practices, and tools that we follow to deliver you the solution that is simple, promotes reusability and flexibility.'/>
+<link rel="canonical" href="/architecture" />
+    </Helmet>
+  
     <div className='Architecture_page'>
 {/* hero sec */}
 <section style={{background:"#FEF4F9"}} className='space-container architecture_page_hero_sec'>
@@ -60,6 +68,7 @@ simple architecture pattern</h1>
    </section>
 
     </div>
+    </>
   )
 }
 
