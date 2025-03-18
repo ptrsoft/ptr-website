@@ -10,56 +10,46 @@ const MarketingSection = () => {
 
 {/* left */}
 <div className="marketing_sec_left">
-    <h2>Our platform is built to provide <a style={{color:'#666AE5'}}> maximum flexibility</a>, ensuring it meets 
-your unique business requirements.</h2>
-
+<h2>Our Complete <a style={{color:'#666AE5'}}>AI-Native</a> E-commerce, Supply Chain & Farmer-Consumer Connection Platform</h2>
 
 {/* text rows container */}
 <div className='marketing_sec_left_text_con'>
 
 <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>Single Tenant App- Fully private, Fully Customizable</span>
+    <span> Seamless Farmer-to-Consumer Marketplace </span>
 </div>
 
-<div className='marketing_sec_left_text_row'>
+     <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>Zero Tech debt- App with all artifacts</span>
+    <span> AI-Powered Supply Chain Optimization </span>
 </div>
 
-<div className='marketing_sec_left_text_row'>
+     <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>Complete Open - You own it, you change it with no limit</span>
+    <span> Intelligent Inventory & Demand Forecasting </span>
 </div>
 
-<div className='marketing_sec_left_text_row'>
+     <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>Highest flexibility - Any cloud / Any Changes</span>
+    <span>Automated Order & Payment Processing </span>
 </div>
 
-<div className='marketing_sec_left_text_row'>
+     <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>One click E2E Engineering Team - Available On demand to make changes
-    </span>
-</div>
+    <span> Personalized Consumer Experience </span>
+</div> 
 
-<div className='marketing_sec_left_text_row'>
+  <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span>Vendor Friendly -Deliver Apps to your own customers
+    <span> Smart Resource Allocation </span>
+</div> 
 
-    </span>
-</div>
-
-<div className='marketing_sec_left_text_row'>
+  <div className='marketing_sec_left_text_row'>
     <img src='/Images/plus.svg' alt="" />
-    <span className='links'>Please look at our 
-        {/* <Link to={"/products"} className="marketing_sec_left_text_row_links" href="/products"> products</Link>,  */}
-        <Link  to={"/process"} className='marketing_sec_left_text_row_links' > process </Link> , 
-        <Link  to={"/technologies"} className='marketing_sec_left_text_row_links' > technologies </Link>
-        
-         that delivers you highest flexibility.
-    </span>
+    <span> Sustainable & Scalable Growth </span>
 </div>
+      
 
 </div>
 

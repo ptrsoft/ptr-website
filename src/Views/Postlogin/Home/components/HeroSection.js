@@ -21,13 +21,11 @@ const HeroSection = () => {
 </div>
 
 <div className="hero_sec_right">
-    <div className='hero_sec_right_heading'> <a style={{color:'#666AE5'}}> Unlock </a>Unlimited Potential
-with Fully Customizable
-<a style={{color:'#666AE5'}}> Open SAAS</a> Solutions </div>
+    <div className='hero_sec_right_heading'> <a style={{color:'#666AE5'}}> Unlock </a> the Future with
+<a style={{color:'#666AE5'}}>AI-Native</a> Applications </div>
 
-<span>At PTR SAAS, we deliver fully open and customizable applications, empowering you to effortlessly add new features.</span>
+<span>At PTR Technologies , we build next-gen AI-native applications that learn, optimize, and evolve—powering businesses with intelligent automation, seamless integrations, and real-time decision-making.</span>
 <GetStartedBtn onClick={handleContactClick}/>
-
 <img  className='hero_vector' src='Images/HeroVector.png' alt='Hero Vector' />
 </div>
 

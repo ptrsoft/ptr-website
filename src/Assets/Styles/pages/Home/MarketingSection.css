@@ -29,7 +29,7 @@
 .marketing_sec_left_text_con{
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 30px;
     margin-top: 51px;
 }
 .marketing_sec_left_text_row{

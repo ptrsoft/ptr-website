@@ -4,20 +4,19 @@ import TextBox from './TextBox'
 const WhyChooseUse = () => {
   return (
    
-<section className='flex flex-col md:flex-row justify-between'>
+<section className='flex flex-col md:flex-row justify-between' style={{minHeight:"100vh", }}>
 
-<div className='w-full md:w-1/2 flex gap-6 p-6 flex-col bg-white md:pl-[10%] md:pr-[110px]'>
+<div className='w-full md:w-1/2 flex gap-6 p-6 flex-col justify-center bg-white md:pl-[10%] md:pr-[110px]'>
   <div>
     <span className="text-indigo-500 text-4xl font-bold capitalize leading-10">Why</span> <span className="text-stone-900 text-4xl font-bold capitalize leading-10">Choose Us?</span>
   </div>
 
   <div className='w-full gap-6 flex flex-col'>
-    <TextBox h="Complete Flexibility" d="Our open applications and on-demand engineering teams provide unparalleled flexibility."/>
-    <TextBox h="Highest Quality" d="Built upon most modern cloud native architecture, delivering highest level of reliability and security and changeability."/>
-    <TextBox h="Own Application Space" d="Our Apps are single tenant ensuring that your Apps and Data is always private."/>
-    <TextBox h="Certified Resources" d="Hire from a pool of certified professionals, ensuring you get top-quality talent."/>
-    <TextBox h="Instant Availability" d="Scale your team instantly to meet project demands without lengthy hiring processes."/>
-    <TextBox h="Outcome-Driven Billing" d="Enjoy a predictable and transparent billing model focused on delivering value."/>
+    <TextBox h="Proven Expertise" d="Experience in production ready AI-native applications, agri-tech, and supply chain innovation."/>
+    <TextBox h="End-to-End Support" d="From development to deployment, we provide comprehensive technical assistance and continuous optimization."/>
+    <TextBox h="Scalable Solutions" d=" Our AI-driven platform adapts to your business needs, ensuring long-term growth and efficiency."/>
+    <TextBox h="Uncompromising Quality" d=" Rigorous testing and validation processes guarantee exceptional product reliability and performance."/>
+     
   </div>
 
   {/* <button className="text-neutral-100 text-lg font-bold uppercase w-60 h-14 bg-indigo-500 rounded-full">get more details</button> */}
