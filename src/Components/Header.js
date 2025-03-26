@@ -11,14 +11,36 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useMediaQuery } from '@mui/material';
+import { Menu, MenuItem, useMediaQuery } from '@mui/material';
 
 const Header = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [isProcessExpanded, setIsProcessExpanded] = useState(false);
   const [state, setState] = React.useState({
     open: false,
   });
 
   const isSmallScreen = useMediaQuery('(max-width:600px)');
+
+  
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  // Scroll effect remains the same
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -100,9 +122,24 @@ const Header = () => {
            <li className={location.pathname === '/technologies' ? 'active' : ''}>
             <Link to="/technologies">Technologies</Link>
           </li>
-          <li className={location.pathname === '/process' ? 'active' : ''}>
+          <li 
+            className={location.pathname.startsWith('/process') ? 'active' : ''}
+            onMouseEnter={handleMenuOpen}
+            onMouseLeave={handleMenuClose}
+          >
             <Link to="/process">Process</Link>
+            <Menu
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={handleMenuClose}
+              MenuListProps={{ onMouseLeave: handleMenuClose }}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+            >
+              <MenuItem component={Link} to="/process/AI-Native" onClick={handleMenuClose}>AI-native Devlopment</MenuItem>
+              <MenuItem component={Link} to="/process" onClick={handleMenuClose}>Software  Devlopment</MenuItem>
+            </Menu>
           </li>
+          {/* Other navigation items */}
           <li className={location.pathname === '/contact-us' ? 'active' : ''}>
             <Link to="/contact-us">Contact</Link>
           </li>

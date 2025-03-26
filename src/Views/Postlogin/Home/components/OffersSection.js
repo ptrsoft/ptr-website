@@ -27,116 +27,122 @@ const OffersSection = () => {
   const handleNavigate = () => {
     navigate('/architecture')
   }
-   const handleSaasArc = () => {
+  const handleSaasArc = () => {
     navigate('/saas-architecture')
   }
-  const handleProcess = () =>{
+  const handleProcess = () => {
     navigate("/process")
   }
   return (
-    <div className='OffersTab_sec space-container '>
+    <div id='offer-section' className='OffersTab_sec space-container '>
 
-     
+
       <div className="OffersTab_sec_top">
-         <h2>AI-native <span style={{ color: '#666AE5' }}>capabilities</span>, such as:</h2>
-       </div>
+        <h2>AI-native <span style={{ color: '#666AE5' }}>capabilities</span></h2>
+      </div>
 
 
       <div className='mobile_accordian'>
 
-{/*mobile accordians  */}
+        {/*mobile accordians  */}
 
-<Accordion >
-  <AccordionSummary id="panel-header" 
-   expandIcon={<ExpandMoreIcon/>} style={{background:'#F39CAD'}} aria-controls="panel-content">
-    <span className='accordian_headings'>
-    AI-Powered Automation</span>
-  </AccordionSummary>
-  <AccordionDetails >
+        <Accordion >
+          <AccordionSummary id="panel-header"
+            expandIcon={<ExpandMoreIcon />} style={{ background: '#F39CAD' }} aria-controls="panel-content">
+            <span className='accordian_headings'>
+              AI-Powered Automation</span>
+          </AccordionSummary>
+          <AccordionDetails >
 
-    <div className='OffersTab_sec_bottom_img_container'>
-      <img src='Images/Tenant.png' alt='unable to load Images' />
-    </div>
-    <h3 className='tabsMinHeadings'>Automate complex workflows & decision-making.</h3>
-      <p className='accordian_para' >Unlock efficiency and scalability with our AI-powered automation solutions. We help businesses streamline complex workflows, eliminate manual tasks, and enhance decision-making using cutting-edge AI and machine learning. From intelligent process automation to predictive analytics, our solutions optimize operations, reduce costs, and improve accuracy. Seamlessly integrate AI into your existing systems and transform the way you work—faster, smarter, and more efficient than ever.</p>
-      <button onClick={handleSaasArc} className="read_more_btn accordian_read_more_btn">
+            <div className='OffersTab_sec_bottom_img_container'>
+              <img src='Images/Tenant.png' alt='unable to load Images' />
+            </div>
+            <h3 className='tabsMinHeadings'>Automate complex workflows & decision-making.</h3>
+            <p className='accordian_para' >Unlock efficiency and scalability with our AI-powered automation solutions. We help businesses streamline complex workflows, eliminate manual tasks, and enhance decision-making using cutting-edge AI and machine learning. From intelligent process automation to predictive analytics, our solutions optimize operations, reduce costs, and improve accuracy. Seamlessly integrate AI into your existing systems and transform the way you work—faster, smarter, and more efficient than ever.</p>
+            <button onClick={()=> navigate("/AI-powered-automation")} className="read_more_btn accordian_read_more_btn">
               Read More
             </button>
-  </AccordionDetails>
-</Accordion>
+          </AccordionDetails>
+        </Accordion>
 
 
-{/* accordian two */}
-<Accordion>
-  <AccordionSummary   expandIcon={<ExpandMoreIcon/>}  id="panel-header" style={{background:'#82D38F'}} aria-controls="panel-content">
-  <span className='accordian_headings'>
-  Real-Time Insights
-  </span>
-  </AccordionSummary>
-  <AccordionDetails >
+        {/* accordian two */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />} id="panel-header" style={{ background: '#82D38F' }} aria-controls="panel-content">
+            <span className='accordian_headings'>
+              AI-Driven Analytics
+            </span>
+          </AccordionSummary>
+          <AccordionDetails >
 
-    <div className='OffersTab_sec_bottom_img_container'>
-      <img src='Images/TechDebt.png' alt='unable to load Images' />
-    </div>
-    <h3 className='tabsMinHeadings'> AI-driven analytics for faster, smarter decisions.</h3>
-<p className='accordian_para'>Turn data into actionable insights with AI-driven analytics. Our advanced AI models process vast amounts of data in real time, uncovering hidden patterns, trends, and predictions to drive smarter business decisions. From predictive analytics to automated reporting, our solutions empower organizations to optimize operations, enhance customer experiences, and maximize profitability. Stay ahead of the competition with data-driven intelligence that works faster, smarter, and more accurately than ever before.</p>
- <button onClick={handleProcess} className="read_more_btn accordian_read_more_btn">
+            <div className='OffersTab_sec_bottom_img_container'>
+              <img src='Images/TechDebt.png' alt='unable to load Images' />
+            </div>
+            <h3 className='tabsMinHeadings'> AI-driven analytics for faster, smarter decisions.</h3>
+            <p className='accordian_para'>Turn data into actionable insights with AI-driven analytics. Our advanced AI models process vast amounts of data in real time, uncovering hidden patterns, trends, and predictions to drive smarter business decisions. From predictive analytics to automated reporting, our solutions empower organizations to optimize operations, enhance customer experiences, and maximize profitability. Stay ahead of the competition with data-driven intelligence that works faster, smarter, and more accurately than ever before.</p>
+            <button onClick={()=> navigate("/real-time-insights")} className="read_more_btn accordian_read_more_btn">
               Read More
             </button>
-     
-  </AccordionDetails>
-</Accordion>
 
-{/* accordian three  */}
-<Accordion>
-  <AccordionSummary   expandIcon={<ExpandMoreIcon/>}  id="panel-header" style={{background:'#E9B986'}} aria-controls="panel-content">
-  <span className='accordian_headings'>
-  Seamless AI Integrations
-  </span>
-  </AccordionSummary>
-  <AccordionDetails >
-    
-  <div className='OffersTab_sec_bottom_img_container'>
- <img src='Images/nativeArchitectures.png' alt='unable to load Images' />
-    </div>
+          </AccordionDetails>
+        </Accordion>
 
-   <h3 className='tabsMinHeadings' >Plug into your existing systems with AI-first efficiency.</h3>
-  
-      <p className='accordian_para'>Seamlessly integrate AI into your existing systems to enhance efficiency, automate processes, and unlock new capabilities. Our AI integration services connect machine learning models, automation tools, and data-driven insights with your current workflows, ensuring a smooth and scalable transformation. Whether it's chatbots, predictive analytics, or intelligent automation, we help businesses leverage AI for smarter operations and better decision-making—without disrupting their existing infrastructure.</p>
+        {/* accordian three  */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />} id="panel-header" style={{ background: '#E9B986' }} aria-controls="panel-content">
+            <span className='accordian_headings'>
+              AI Integrations
+            </span>
+          </AccordionSummary>
+          <AccordionDetails >
 
-      <button onClick={handleNavigate} className="read_more_btn accordian_read_more_btn">
+            <div className='OffersTab_sec_bottom_img_container'>
+              <img src='Images/nativeArchitectures.png' alt='unable to load Images' />
+            </div>
+
+            <h3 className='tabsMinHeadings' >Plug into your existing systems with AI-first efficiency.</h3>
+
+            <p className='accordian_para'>Seamlessly integrate AI into your existing systems to enhance efficiency, automate processes, and unlock new capabilities. Our AI integration services connect machine learning models, automation tools, and data-driven insights with your current workflows, ensuring a smooth and scalable transformation. Whether it's chatbots, predictive analytics, or intelligent automation, we help businesses leverage AI for smarter operations and better decision-making—without disrupting their existing infrastructure.</p>
+
+            <button onClick={()=> navigate("/AI-integrations")} className="read_more_btn accordian_read_more_btn">
               Read More
             </button>
-    
-  </AccordionDetails>
-</Accordion>
+
+          </AccordionDetails>
+        </Accordion>
 
 
-{/* accordian four */}
-<Accordion>
-  <AccordionSummary   expandIcon={<ExpandMoreIcon/>} id="panel-header" style={{background:'#9B8CEA'}} aria-controls="panel-content">
-    <span className='accordian_headings'>
-    Custom AI Models
-    </span>
-  </AccordionSummary>
-  <AccordionDetails >
-    
-  <div className='OffersTab_sec_bottom_img_container'>
-      <img src='Images/EngineeringTeams.png' alt='unable to load Images' />
-    </div>
-   <h3 className='tabsMinHeadings' > Train and deploy AI models tailored for your business.</h3>
+        {/* accordian four */}
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />} id="panel-header" style={{ background: '#9B8CEA' }} aria-controls="panel-content">
+            <span className='accordian_headings'>
+              Custom AI Models
+            </span>
+          </AccordionSummary>
+          <AccordionDetails >
+
+            <div className='OffersTab_sec_bottom_img_container'>
+              <img src='Images/EngineeringTeams.png' alt='unable to load Images' />
+            </div>
+            <h3 className='tabsMinHeadings' > Train and deploy AI models tailored for your business.</h3>
 
 
-   <p className='accordian_para'>Empower your business with tailor-made AI models designed to solve your unique challenges. Our custom AI solutions leverage cutting-edge machine learning, deep learning, and NLP to deliver highly accurate, scalable, and efficient models. Whether you need predictive analytics, intelligent automation, or advanced data processing, we build AI models that seamlessly integrate with your workflows, driving better decisions, faster operations, and greater business impact.</p>
-  </AccordionDetails>
-</Accordion>
+            <p className='accordian_para'>Empower your business with tailor-made AI models designed to solve your unique challenges. Our custom AI solutions leverage cutting-edge machine learning, deep learning, and NLP to deliver highly accurate, scalable, and efficient models. Whether you need predictive analytics, intelligent automation, or advanced data processing, we build AI models that seamlessly integrate with your workflows, driving better decisions, faster operations, and greater business impact.</p>
 
-</div>
+        
+
+            <button  onClick={()=> navigate("/custom-AI-models")} className="read_more_btn accordian_read_more_btn">
+              Read More
+            </button>
+          </AccordionDetails>
+        </Accordion>
+
+      </div>
 
       {/* offer table bottom */}
 
 
-     
+
 
       <div className='OffersTab_sec_bottom'>
         {/* button contaienr */}
@@ -160,7 +166,7 @@ const OffersSection = () => {
             }}
             className='tab_btn'>
             <img alt='icon' src='icons/buttontwo.svg' />
-            <span>Real-Time Insights</span>
+            <span>AI-driven analytics</span>
           </button>
 
 
@@ -171,7 +177,7 @@ const OffersSection = () => {
             }}
             className='tab_btn'>
             <img alt='icon' src='icons/buttonthree.svg' />
-            <span>Seamless AI Integrations </span>
+            <span>AI Integrations </span>
           </button>
 
           <button onClick={() => handleButtonClick(4)}
@@ -197,8 +203,8 @@ const OffersSection = () => {
         {/* 3rd */}
         <div className='tabs_3rd'>
           {selectedButton === 1 && <h3 className='tabsMinHeadings'><span style={{ color: '#666AE5' }}>Automate</span> complex workflows & decision-making.</h3>}
-          {selectedButton === 2 && <h3 className='tabsMinHeadings'  > AI-driven analytics for <span style={{color:"#666AE5"}}>faster</span>, <span style={{color:"#666AE5"}}>smarter</span> decisions.</h3>}
-          {selectedButton === 3 && <h3 className='tabsMinHeadings' >Plug into your existing systems with <span style={{color:"#666AE5"}}>AI-first efficiency</span>.</h3>}
+          {selectedButton === 2 && <h3 className='tabsMinHeadings'  > AI-driven analytics for <span style={{ color: "#666AE5" }}>faster</span>, <span style={{ color: "#666AE5" }}>smarter</span> decisions.</h3>}
+          {selectedButton === 3 && <h3 className='tabsMinHeadings' >Plug into your existing systems with <span style={{ color: "#666AE5" }}>AI-first efficiency</span>.</h3>}
           {selectedButton === 4 && <h3 className='tabsMinHeadings' > Train and deploy <span style={{ color: '#666AE5' }}>AI models</span> tailored for your <span style={{ color: '#666AE5' }}>business</span>.</h3>}
 
           {selectedButton === 1 &&
@@ -208,11 +214,11 @@ const OffersSection = () => {
             <p>Turn data into actionable insights with AI-driven analytics. Our advanced AI models process vast amounts of data in real time, uncovering hidden patterns, trends, and predictions to drive smarter business decisions. From predictive analytics to automated reporting, our solutions empower organizations to optimize operations, enhance customer experiences, and maximize profitability. Stay ahead of the competition with data-driven intelligence that works faster, smarter, and more accurately than ever before.</p>
           }
           {selectedButton === 3 &&
-          <p>Seamlessly integrate AI into your existing systems to enhance efficiency, automate processes, and unlock new capabilities. Our AI integration services connect machine learning models, automation tools, and data-driven insights with your current workflows, ensuring a smooth and scalable transformation. Whether it's chatbots, predictive analytics, or intelligent automation, we help businesses leverage AI for smarter operations and better decision-making—without disrupting their existing infrastructure.</p>
-           }
+            <p>Seamlessly integrate AI into your existing systems to enhance efficiency, automate processes, and unlock new capabilities. Our AI integration services connect machine learning models, automation tools, and data-driven insights with your current workflows, ensuring a smooth and scalable transformation. Whether it's chatbots, predictive analytics, or intelligent automation, we help businesses leverage AI for smarter operations and better decision-making—without disrupting their existing infrastructure.</p>
+          }
           {selectedButton === 4 &&
-          <p>Empower your business with tailor-made AI models designed to solve your unique challenges. Our custom AI solutions leverage cutting-edge machine learning, deep learning, and NLP to deliver highly accurate, scalable, and efficient models. Whether you need predictive analytics, intelligent automation, or advanced data processing, we build AI models that seamlessly integrate with your workflows, driving better decisions, faster operations, and greater business impact. </p>
-           }
+            <p>Empower your business with tailor-made AI models designed to solve your unique challenges. Our custom AI solutions leverage cutting-edge machine learning, deep learning, and NLP to deliver highly accurate, scalable, and efficient models. Whether you need predictive analytics, intelligent automation, or advanced data processing, we build AI models that seamlessly integrate with your workflows, driving better decisions, faster operations, and greater business impact. </p>
+          }
 
 
 
@@ -229,28 +235,28 @@ const OffersSection = () => {
 } */}
 
           {selectedButton === 3 &&
-            <button onClick={handleNavigate} className="read_more_btn">
+            <button onClick={() => navigate("/AI-integrations")} className="read_more_btn">
               Read More
             </button>
           }
           {selectedButton === 1 &&
-            <button onClick={handleSaasArc} className="read_more_btn">
+            <button onClick={() => navigate("/AI-powered-automation")} className="read_more_btn">
               Read More
             </button>
-          } 
+          }
           {selectedButton === 2 &&
-          <div style={{width:"100%"}}>
-             <button style={{marginTop:"20px"}} onClick={handleProcess} className="read_more_btn">
+            <div style={{ width: "100%" }}>
+              <button style={{ marginTop: "20px" }} onClick={() => navigate("/real-time-insights")} className="read_more_btn">
+                Read More
+              </button>
+            </div>
+          }
+
+          {selectedButton === 4 &&
+            <button onClick={() => navigate("/custom-AI-models")} className="read_more_btn">
               Read More
             </button>
-            </div>
-          } 
-
-          {/* {selectedButton === 4 &&
- <button className="read_more_btn">
- Read More
-</button>
-} */}
+          }
 
 
 

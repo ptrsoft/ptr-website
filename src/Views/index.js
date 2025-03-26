@@ -3,13 +3,17 @@ import { Routes, Route, } from "react-router-dom";
 import Home from "./Postlogin/Home";
 import AboutUs from "./Postlogin/AboutUs";
 import Process from "./Postlogin/Process";
+import AINativeProcess from "./Postlogin/AINativeProcess";
 import ContactUs from "./Postlogin/ContactUs/page";
 import Login from "./PreLogin/Login";
 import SaasArchitecture from "./Postlogin/SaasArchitecture";
 import Architecture from "./Postlogin/Architecture";
 import PathNotFound from "./PathNotFound";
 import Technology from "./Postlogin/Technology";
-
+import CustomAIModels from "./Postlogin/Home/CustomAIModels"
+import AIIntegrations from "./Postlogin/Home/AIIntegrations"
+import AIPoweredAutomation from "./Postlogin/Home/AIPoweredAutomation"
+import RealTimeInsights from "./Postlogin/Home/RealTimeInsights"
 
 
 const Views = () => {
@@ -57,9 +61,22 @@ const Views = () => {
                         exact
                         path={"architecture"}
                         element={<Architecture />}
+                    /> 
+                     <Route
+                        exact
+                        path={"process/AI-Native"}
+                        element={<AINativeProcess />}
+                    /> 
+                    <Route
+                        exact
+                        path={"AI-powered-automation"}
+                        element={<AIPoweredAutomation />}
                     />
 
                     <Route exact path="/" element={<Home to="home" />} />
+                    <Route exact path="/custom-AI-models" element={<CustomAIModels to="customAIModels" />} />
+                    <Route exact path="/AI-integrations" element={<AIIntegrations to="AIIntegrations" />} />
+                    <Route exact path="/real-time-insights" element={<RealTimeInsights to="RealTimeInsights" />} />
                     <Route path="not-found" element={<PathNotFound />} />
 
                     {/* <Route path="*" element={<PathNotFound />} /> */}
