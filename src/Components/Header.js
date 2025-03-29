@@ -15,6 +15,7 @@ import { Menu, MenuItem, useMediaQuery } from '@mui/material';
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorE2, setAnchorE2] = useState(null);
   const [isProcessExpanded, setIsProcessExpanded] = useState(false);
   const [state, setState] = React.useState({
     open: false,
@@ -30,6 +31,16 @@ const Header = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+
+
+  const handleTechnologMenuOpen = (event) => {
+    setAnchorE2(event.currentTarget);
+  };
+
+  const handleTechnologClose = () => {
+    setAnchorE2(null);
+  };
+
 
   // Scroll effect remains the same
   useEffect(() => {
@@ -119,9 +130,25 @@ const Header = () => {
           <li className={location.pathname === '/about-us' ? 'active' : ''}>
             <Link to="/about-us">About Us</Link>
           </li>
-           <li className={location.pathname === '/technologies' ? 'active' : ''}>
-            <Link to="/technologies">Technologies</Link>
+         
+          <li 
+            className={location.pathname.startsWith('/technologies') ? 'active' : ''}
+            onMouseEnter={handleTechnologMenuOpen}
+            onMouseLeave={handleTechnologClose}
+          >
+            <Link to="/process">Technologies</Link>
+            <Menu
+              anchorEl={anchorE2}
+              open={Boolean(anchorE2)}
+              onClose={handleTechnologClose}
+              MenuListProps={{ onMouseLeave: handleTechnologClose }}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+            >
+              <MenuItem component={Link} to="/technologies/ai-native" onClick={handleTechnologClose}>AI-native</MenuItem>
+              <MenuItem component={Link} to="/technologies" onClick={handleTechnologClose}>Software Devlopment</MenuItem>
+            </Menu>
           </li>
+
           <li 
             className={location.pathname.startsWith('/process') ? 'active' : ''}
             onMouseEnter={handleMenuOpen}

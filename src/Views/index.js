@@ -14,7 +14,7 @@ import CustomAIModels from "./Postlogin/Home/CustomAIModels"
 import AIIntegrations from "./Postlogin/Home/AIIntegrations"
 import AIPoweredAutomation from "./Postlogin/Home/AIPoweredAutomation"
 import RealTimeInsights from "./Postlogin/Home/RealTimeInsights"
-
+import  AINative from "./Postlogin/Technology/AINative"
 
 const Views = () => {
     return (
@@ -39,6 +39,10 @@ const Views = () => {
                         exact
                         path={"Technologies"}
                         element={<Technology />}
+                    />  <Route
+                        exact
+                        path={"technologies/ai-native"}
+                        element={<AINative />}
                     />
                      <Route
                         exact
