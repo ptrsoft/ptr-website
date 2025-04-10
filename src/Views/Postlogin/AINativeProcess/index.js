@@ -1,148 +1,152 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import AIJourney from "../../../Assets/Images/AIJourney.svg"
-import tempImage from "../../../Assets/Images/emailAutomation.png"
+import { useNavigate } from 'react-router-dom';
+import ProcessImg from "../../../Assets/Images/AI_Native-Process (1).png"
 const ProcessPage = () => {
-  const processSteps = [
+  const navigate = useNavigate()
+  const steps = [
     {
-      title: "Problem Definition and Opportunity Identification",
+      title: "Problem Definition & Opportunity:",
+      icon: "🔍",
+      color: "bg-purple-100",
       points: [
-        "Clearly define the problem that AI can solve",
-        "Identify opportunities where AI can create significant value",
-        "Focus on problems where AI's unique capabilities are essential",
-        "Strong user research and market analysis"
-      ],
-      image: tempImage
+         "Clearly define the problem that AI can solve.",
+         "Identify opportunities where AI can create significant value.",
+         "Focus on problems where AI's unique capabilities (e.g., pattern recognition, prediction, generation) are essential.",
+         "This step involves strong user research, and market analysis.",
+      ]
     },
     {
-      title: "Data Acquisition and Preparation",
+      title: "Data Acquisition and Preparation:",
+      icon: "📊",
+      color: "bg-blue-100",
       points: [
-        "Identify and acquire relevant data",
-        "Clean, preprocess, and transform data",
-        "Ensure data quality and proper governance",
-        "Maintain ethical data practices"
-      ],
-      image:tempImage
+        "Identify and acquire relevant data.",
+        "Clean, preprocess, and transform data for AI model training.",
+        "This stage is critical, as AI model performance heavily depends on data quality.",
+        "Data governance and ethics are very important here.",
+      ]
     },
     {
-        title: "Model Development and Training:",
-        points: [
-          "Identify and acquire relevant dataSelect and design appropriate AI models (e.g., machine learning, deep learning).",
-          "Train models using prepared data.",
-          "Evaluate model performance and iterate on model design.",
-          "This is where the Ai models are built, and tested."
-        ],
-        image:tempImage
-      },
-      {
-        title: "Integration and Application Development:",
-        points: [
-            "Integrate trained AI models into the product or application.",
-          "Develop user interfaces and experiences that leverage AI capabilities.",
-          "Focus on seamless and intuitive integration."
-        ],
-        image:tempImage
-      },
-    
-      {
-        title: "Deployment and Monitoring:",
-        points: [
-           "Deploy the AI-powered product or application.",
-           "Continuously monitor model performance and data drift.",
-           "Establish feedback loops to collect user data and improve the model.",
-           "This is where the product goes live."
-        ],
-        image: tempImage
-      },
-      {
-        title: "Iteration and Optimization:",
-        points: [
-          "Iteratively improve the model and product based on user feedback and performance data.",
-          "Continuously retrain models with new data.",
-          "Adapt to evolving user needs and market conditions.",
-          "This is where the product is improved, and refined."
-        ],
-        image: tempImage
-      },
-    // Add other steps similarly...
+      title: "Model Development and Training:",
+      icon: "🧠",
+      color: "bg-green-100",
+      points: [
+        "Select and design appropriate AI models (e.g., machine learning, deep learning).",
+        "Train models using prepared data.",
+        "Evaluate model performance and iterate on model design.",
+        "This is where the Ai models are built, and tested.",
+      ]
+    },
+    {
+      title: "Integration & Application:",
+      icon: "⚙️",
+      color: "bg-yellow-100",
+      points: [
+        "Integrate trained AI models into the product or application.",
+        "Develop user interfaces and experiences that leverage AI capabilities.",
+        "Focus on seamless and intuitive integration.",
+      ]
+    },
+    {
+      title: "Deployment & Monitoring:",
+      icon: "🚀",
+      color: "bg-orange-100",
+      points: [
+        "Deploy the AI-powered product or application.",
+        "Continuously monitor model performance and data drift.",
+        "Establish feedback loops to collect user data and improve the model.",
+        "This is where the product goes live.",
+      ]
+    },
+    {
+      title: "Iteration & Optimization:",
+      icon: "🔄",
+      color: "bg-pink-100",
+      points: [
+        "Iteratively improve the model and product based on user feedback and performance data.",
+        "Continuously retrain models with new data.",
+        "Adapt to evolving user needs and market conditions.",
+        "This is where the product is improved, and refined.",
+      ]
+    }
   ];
 
   return (
-    <div className="overflow-hidden">
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-800 to-purple-900 text-white">
-        <div className="text-center px-4 max-w-4xl">
-          <h1 className="text-5xl font-bold mb-8 animate-fade-in-up">
-            Ready to build your AI-native product?
+    <>
+
+<section className='space-container bg-white single_tenant_sec single_tenant_container'>
+    <h2 className='single_tenant_sec_heading text-balance'>Ready to build your <span style={{color:'#666AE5'}}>AI-native</span> product?</h2>
+    <p className='single_tenant_sec_para'>
+    Contact our team to start your development journey with our proven process.
+       </p>
+    <img style={{width:"70%" , maxWidth:"540px"}} className='single_tenant_sec_img' src={ProcessImg} alt="unable to load image check your internet connection" />
+   </section>
+
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+     
+        {/* Main Heading */}
+        <div className="text-center mb-16">
+          <h1 className='single_tenant_sec_heading text-balance'>
+          Our process emphasizes iterative cycles, data-centricity, and continuous learning.
           </h1>
-          <p className="text-xl mb-12 text-blue-100">
-            Contact our team to start your development journey with our proven process. 🚀
-          </p>
-          <Link 
-            to="/contact-us" 
-            className="inline-block bg-white text-blue-800 px-12 py-4 rounded-full 
-                      text-lg font-semibold hover:scale-105 transition-transform"
-          >
-            Start Your Journey
-          </Link>
+         
         </div>
-      </section>
-
-      {/* Full-screen Image */}
-      <div className="max-h-screen flex   flex-col items-center justify-center bg-white pt-[30px] space-container ">
-         <img 
-          src={AIJourney}
-          className="w-[700px] object-cover" 
-          alt="AI Development" 
-        />
-      </div>
-
-      {/* Process Overview */}
-      <section className="space-container min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="max-w-4xl px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8 text-gray-800">
-            Our process emphasizes iterative cycles, data-centricity, and continuous learning
-          </h2>
-            
-        </div>
-      </section>
-
-      {/* Process Steps */}
-      {processSteps.map((step, index) => (
-        <section key={index} className="min-h-screen space-container flex items-center justify-center py-20">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              {/* Text Content */}
-              <div className="lg:w-1/2">
-                <div className="text-blue-600 text-6xl font-bold mb-6">0{index + 1}</div>
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">{step.title}</h3>
-                <ul className="space-y-4">
-                  {step.points.map((point, i) => (
-                    <li key={i} className="flex items-start text-gray-600">
-                      <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" 
-                           fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                      </svg>
-                      <span className="text-lg">{point}</span>
-                    </li>
-                  ))}
-                </ul>
+       
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {steps.map((step, index) => (
+            <div 
+              key={index}
+              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+            >
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              
+              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+                <span className="text-3xl">{step.icon}</span>
               </div>
 
-              {/* Image */}
-              <div className="lg:w-1/2">
-                <img 
-                  src={step.image} 
-                  className="rounded-xl shadow-2xl hover:shadow-xl transition-shadow"
-                  alt={`Step ${index + 1}`}
-                />
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                <span className="mr-2 text-blue-600">{index + 1}.</span>
+                {step.title}
+              </h3>
+
+              <ul className="space-y-3">
+                {step.points.map((point, i) => (
+                  <li key={i} className="flex items-start text-gray-600">
+                    <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span className="text-blue-600 font-medium">{index + 1}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      ))}
+          ))}
+        </div>
+
+        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Continuous Innovation Cycle
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            Our process never truly ends - we maintain constant feedback loops between stages,
+            enabling rapid iteration and continuous value delivery powered by real-world data
+            and user insights.
+          </p>
+        </div>
+      </div>
     </div>
+    </>
   );
 };
 
 export default ProcessPage;
+
+
+ 
