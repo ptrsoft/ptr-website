@@ -6,50 +6,21 @@ import "../../../../Assets/Styles/pages/Home/MarketingSection.css"
 import { Modal ,Box, Paper } from '@mui/material';
 import Slider from 'react-slick';
 import Ecomnmerce from "../../../../Assets/Images/Home-page.jpg"
-
-// procurement Images 
-import ProcurementImg1 from "../../../../Assets/Images/Procurement/01.svg"
-import ProcurementImg2 from "../../../../Assets/Images/Procurement/02.svg"
-import ProcurementImg3 from "../../../../Assets/Images/Procurement/03.svg"
-import ProcurementImg4 from "../../../../Assets/Images/Procurement/04.svg"
-import ProcurementImg5 from "../../../../Assets/Images/Procurement/05.svg"
-import ProcurementImg6 from "../../../../Assets/Images/Procurement/06.svg"
-import ProcurementImg7 from "../../../../Assets/Images/Procurement/07.svg"
-import ProcurementImg8 from "../../../../Assets/Images/Procurement/08.svg"
-import ProcurementImg9 from "../../../../Assets/Images/Procurement/09.svg"
  
-
-// accointing images 
-import Accounting1 from "../../../../Assets/Images/Finance and management/01.svg"
-import Accounting2 from "../../../../Assets/Images/Finance and management/02.svg"
-import Accounting3 from "../../../../Assets/Images/Finance and management/03.svg"
-import Accounting4 from "../../../../Assets/Images/Finance and management/04.svg"
-import Accounting5 from "../../../../Assets/Images/Finance and management/05.svg"
-import Accounting6 from "../../../../Assets/Images/Finance and management/06.svg"
-
-// inventor images 
-import inventory1 from "../../../../Assets/Images/Inventory Svg Img/Container 1 Inventory.svg"
-import inventory2 from "../../../../Assets/Images/Inventory Svg Img/Container 2.svg"
-import inventory3 from "../../../../Assets/Images/Inventory Svg Img/Container 3.svg"
-import inventory4 from "../../../../Assets/Images/Inventory Svg Img/Container 4.svg"
-import inventory5 from "../../../../Assets/Images/Inventory Svg Img/Container 5.svg"
-import inventory6 from "../../../../Assets/Images/Inventory Svg Img/Container 6.svg"
-import inventory7 from "../../../../Assets/Images/Inventory Svg Img/Container 7.svg"
-import inventory8 from "../../../../Assets/Images/Inventory Svg Img/Container 8.svg"
-import inventory9 from "../../../../Assets/Images/Inventory Svg Img/Container 9.svg"
-import inventory10 from "../../../../Assets/Images/Inventory Svg Img/Container 10.svg"
-
-// Ecomnmerce images 
- import ecom1 from "../../../../Assets/Images/B2C Svg/Bengali Homeneeds page (1).svg"
- import ecom2 from "../../../../Assets/Images/B2C Svg/Bengali Homeneeds page (2).svg"
- import ecom3 from "../../../../Assets/Images/B2C Svg/Bengali Homeneeds page (3).svg"
- import ecom4 from "../../../../Assets/Images/B2C Svg/Bengali Homeneeds page (4).svg"
- import ecom5 from "../../../../Assets/Images/B2C Svg/Home-page.svg"
- import ecom6 from "../../../../Assets/Images/B2C Svg/Front-page.svg"
- import ecom7 from "../../../../Assets/Images/B2C Svg/Home-page (1).svg"
-
-//  pos images
-import pos1 from "../../../../Assets/Images/POS SVG/Login Page.svg"
+import pos1 from "../../../../Assets/Images/Pos Svg/01.svg"
+import pos2 from "../../../../Assets/Images/Pos Svg/02.svg"
+import pos3 from "../../../../Assets/Images/Pos Svg/03.svg"
+import pos4 from "../../../../Assets/Images/Pos Svg/04.svg"
+import pos5 from "../../../../Assets/Images/Pos Svg/05..svg"
+import pos6 from "../../../../Assets/Images/Pos Svg/06.svg"
+import pos7 from "../../../../Assets/Images/Pos Svg/07.svg"
+import pos8 from "../../../../Assets/Images/Pos Svg/08.svg"
+import pos9 from "../../../../Assets/Images/Pos Svg/09.svg"
+import pos10 from "../../../../Assets/Images/Pos Svg/10.svg"
+import pos11 from "../../../../Assets/Images/Pos Svg/11.svg"
+import pos12 from "../../../../Assets/Images/Pos Svg/12.svg"
+ 
+  
  const MarketingSection = () => {
    // Settings for the slick carousel
    const [open,setOpen] = useState(false)
@@ -83,6 +54,7 @@ const [procurement,setProcurement] = useState(false)
 const [accounting,setAccounting] = useState(false)
 const [inventory,setInventory] = useState(false)
 const [ecom,setEcom] = useState(false)
+const [pos,setPos] = useState(false)
 
   return (
     <div id='AI-Native' className='marketing_sec space-container'>
@@ -233,7 +205,28 @@ const [ecom,setEcom] = useState(false)
               </button> 
               
             
+              <button
+                 className="group relative p-6 bg-white rounded-xl shadow-sm hover:shadow-lg 
+                  transition-all duration-300 hover:-translate-y-1 border border-gray-100
+                  hover:border-indigo-100 hover:bg-gradient-to-br from-white to-indigo-50
+                  text-left"
+                  onClick={()=> setPos(true)}
 
+              >
+                <div className="space-y-3">
+                  <div className="h-10 w-10 text-[2rem] bg-indigo-100 group-hover:bg-indigo-200 rounded-lg flex items-center justify-center transition-colors">
+                📦
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-700 transition-colors">
+                    {"POS"}
+                  </h3>
+                </div>
+                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </div>
+              </button> 
 
              
           </div>
@@ -249,37 +242,55 @@ const [ecom,setEcom] = useState(false)
         aria-describedby="modal-modal-description"
       >
           <Box sx={modalStyle}>
+          <div className='flex justify-end absolute top-2 right-4 cursor-pointer' onClick={()=>  setProcurement(false)}>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
 
+</div>
           <Slider  ref={sliderRef} {...settings}>
        
           <div>
-             <img src={ProcurementImg1} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Procurement/01.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div>  
           <div>
-             <img src={ProcurementImg2} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Procurement/02.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div> 
           <div>
-             <img src={ProcurementImg3} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-          <div>
-             <img src={ProcurementImg4} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-          <div>
-             <img src={ProcurementImg5} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-          <div>
-             <img src={ProcurementImg6} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-          <div>
-             <img src={ProcurementImg7} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-          <div>
-             <img src={ProcurementImg8} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Procurement/03.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div> 
           <div>
-             <img src={ProcurementImg9} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Procurement/04.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div> 
-          
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/05.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/06.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/07.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/08.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/09.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+      
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/10.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/11.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/12.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Procurement/13.svg" alt={'Procurement Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
       </Slider>
     
           </Box>
@@ -295,33 +306,39 @@ const [ecom,setEcom] = useState(false)
         aria-describedby="modal-modal-description"
       >
           <Box sx={modalStyle}>
+<div className='flex justify-end absolute top-2 right-4 cursor-pointer' onClick={()=>  setAccounting(false)}>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
 
+</div>
           <Slider  ref={sliderRef} {...settings}>
        
           
            <div>
-             <img src={Accounting1} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Finance_and_management/01.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/02.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/03.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/04.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/05.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/06.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+          <div>
+             <img src="https://images.promodeagro.com/Finance_and_management/07.svg" alt={'Accounts Image'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div> 
 
-           <div>
-             <img src={Accounting2} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-
-           <div>
-             <img src={Accounting3} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-
-          <div>
-             <img src={Accounting4} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-
-          <div>
-             <img src={Accounting5} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
-
-          <div>
-             <img src={Accounting6} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>  
+          
            
           
       </Slider>
@@ -339,46 +356,55 @@ const [ecom,setEcom] = useState(false)
         aria-describedby="modal-modal-description"
       >
           <Box sx={modalStyle}>
+          <div className='flex justify-end absolute top-2 right-4 cursor-pointer' onClick={()=>  setInventory(false)}>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
 
+</div>
           <Slider  ref={sliderRef} {...settings}>
        
           
            <div>
-             <img src={inventory1} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/Inventory/Container%201%20Inventory.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div> 
-
-          <div>
-             <img src={inventory2} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory3} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory4} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory5} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory6} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory7} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory8} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory9} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-          <div>
-             <img src={inventory10} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-
-
-        
-           
           
+            <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 2.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 3.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 4.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 5.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 6.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 7.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 8.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 9.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div> 
+
+          <div>
+             <img src="https://images.promodeagro.com/Inventory/Container 10.svg" alt={'inventory Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>           
       </Slider>
     
           </Box>
@@ -393,35 +419,55 @@ const [ecom,setEcom] = useState(false)
         aria-describedby="modal-modal-description"
       >
           <Box sx={modalStyle}>
+          <div className='flex justify-end absolute top-2 right-4 cursor-pointer' onClick={()=>  setEcom(false)}>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
 
+</div>
           <Slider  ref={sliderRef} {...settings}>
        
           
            <div>
-             <img src={ecom5} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+             <img src="https://images.promodeagro.com/B2C/Home-page.svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
           </div>
+           
           <div>
-             <img src={ecom7} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>     
-              <div>
-             <img src={ecom6} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div>
-          
+             <img src="https://images.promodeagro.com/B2C/Home-page (1).svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>  
           
           <div>
-             <img src={ecom1} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
+             <img src="https://images.promodeagro.com/B2C/Front-page.svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
+           
+ <div>
+             <img src="https://images.promodeagro.com/B2C/Bengali Vegetable page.svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
 
           <div>
-             <img src={ecom2} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
+             <img src="https://images.promodeagro.com/B2C/Bengali Homeneeds page.svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
+
           <div>
-             <img src={ecom3} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
+             <img src="https://images.promodeagro.com/B2C/Bengali Homeneeds page (1).svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
           <div>
-             <img src={ecom4} alt={'Image Not found'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
-          </div> 
-            
+             <img src="https://images.promodeagro.com/B2C/Bengali Homeneeds page (2).svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src="https://images.promodeagro.com/B2C/Bengali Homeneeds page (3).svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src="https://images.promodeagro.com/B2C/Bengali Homeneeds page (4).svg" alt={'Ecommerce Images'} style={{ width: '90%' , margin:"auto", height:"auto" }} />
+          </div>
+
+        
+
+         
+
+         
+           
 
 
         
@@ -433,7 +479,72 @@ const [ecom,setEcom] = useState(false)
       </Modal>
 
 
+{/* POS */}
 
+<Modal
+        open={pos}
+        onClose={()=> setPos(false)}
+ 
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+          <Box sx={modalStyle}>
+          <div className='flex justify-end absolute top-2 right-4 cursor-pointer' onClick={()=>  setPos(false)}>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>
+
+</div>
+          <Slider  ref={sliderRef} {...settings}>
+       
+          
+           <div>
+             <img src={pos1} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos2} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos3} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos4} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos5} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos6} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos7} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos8} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+
+          <div>
+             <img src={pos9} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos10} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+          <div>
+             <img src={pos11} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+
+          <div>
+             <img src={pos12} alt={'POS Images'} style={{ width: '90%' ,height:"100px", margin:"auto", height:"auto" }} />
+          </div>
+
+
+
+                    
+      </Slider>
+    
+          </Box>
+      </Modal>
 
     </div>
   )
