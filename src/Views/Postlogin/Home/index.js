@@ -8,6 +8,8 @@ import WhyChooseUse from './components/WhyChooseUse'
 import OffersComponent from './components/OffersSection'
 
 import {Helmet} from "react-helmet-async"
+import OurProducts from './components/OurProducts'
+import AINativecapabilities from './components/AINativecapabilities'
 
   
 const Home = () => {
@@ -23,9 +25,11 @@ const Home = () => {
 <HeroSection/>
 <section>
 <MarketingSection/>
+{/* <OurProducts/> */}
 </section>
 <section>
-<OffersComponent/>
+{/* <OffersComponent/> */}
+<AINativecapabilities/>
 </section>
 <section>
 <HowItsWorkSection/>

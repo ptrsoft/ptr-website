@@ -122,7 +122,7 @@ Stage 1: requirement
 {/* wrapper starts */}
 <div className="process_section_right_wrapper">
 {/* headings */}
-{tabNumber === "devProcess" && <span className='process_section_right_heading'>Our Software Development Process</span>}
+{tabNumber === "devProcess" && <span className='process_section_right_heading'>Our Cloud Native Development Process</span>}
 {tabNumber === "requirement" && <span className='process_section_right_heading'>1. Requirement</span>}
 {tabNumber === "mockDevelopment" && <span className='process_section_right_heading'>2. Mock Development</span>}
 {tabNumber === "actualDevelopment" && <span className='process_section_right_heading'>3. Actual Development</span>}

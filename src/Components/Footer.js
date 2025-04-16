@@ -11,9 +11,12 @@ const Footer = () => {
 
 {/* footer top */}
 <div className="footer_top">
-    <h2>Ready to experience the flexibility and power of PTR Technologies</h2>
-    <span>Sign up now and start customizing your applications and hiring on-demand engineering teams.</span>
-    <button onClick={handleNavigate}>GET STARTED</button>
+    <h2>Automate your business processes with PTR Technologies </h2>
+    <span>Contact us to discover how our AI-powered automation solutions can transform your operations.</span>
+    <div className='flex gap-6'>
+    <button onClick={handleNavigate} className='uppercase text-[#040404] bg-[#FFFFFF]'>GET STARTED</button>
+    <button className='uppercase bg-[#2A9BED] text-[#FFFFFF]' onClick={handleNavigate} >Request A Demo</button>
+    </div>
 </div>
 
 {/* devider */}
@@ -80,7 +83,7 @@ const Footer = () => {
 
 <div className='devider'></div>
 <div className='rights'>
-<span>2024 All Rights Reserved</span>
+<span>2025 All Rights Reserved</span>
 
 <ul>
     <li>Privacy Policy</li>

@@ -208,16 +208,16 @@ const OffersSection = () => {
           {selectedButton === 4 && <h3 className='tabsMinHeadings' > Train and deploy <span style={{ color: '#666AE5' }}>AI models</span> tailored for your <span style={{ color: '#666AE5' }}>business</span>.</h3>}
 
           {selectedButton === 1 &&
-            <p>Unlock efficiency and scalability with our AI-powered automation solutions. We help businesses streamline complex workflows, eliminate manual tasks, and enhance decision-making using cutting-edge AI and machine learning. From intelligent process automation to predictive analytics, our solutions optimize operations, reduce costs, and improve accuracy. Seamlessly integrate AI into your existing systems and transform the way you work—faster, smarter, and more efficient than ever.</p>
+            <p> Streamline operations, automates repetitive tasks, and enhances decision-making.</p>
           }
           {selectedButton === 2 &&
-            <p>Turn data into actionable insights with AI-driven analytics. Our advanced AI models process vast amounts of data in real time, uncovering hidden patterns, trends, and predictions to drive smarter business decisions. From predictive analytics to automated reporting, our solutions empower organizations to optimize operations, enhance customer experiences, and maximize profitability. Stay ahead of the competition with data-driven intelligence that works faster, smarter, and more accurately than ever before.</p>
+            <p> Harness the power of data-driven insights to optimize operations, identify trends, and make informed business decisions through advanced analytics and machine learning algorithms.</p>
           }
           {selectedButton === 3 &&
-            <p>Seamlessly integrate AI into your existing systems to enhance efficiency, automate processes, and unlock new capabilities. Our AI integration services connect machine learning models, automation tools, and data-driven insights with your current workflows, ensuring a smooth and scalable transformation. Whether it's chatbots, predictive analytics, or intelligent automation, we help businesses leverage AI for smarter operations and better decision-making—without disrupting their existing infrastructure.</p>
+            <p> Coordinate AI systems across operations for optimal performance and resource usage through smart workflow management.</p>
           }
           {selectedButton === 4 &&
-            <p>Empower your business with tailor-made AI models designed to solve your unique challenges. Our custom AI solutions leverage cutting-edge machine learning, deep learning, and NLP to deliver highly accurate, scalable, and efficient models. Whether you need predictive analytics, intelligent automation, or advanced data processing, we build AI models that seamlessly integrate with your workflows, driving better decisions, faster operations, and greater business impact. </p>
+            <p> Empower your business with tailor-made AI models designed to solve your unique challenges</p>
           }
 
 

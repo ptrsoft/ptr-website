@@ -201,16 +201,17 @@
 // export default index
 
 
-
-
+ 
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
- const Index = () => {
+import AboutUsBox from '../../AboutUs/components/AboutUsBox';
+  const Index = () => {
   const navigate = useNavigate()
   const steps = [
     {
       title: "Email Automation Excellence",
+      background:"bg-[#EABFD4]",
       desc:"Revolutionize your email communications with AI-powered automation:",
       icon: "📧",
       color: "bg-purple-100",
@@ -222,6 +223,7 @@ import { useNavigate } from 'react-router-dom';
       ]
     },
     {
+      background:"bg-[#D1D6E8]",
       title: "Service Desk Automation",
       desc:"Enhance your customer support with intelligent service desk solutions:",
       icon: "🧑‍💻",
@@ -235,6 +237,7 @@ import { useNavigate } from 'react-router-dom';
     },
     {
       title: "CRM Automation Excellence",
+      background:"bg-[#EABFD4]",
       desc:"Maximize customer relationships with intelligent CRM automation",
       icon: " 🧑‍💼",
       color: "bg-green-100",
@@ -246,6 +249,7 @@ import { useNavigate } from 'react-router-dom';
       ]
     },
     {
+      background:"bg-[#A7D6EB]",
       title: "Inventory Management Automation",
       desc:"Optimize your inventory control with AI-driven automation:",
       icon: "📦",
@@ -259,6 +263,7 @@ import { useNavigate } from 'react-router-dom';
     },
     {
       title: "Financial Process Automation",
+      background:"bg-[#C0E8F3]",
       desc:"Streamline your financial operations with intelligent automation:",
       icon: "💰",
       color: "bg-orange-100",
@@ -270,6 +275,7 @@ import { useNavigate } from 'react-router-dom';
       ]
     },
     {
+      background:"bg-[#A7D6EB]",
       title: "HR Process Automation",
       desc:"Transform your HR operations with AI-powered solutions:",
       icon: "📋",
@@ -292,7 +298,7 @@ import { useNavigate } from 'react-router-dom';
         {/* Main Heading */}
         <div className="text-center mb-16">
           <h1 className='single_tenant_sec_heading text-balance'>
-          AI-Powered Business Automation Solutions
+          <span style={{color:"#666AE5"}}>AI-Powered</span> Business  <span style={{color:"#666AE5"}}>Automation</span> Solutions
           </h1>
          <p className='text-balance single_tenant_sec_para'>Transform your business operations with our comprehensive suite of intelligent automation services. Our AI-driven solutions streamline workflows, reduce manual effort, and boost productivity across your organization.</p>
         </div>
@@ -301,15 +307,15 @@ import { useNavigate } from 'react-router-dom';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className={`relative group ${step.background} rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
              
-              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+              <div className={` bg-white  w-14 h-14 rounded-xl flex m-auto items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                <span className="mr-2 text-blue-600">{index + 1}.</span>
+              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
                 {step.title}
               </h3>
               <p className=' mb-4'>{step.desc}</p>
@@ -337,9 +343,9 @@ import { useNavigate } from 'react-router-dom';
 <p className='single_tenant_sec_para text-balance pt-20 '>Transform your business efficiency with our comprehensive automation solutions. Contact us to learn more about implementing these powerful tools in your organization. 🚀</p>
 
 
-        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
+        {/* <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Benefits of Our Automation Solutions
+          <span style={{color:"#666AE5"}}>Benefits</span> of Our <span style={{color:"#666AE5"}}>Automation</span> Solutions
           </h2>
 
           <ul className="space-y-3 items-center flex  flex gap-2 mb-3">
@@ -363,15 +369,20 @@ import { useNavigate } from 'react-router-dom';
                     Cost Optimization <br /> Reduce operational costs while improving service quality
                                     </li>
                </ul>
-        </div>
+        </div> */}
 
-         <p className='single_tenant_sec_para pt-20 text-balance'>
+         {/* <p className='single_tenant_sec_para pt-20 text-balance'>
           Ready to automate your business processes? Contact us to discover how our AI-powered automation solutions can transform your operations. 🚀
-          </p>
+          </p> */}
       </div>
     </div>
 
     
+
+    <div className='h-[400px]  w-[100%] overflow-hidden relative'>
+      <h2 className='z-10'>Benefits of Our Automation Solutions</h2>
+<img src="Images\benifitsbackground.png" className='absolute z-0 left-0 right-0 bottom-0 top-0' alt="" />
+    </div>
     </>
   );
 };

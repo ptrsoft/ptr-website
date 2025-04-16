@@ -5,7 +5,7 @@ import appServices from "../../../Assets/Images/appServices.png"
 import CommonServices from "../../../Assets/Images/CommonServices.png"
 import lifeCycle from "../../../Assets/Images/lifeCycle.png"
 import appBlock from "../../../Assets/Images/appBlock.png"
-import Operationsmanagement from "../../../Assets/Images/Operationsmanagement .png"
+import Operationsmanagement from "../../../Assets/Images/Technologies Page Image.png"
 import { useNavigate } from 'react-router-dom'
 const SaasArchitecture = () => {
   const navigate = useNavigate()
@@ -46,7 +46,7 @@ const SaasArchitecture = () => {
     <img className='single_tenant_sec_img' src={Operationsmanagement} alt="unable to load image check your internet connection" />
    </section>
 
-   <section style={{background:"lightgray"}} className="space-container single_tenant_container">
+   <section style={{background:"#FEF4F9"}} className="space-container single_tenant_container">
    <h2 className='single_tenant_sec_heading'><span style={{color:"#666AE5"}}>Cutting-Edge</span> Technology</h2>
     <p className='single_tenant_sec_para'>Built on the latest technologies, our backend platform ensures robust performance and security.
     Explore few simple and some robust architecture that we follow to develop a simple App or a complete cloudnative enterprise product.</p>

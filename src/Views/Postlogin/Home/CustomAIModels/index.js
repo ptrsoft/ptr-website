@@ -186,7 +186,7 @@ import { useNavigate } from 'react-router-dom';
         {/* Main Heading */}
         <div className="text-center mb-16">
           <h1 className='single_tenant_sec_heading text-balance'>
-          Custom AI Model Development Services
+            Custom <span style={{color:"#666AE5"}}> AI Model Development</span> Services
 
           </h1>
          <p className=' single_tenant_sec_para'>
@@ -235,9 +235,9 @@ import { useNavigate } from 'react-router-dom';
 
         <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Ongoing Support
+          Ongoing  <span style={{color:"#666AE5"}}>Support</span>
           </h2>
-<p className=''>Ensure long-term model success with our maintenance services:</p>
+<p className=' text-gray-600  '>Ensure long-term model success with our maintenance services:</p>
           <ul className="space-y-3 items-center flex  flex gap-4 mb-3">
                    <li   className="flex items-center  w-[24%] text-gray-600">
                    Model Updates <br /> Regular retraining with new data

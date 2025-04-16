@@ -1,10 +1,12 @@
 import React from 'react'
 import "../../../../Assets/Styles/pages/SaasArchitecture/index.css"
 
-import FullAgenticImg from "../../../../Assets/Images/Full Agentic.png"
+import FullAgenticImg from "../../../../Assets/Images/mlops.drawio.svg"
 import AINativeTransformation from "../../../../Assets/Images/AI Native Transformation.png"
 import AINativeTransformation2 from "../../../../Assets/Images/AI Native Transformation2.png"
-import SemiAINative from "../../../../Assets/Images/semiAiNative.png"
+import SemiAINative from "../../../../Assets/Images/SemiAiNative.drawio.svg"
+
+import ssss from "../../../../Assets/Images/AINativeTransformation.drawio.svg"
     import { useNavigate } from 'react-router-dom'
 const Index = () => {
   const navigate = useNavigate()
@@ -27,11 +29,8 @@ const Index = () => {
 
    <section style={{background:'#FFF'}} className='space-container single_tenant_container'>
     <h2 className='single_tenant_sec_heading'><span style={{color:"#666AE5"}}>  AI Native</span> Transformation</h2>
-    <div className='flex w-full justify-between'>
-     <img style={{width:"49%"}} className='single_tenant_sec_img' src={AINativeTransformation} alt="unable to load image check your internet connection" />
-     <img style={{width:"49%"}} className='single_tenant_sec_img' src={AINativeTransformation2} alt="unable to load image check your internet connection" />
-    </div>
-    <p className='single_tenant_sec_para text-balance'>
+     <img src={ssss} alt="" />
+     <p className='single_tenant_sec_para text-balance'>
     We make both legacy and cloud-native products AI-ready by adding data connectors and transformations to prepare your data, helping you leverage AI while protecting your existing investment.
     </p>
      </section>

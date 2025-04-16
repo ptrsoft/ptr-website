@@ -25,16 +25,17 @@ const HeroSection = () => {
 <a style={{color:'#666AE5'}}> AI-Native</a> Applications </div>
 
 <span className='text-balance'>At PTR Technologies , we build next-gen AI-native applications that learn, optimize, and evolve—powering businesses with intelligent automation, seamless integrations, and real-time decision-making.</span>
-<div className='flex gap-6'>
+<div className='flex items-center gap-6'>
 <GetStartedBtn label="Explore" onClick={()=> {
    const element = document.getElementById("AI-Native");
    element.scrollIntoView({ behavior: "smooth" }); // Instant scroll
-}}/> <span className='text-balance'>our AI-Native Ecommerce and Supply Chain platform</span>
+}}/>
+ <span className='text-balance'> AI-Native Ecommerce & Supply Chain platform</span>
 </div>
 <div className='flex gap-6 items-center'>
 <GetStartedBtn label="Start" 
 onClick={()=> {
-  const element = document.getElementById("offer-section");
+  const element = document.getElementById("AI-Native-Capabilities");
   element.scrollIntoView({ behavior: "smooth" }); // Instant scroll
 }}
 /> <span>Your AI Native Journey</span>

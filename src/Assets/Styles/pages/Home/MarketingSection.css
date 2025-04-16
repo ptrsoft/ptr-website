@@ -1,7 +1,7 @@
 .marketing_sec{
-    background-color: #FFF;
+    background-color: #DAE3F2;
     
-    padding-top: 130px;
+    /* padding-top: 130px; */
     padding-bottom: 130px;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 .marketing_sec_left{
     width: 50%;
 }.marketing_sec_right{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;

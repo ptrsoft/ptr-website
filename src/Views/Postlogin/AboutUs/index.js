@@ -44,9 +44,8 @@ const AboutUs = () => {
 </div>
 
 {/* about us para */}
-<p className="about_us_para">
-Welcome to PTR technologies, where innovation meets simplicity. 
-We are a forward-thinking SaaS company dedicated to transforming the way businesses operate by providing cutting-edge software solutions that streamline processes, enhance productivity, and foster growth.
+<p className="about_us_para"> 
+Welcome to PTR Technologies, where innovation meets simplicity. As a forward-thinking AI company, we transform businesses through AI solutions that streamline processes, boost productivity, and drive growth.
 </p>
 
 {/* abot us cards */}
@@ -56,7 +55,7 @@ We are a forward-thinking SaaS company dedicated to transforming the way busines
     <div className='about_us_card'>
    <img className='about_us_card_icon' src={MissionIcon} alt="unable to load image check your internet connection" />
    <h2 className='about_us_card_heading'>Our Mission</h2>
-   <p className='about_us_card_para'>Our mission is to empower businesses of all sizes to achieve their full potential by delivering intuitive, reliable, and scalable and flexible software solutions. </p>
+   <p className='about_us_card_para'>Empowering businesses through intelligent, AI-first solutions </p>
    </div>
   
   </Grid>
@@ -64,14 +63,14 @@ We are a forward-thinking SaaS company dedicated to transforming the way busines
   <div className='about_us_card'>
    <img className='about_us_card_icon' src={VissionIcon} alt="unable to load image check your internet connection" />
    <h2 className='about_us_card_heading'>Our Vision</h2>
-   <p className='about_us_card_para'>We envision a world where technology seamlessly integrates with daily business operations, driving efficiency and innovation. </p>
+   <p className='about_us_card_para'> Our AI-first solutions powers every business decision and unlocks limitless possibilities. </p>
    </div>
   </Grid>
   <Grid xs={12} md={6} lg={3}>
   <div className='about_us_card'>
    <img className='about_us_card_icon' src={CostumberIcon} alt="unable to load image check your internet connection" />
-   <h2 className='about_us_card_heading'>Customer-Centricity</h2>
-   <p className='about_us_card_para'>Our customers are at the heart of everything we do. We listen to their needs, understand their challenges, and deliver solutions that add real value.</p>
+   <h2 className='about_us_card_heading'>What we do</h2>
+   <p className='about_us_card_para '> We create AI-native apps that learn and adapt, delivering automation, integration, and real-time insights for businesses.</p>
    </div>
   </Grid>
   <Grid xs={12} md={6} lg={3}>
@@ -112,7 +111,7 @@ We strive for excellence in every aspect of our business, from product developme
 
 {/* our projects sec start */}
 <section style={{background:"#FFF"}} className="space-container global_padding our_projects_sec">
-<h2 className='our_projects_sec_heading'>Our Products At PTR Technologies, we offer a suite of software solutions designed to meet the diverse needs of modern businesses:
+<h2 className='our_projects_sec_heading'>Our <span style={{color:"#666AE5"}}>AI Native Products</span> At PTR Technologies, we offer a suite of AI Native software solutions
 </h2>
 
 {/* projects cards grid */}

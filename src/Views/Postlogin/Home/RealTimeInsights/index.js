@@ -358,6 +358,7 @@ import { useNavigate } from 'react-router-dom';
   const navigate = useNavigate()
   const steps = [
     {
+      background:"bg-[#EABFD4]",
       title: "Predictive Analytics",
       desc:"Anticipate future trends and make proactive decisions:",
       icon: "📊",
@@ -369,7 +370,8 @@ import { useNavigate } from 'react-router-dom';
           ,"Market Trend Analysis - Stay ahead of market changes and opportunities"
       ]
     },
-    {
+    {      
+      background:"bg-[#D1D6E8]",
       title: "Performance Analytics",
       desc:"Optimize operations with data-driven insights:",
       icon: "🚀",
@@ -381,7 +383,8 @@ import { useNavigate } from 'react-router-dom';
         "Cost Analysis - Identify cost-saving opportunities"
        ]
     },
-    {
+    {      
+      background:"bg-[#EABFD4]",
       title: "Feature Engineering & Data Transformation",
       desc:"Transform raw data into AI-ready formats with our advanced preprocessing solutions:",
       icon: "💻",
@@ -393,7 +396,8 @@ import { useNavigate } from 'react-router-dom';
        "Data Normalization - Standardize data formats for optimal AI processing"
       ]
     },
-    {
+    {      
+      background:"bg-[#A7D6EB]",
       title: "AI Data Pipeline Automation",
       desc:"Streamline your data preparation workflow:",
       icon: "🤖",
@@ -417,7 +421,7 @@ import { useNavigate } from 'react-router-dom';
         {/* Main Heading */}
         <div className="text-center mb-16">
           <h1 className='single_tenant_sec_heading text-balance'>
-          AI-Powered Data Analytics Solutions
+          <span style={{color:"#666AE5"}}>AI-Powered</span> Data  <span style={{color:"#666AE5"}}>Analytics</span> Solutions
 
           </h1>
          <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
@@ -427,15 +431,15 @@ import { useNavigate } from 'react-router-dom';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className={`relative group  ${step.background}  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
              
-              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+              <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                <span className="mr-2 text-blue-600">{index + 1}.</span>
+              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
                 {step.title}
               </h3>
               <p className=' mb-4'>{step.desc}</p>
@@ -465,7 +469,7 @@ import { useNavigate } from 'react-router-dom';
 
         <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Benefits of AI-Powered Data Solutions
+           Benefits  of  <span style={{color:"#666AE5"}}>AI-Powered</span> Data Solutions
           </h2>
 <p>Leverage the full potential of your data assets with our advanced AI solutions:</p>
           <ul className="space-y-3 items-center flex  flex gap-2 mb-3">

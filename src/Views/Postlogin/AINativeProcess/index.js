@@ -1,12 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ProcessImg from "../../../Assets/Images/AI_Native-Process (1).png"
+ import ProcessImg from "../../../Assets/Images/AINativeProcess.svg"
+ import LikeImages from "../../../Assets/Images/LikeImages.svg"
 const ProcessPage = () => {
   const navigate = useNavigate()
   const steps = [
     {
       title: "Problem Definition & Opportunity:",
       icon: "🔍",
+      background:"bg-[#EABFD4]",
       color: "bg-purple-100",
       points: [
          "Clearly define the problem that AI can solve.",
@@ -18,6 +20,7 @@ const ProcessPage = () => {
     {
       title: "Data Acquisition and Preparation:",
       icon: "📊",
+      background:"bg-[#D1D6E8]",
       color: "bg-blue-100",
       points: [
         "Identify and acquire relevant data.",
@@ -29,6 +32,7 @@ const ProcessPage = () => {
     {
       title: "Model Development and Training:",
       icon: "🧠",
+      background:"bg-[#EABFD4]",
       color: "bg-green-100",
       points: [
         "Select and design appropriate AI models (e.g., machine learning, deep learning).",
@@ -40,6 +44,7 @@ const ProcessPage = () => {
     {
       title: "Integration & Application:",
       icon: "⚙️",
+      background:"bg-[#A7D6EB]",
       color: "bg-yellow-100",
       points: [
         "Integrate trained AI models into the product or application.",
@@ -50,6 +55,7 @@ const ProcessPage = () => {
     {
       title: "Deployment & Monitoring:",
       icon: "🚀",
+      background:"bg-[#C0E8F3]",
       color: "bg-orange-100",
       points: [
         "Deploy the AI-powered product or application.",
@@ -62,6 +68,7 @@ const ProcessPage = () => {
       title: "Iteration & Optimization:",
       icon: "🔄",
       color: "bg-pink-100",
+      background:"bg-[#A7D6EB]",
       points: [
         "Iteratively improve the model and product based on user feedback and performance data.",
         "Continuously retrain models with new data.",
@@ -79,34 +86,30 @@ const ProcessPage = () => {
     <p className='single_tenant_sec_para'>
     Contact our team to start your development journey with our proven process.
        </p>
-    <img style={{width:"70%" , maxWidth:"540px"}} className='single_tenant_sec_img' src={ProcessImg} alt="unable to load image check your internet connection" />
+    <img style={{width:"100%" }} className='single_tenant_sec_img' src={ProcessImg} alt="unable to load image check your internet connection" />
    </section>
 
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto relative ">
      
-        {/* Main Heading */}
-        <div className="text-center mb-16">
-          <h1 className='single_tenant_sec_heading text-balance'>
-          Our process emphasizes iterative cycles, data-centricity, and continuous learning.
-          </h1>
-         
-        </div>
+      <h2 className='single_tenant_sec_heading text-balance'><span style={{color:'#666AE5'}}>AI-native </span>Process</h2>
+      <p className='single_tenant_sec_para mb-[70px]'>Our process emphasizes iterative cycles, data-centricity, & continuous learning.</p>
+<img src={LikeImages} className='absolute top-0 right-0 w-[180px]' alt="" />
        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className={`${step.background} relative group  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
-              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+              <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                <span className="mr-2 text-blue-600">{index + 1}.</span>
+              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
                 {step.title}
               </h3>
 

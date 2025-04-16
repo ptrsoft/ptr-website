@@ -118,6 +118,7 @@ import { useNavigate } from 'react-router-dom';
   const navigate = useNavigate()
   const steps = [
     {
+      background:"bg-[#EABFD4]",
       title: "Core Integration Services",
        icon: "🔗",
       color: "bg-purple-100",
@@ -129,6 +130,7 @@ import { useNavigate } from 'react-router-dom';
       ]
     },
     {
+      background:"bg-[#D1D6E8]",
       title: "AI Features Integration",
        icon: "🤖",
       color: "bg-blue-100",
@@ -140,6 +142,7 @@ import { useNavigate } from 'react-router-dom';
        ]
     },
     {
+      background:"bg-[#A7D6EB]",
       title: "Advanced Integration",
       desc:"Enhance your AI systems with our cutting-edge integration services:",
       icon: "🌐",
@@ -164,7 +167,7 @@ import { useNavigate } from 'react-router-dom';
         {/* Main Heading */}
         <div className="text-center mb-16">
           <h1 className='single_tenant_sec_heading text-balance'>
-          AI Integration Services
+          AI <span style={{color:"#666AE5"}}>Integration</span> Services
 
           </h1>
          <p className=' single_tenant_sec_para'>
@@ -175,15 +178,15 @@ import { useNavigate } from 'react-router-dom';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className={`relative group  ${step.background}  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
              
-              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+              <div className={`bg-white w-14 h-14 rounded-xl m-auto flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                <span className="mr-2 text-blue-600">{index + 1}.</span>
+              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
                 {step.title}
               </h3>
               <p className=' mb-4'>{step.desc}</p>
@@ -212,7 +215,7 @@ import { useNavigate } from 'react-router-dom';
 
         <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Integration Benefits
+          Integration <span style={{color:"#666AE5"}}>Benefits</span>
           </h2>
 <p className=''>Our AI integration services deliver tangible advantages:</p>
           <ul className="space-y-3 items-center flex  flex gap-2 mb-3">
