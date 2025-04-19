@@ -111,25 +111,30 @@ We strive for excellence in every aspect of our business, from product developme
 
 {/* our projects sec start */}
 <section style={{background:"#FFF"}} className="space-container global_padding our_projects_sec">
-<h2 className='our_projects_sec_heading'>Our <span style={{color:"#666AE5"}}>AI Native Products</span> At PTR Technologies, we offer a suite of AI Native software solutions
+<h2 className='our_projects_sec_heading'>Our Products At <span style={{color:"#666AE5"}}>PTR Technologies</span>, we offer a suite of software solutions designed to meet the diverse needs of modern businesses :
 </h2>
 
 {/* projects cards grid */}
-<div className="project_grid">
 
-  <AboutUsCard icon={Procurement} label="Procurement" para="Streamlined Supply Management"/>
-<AboutUsCard icon="Images/Inventry.png" label="Inventory" para="Optimized Stock Control"/>
-<AboutUsCard label="POS" icon="Images/POS.png" para="Seamless Sales Transactions"/>
-<AboutUsCard label="Ecommerce" icon="Images/ecommerce.png" para="Effortless Online Shopping"/>
-<AboutUsCard label="Whatsapp Commerce" icon="Images/WhatsappEcommerce.png" para="Chat-Driven Shopping"/>
-<AboutUsCard label="Logistics" icon="Images/Logistics.png" para="Efficient Delivery Management"/>
-<AboutUsCard label="CRM" icon="Images/CRM.png" para="Customer Relationship Mastery"/>
-<AboutUsCard label="Accounting" icon="Images/accounting.png" para="Integrated Financial Solutions"/>
-<AboutUsCard label="Asset Management" icon="Images/AssetManagement.png" para="Efficient Asset Oversight"/>
-<AboutUsCard label="HR & Payroll" icon="Images/HRandPayroll.png" para="Streamlined HR Operations"/>
-<AboutUsCard label="Subscriptions" icon="Images/SubscriptionManagement.png" para="Efficient Subscription Handling"/>
-<AboutUsCard label="Workflow" icon="Images/Workflow.png" para="Optimized Workflow Management"/>
-</div>
+
+{/* products */}
+<div id='ai-native-products' className='grid pt-[70px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'>  
+             <ServiceCard bg="#ABCBCD" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
+             <ServiceCard bg="#D1D6E8" icon="Images/Inventry.png" title={"Inventory"} subtitle={"Optimizing inventory management for accuracy, efficiency, and real-time control"} />
+             <ServiceCard bg="#EABFD4" icon="Images/ecommerce.png" title={"Ecommerce"} subtitle={"Empowering ecommerce operations with seamless integration and customer-focused solutions."} />
+             <ServiceCard bg="#A7D6EB" icon="Images/Logistics.png" title={"Logistics"} subtitle={"Enhancing logistics operations for faster delivery, better tracking, and end-to-end visibility."} />
+             <ServiceCard bg="#C0E8F3" icon="Images/CRM.png" title={"CRM"} subtitle={"Driving customer relationships with smart CRM solutions that boost engagement and retention."} />
+             <ServiceCard bg="#A7D6EB" icon="Images/accounting.png" title={"Accounting"} subtitle={"Simplifying accounting processes with accurate, automated, and compliant financial management."} />
+             <ServiceCard bg="#EABFD4" icon="Images/POS.png" title={"POS"} subtitle={"Streamlining transactions with advanced POS systems to boost sales and service."} />
+             <ServiceCard bg="#D1D6E8" icon="Images/WhatsappEcommerce.png" title={"Whatsapp Commerce"} subtitle={"Driving sales and customer engagement through seamless WhatsApp Commerce solutions."} />
+             <ServiceCard bg="#ABCBCD" icon="Images/SubscriptionManagement.png" title={"Subscriptions"} subtitle={"Simplifying customer subscriptions for seamless recurring services and billing."} />
+             <ServiceCard bg="#ABCBCD" icon="Images/AssetManagement.png" title={"Asset Management"} subtitle={"Managing assets efficiently to maximize value, performance, and lifecycle control."} />
+             <ServiceCard bg="#D1D6E8"  icon="Images/HRandPayroll.png" title={"HR & Payroll"} subtitle={"Streamlining workflows to boost productivity, collaboration, and efficiency."} />
+             <ServiceCard bg="#EABFD4"  icon="Images/Workflow.png" title={"Workflow"} subtitle={"Simplifying HR and payroll processes with accurate, automated, and compliant solutions."} />
+             </div>
+
+
+
 </section>
 {/* our projects sec ends */}
 
@@ -177,4 +182,37 @@ We’d love to hear from you! Whether you have a question about our products, ne
 }
 
 export default AboutUs
+
+
+
+
+const ServiceCard = ({ icon, title, subtitle ,bg }) => {
+  return (
+    <div className={`bg-[${bg}] rounded-xl p-6 text-center max-w-sm mx-auto hover:shadow-lg`}>
+    {/* Icon */}
+    <div className="flex bg-white w-[75px] h-[70px] items-center rounded-md m-auto justify-center mb-4 ">
+    <img src={icon} alt="" />
+    </div>
+
+
+    {/* Title */}
+    <h2 className="text-2xl font-bold text-[#000000] mb-2">{title}</h2>
+
+    {/* Subtitle */}
+    <p className="text-base text-[#414141] mb-6">
+    {subtitle}
+    </p>
+
+    {/* Buttons */}
+    <div className="flex justify-center gap-4">
+      <button className="bg-white text-gray-800 font-medium py-2 px-6 rounded-lg shadow hover:bg-gray-100">
+        Preview
+      </button>
+      <button className="bg-[#666AE5] text-white font-medium py-2 px-6 rounded-lg shadow hover:bg-purple-800">
+        Visit App
+      </button>
+    </div>
+  </div>
+  );
+};
 

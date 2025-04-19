@@ -307,9 +307,8 @@ import AboutUsBox from '../../AboutUs/components/AboutUsBox';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`relative group ${step.background} rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              className={`relative group ${step.background} rounded-2xl p-6 hover:shadow-lg   transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
              
               <div className={` bg-white  w-14 h-14 rounded-xl flex m-auto items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
@@ -331,11 +330,7 @@ import AboutUsBox from '../../AboutUs/components/AboutUsBox';
                 ))}
               </ul>
 
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-medium">{index + 1}</span>
-                </div>
-              </div>
+              
             </div>
           ))}
         </div>
