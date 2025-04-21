@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
  import ProcessImg from "../../../Assets/Images/AINativeProcess.svg"
  import LikeImages from "../../../Assets/Images/LikeImages.svg"
+ import backgroundImage from "../../../Assets/Images/benifitsBackground.png"
 const ProcessPage = () => {
   const navigate = useNavigate()
   const steps = [
@@ -100,10 +101,9 @@ const ProcessPage = () => {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`${step.background} relative group  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              className={`${step.background} relative group  rounded-2xl p-6 hover:shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              
+               
               <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
@@ -124,27 +124,23 @@ const ProcessPage = () => {
                 ))}
               </ul>
 
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-medium">{index + 1}</span>
-                </div>
-              </div>
+              
             </div>
           ))}
         </div>
 
-        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Continuous Innovation Cycle
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Our process never truly ends - we maintain constant feedback loops between stages,
-            enabling rapid iteration and continuous value delivery powered by real-world data
-            and user insights.
-          </p>
-        </div>
+         
       </div>
     </div>
+
+
+
+<div className='pt-[80px] pb-[80px] w-full flex flex-col  justify-center  relative overflow-hidden space-container bg-gradient-to-br from-indigo-900 via-blue-800 to-cyan-700'>
+<h2 className='text-center relative z-10  text-[2.75rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Continuous Innovation Cycle</h2>
+<p className='text-balance relative text-[18px] font-[poppins] font-[600] uppercase text-[#000000] z-10 text-center'>Our process never truly ends - we maintain constant feedback loops between stages, enabling rapid iteration and continuous value delivery powered by real-world data and user insights. </p>
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+</div>
+    
     </>
   );
 };

@@ -112,8 +112,13 @@
 
 
 
+import { Grid } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+
+
+import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
  const Index = () => {
   const navigate = useNavigate()
   const steps = [
@@ -178,10 +183,9 @@ import { useNavigate } from 'react-router-dom';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`relative group  ${step.background}  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              className={`relative group  ${step.background}  rounded-2xl p-6 hover:shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-             
+              
               <div className={`bg-white w-14 h-14 rounded-xl m-auto flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
@@ -202,49 +206,65 @@ import { useNavigate } from 'react-router-dom';
                 ))}
               </ul>
 
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-medium">{index + 1}</span>
-                </div>
-              </div>
+          
             </div>
           ))}
         </div>
 
  
 
-        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Integration <span style={{color:"#666AE5"}}>Benefits</span>
-          </h2>
-<p className=''>Our AI integration services deliver tangible advantages:</p>
-          <ul className="space-y-3 items-center flex  flex gap-2 mb-3">
-                   <li   className="flex items-center  text-gray-600">
-                   Enhanced Efficiency <br /> Automate complex tasks and streamline operations
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                     
-                  Scalable Solutions <br /> Grow your AI capabilities alongside your business
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                   
-                  Seamless Deployment <br /> Minimize disruption during integration
-                                     </li>
-
-                  <li   className="flex items-start text-gray-600">
-                    
-                  Future-Ready Architecture <br /> Build a foundation for ongoing AI innovation                  
-                                     </li>
-               </ul>
-        </div>
-
-         <p className='single_tenant_sec_para pt-20 text-balance'>
-         Ready to integrate AI into your business? Contact our experts to discuss your integration needs and discover the perfect solution for your organization. 🚀
-           </p>
+      <p className='single_tenant_sec_para pt-7'>Ready to integrate AI into your business? Contact our experts to discuss your integration needs and discover the perfect solution for your organization. 🚀</p>
       </div>
     </div>
+
+  <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
+<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000]  font-[poppins] '>Integration Benefits</h2>
+<p className='single_tenant_sec_para z-10 relative text-balance mb-[30px]'>Our AI integration services deliver tangible advantages:</p>
+
+
+
+<Grid className='flex gap-3 justify-between z-10 relative'   >
+  <Grid className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Efficiency</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Automate complex tasks and streamline operations</p>
+   </div>
+  </Grid>
+
+ 
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Solutions</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Grow your AI capabilities alongside your business</p>
+   </div>
+  </Grid>
+  
+ 
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Seamless Deployment</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Minimize disruption during integration</p>
+   </div>
+  </Grid>
+
+
+  
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Future-Ready Architecture</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Build a foundation for ongoing AI innovation</p>
+   </div>
+  </Grid>
+   
+</Grid>
+
+ 
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+</div>
     </>
   );
 };

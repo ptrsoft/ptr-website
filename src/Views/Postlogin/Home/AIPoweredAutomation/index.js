@@ -206,7 +206,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import AboutUsBox from '../../AboutUs/components/AboutUsBox';
-  const Index = () => {
+import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
+import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import { Grid } from '@mui/material';
+
+
+   const Index = () => {
   const navigate = useNavigate()
   const steps = [
     {
@@ -307,9 +312,9 @@ import AboutUsBox from '../../AboutUs/components/AboutUsBox';
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`relative group ${step.background} rounded-2xl p-6 hover:shadow-lg   transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              className={`relative group ${step.background} rounded-2xl p-6 hover:shadow-lg  transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
-             
+              
               <div className={` bg-white  w-14 h-14 rounded-xl flex m-auto items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
@@ -330,54 +335,71 @@ import AboutUsBox from '../../AboutUs/components/AboutUsBox';
                 ))}
               </ul>
 
-              
+             
             </div>
           ))}
         </div>
 
 <p className='single_tenant_sec_para text-balance pt-20 '>Transform your business efficiency with our comprehensive automation solutions. Contact us to learn more about implementing these powerful tools in your organization. 🚀</p>
 
-
-        {/* <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          <span style={{color:"#666AE5"}}>Benefits</span> of Our <span style={{color:"#666AE5"}}>Automation</span> Solutions
-          </h2>
-
-          <ul className="space-y-3 items-center flex  flex gap-2 mb-3">
-                   <li   className="flex items-center  text-gray-600">
-                    Increased Efficiency <br /> Reduce manual tasks by up to 80%
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                     
-                    Enhanced Accuracy <br /> Minimize human errors in routine operations
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                   
-                    24/7 Operations <br /> Maintain business continuity around the clock                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                    
-                    Scalable Growth <br /> Easily adapt to increasing business demands                  </li> <li   className="flex items-start text-gray-600">
-                    
-                    Cost Optimization <br /> Reduce operational costs while improving service quality
-                                    </li>
-               </ul>
-        </div> */}
-
-         {/* <p className='single_tenant_sec_para pt-20 text-balance'>
-          Ready to automate your business processes? Contact us to discover how our AI-powered automation solutions can transform your operations. 🚀
-          </p> */}
       </div>
     </div>
 
     
 
-    <div className='h-[400px]  w-[100%] overflow-hidden relative'>
-      <h2 className='z-10'>Benefits of Our Automation Solutions</h2>
-<img src="Images\benifitsbackground.png" className='absolute z-0 left-0 right-0 bottom-0 top-0' alt="" />
-    </div>
+
+<div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
+<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Benefits of Our Automation Solutions</h2>
+
+
+
+<Grid className='flex gap-3 justify-between z-10 relative'   >
+  <Grid >
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Increased Efficiency</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Reduce manual tasks by up to 80%</p>
+   </div>
+  </Grid>
+
+
+  <Grid >
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Enhanced Accuracy</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Minimize human errors in routine operations</p>
+   </div>
+  </Grid>
+
+  <Grid >
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>24/7 Operations</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Maintain business continuity around the clock</p>
+   </div>
+  </Grid>
+
+  <Grid >
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Scalable Growth</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Easily adapt to increasing business demands</p>
+   </div>
+  </Grid>
+
+  <Grid >
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Cost Optimization</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Reduce operational costs while improving service quality</p>
+   </div>
+  </Grid>
+   
+</Grid>
+
+{/* <p className='text-balance relative text-[18px] font-[poppins] font-[600] uppercase text-[#000000] z-10 text-center'>Our process never truly ends - we maintain constant feedback loops between stages, enabling rapid iteration and continuous value delivery powered by real-world data and user insights. </p> */}
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+</div>
     </>
   );
 };

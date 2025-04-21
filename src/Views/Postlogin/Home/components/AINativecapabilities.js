@@ -1,6 +1,8 @@
 import React from 'react'
 
-import image1 from "../../../../Assets/Images/AINativeCapabalities.svg"
+import image1 from "../../../../Assets/Images/AIEngeneer.svg"
+import image2 from "../../../../Assets/Images/MLEngeneer.svg"
+
 import { useNavigate } from 'react-router-dom'
 const AINativecapabilities = () => {
   return (
@@ -21,7 +23,7 @@ const AINativecapabilities = () => {
 <ServiceCard bg="#D1D6E8" Navigate="/AI-integrations" icon="icons/buttonthree.svg" title={"AI Integrations"} subtitle={"Connect AI capabilities with your current infrastructure for improved efficiency without disruptive changes to your existing systems."} />
 <ServiceCard bg="#EABFD4" Navigate="/custom-AI-models" icon="icons/buttonfour.svg" title={"Custom AI Models"} subtitle={"Custom AI and ML models built to address your specific business challenges and opportunities with tailored solutions for your industry."} />
    <div>
-    <img src={image1} alt="" />
+    <img src={image2} alt="" />
 </div>
 
 

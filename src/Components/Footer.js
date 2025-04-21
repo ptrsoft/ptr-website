@@ -13,11 +13,8 @@ const Footer = () => {
 <div className="footer_top">
     <h2>Automate your business processes with PTR Technologies </h2>
     <span>Contact us to discover how our AI-powered automation solutions can transform your operations.</span>
-    <div className='flex gap-6'>
-    <button onClick={handleNavigate} className='uppercase text-[#040404] bg-[#FFFFFF]'>GET STARTED</button>
-    <button className='uppercase bg-[#2A9BED] text-[#FFFFFF]' onClick={handleNavigate} >Request A Demo</button>
-    </div>
-</div>
+     <button onClick={handleNavigate} className='uppercase text-[#040404] bg-[#FFFFFF]'>GET STARTED</button>
+  </div>
 
 {/* devider */}
 <div className='devider'></div>

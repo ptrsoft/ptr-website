@@ -28,7 +28,7 @@
 //     <p className='single_tenant_sec_para'>Transform your business with our end-to-end custom AI model development solutions. We specialize in creating, training, and deploying tailored AI models that address your unique business challenges.</p>
 //     <img style={{width:"70%" , maxWidth:"500px"}} className='single_tenant_sec_img' src={customAIModel} alt="unable to load image check your internet connection" />
 //    </section>
- 
+
 
 
 //   <section className='space-container  single_tenant_container'>
@@ -132,136 +132,163 @@
 
 
 
+import { Grid } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
- const Index = () => {
+import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
+const Index = () => {
   const navigate = useNavigate()
   const steps = [
     {
+      bgColor:"bg-[#EABFD4]",
       title: "Model Development Life Cycle",
-      desc:"Our comprehensive approach ensures high-quality, production-ready AI models:",
-       icon: "🔄",
+      desc: "Our comprehensive approach ensures high-quality, production-ready AI models:",
+      icon: "🔄",
       color: "bg-purple-100",
       points: [
-       "Requirements Analysis - Define clear objectives and success metrics for your AI model",
-       "Data Preparation - Clean, preprocess, and augment training data for optimal results",
-       "Model Architecture Design - Create custom neural networks and model architectures",
-       "Training & Optimization - Implement advanced training techniques with performance monitoring"
+        "Requirements Analysis - Define clear objectives and success metrics for your AI model",
+        "Data Preparation - Clean, preprocess, and augment training data for optimal results",
+        "Model Architecture Design - Create custom neural networks and model architectures",
+        "Training & Optimization - Implement advanced training techniques with performance monitoring"
       ]
     },
     {
+      bgColor:"bg-[#D1D6E8]",
       title: "Validation & Testing",
-      desc:"Ensure model reliability through rigorous validation:",
-       icon: "✅",
+      desc: "Ensure model reliability through rigorous validation:",
+      icon: "✅",
       color: "bg-blue-100",
       points: [
         "Cross-Validation - Verify model performance across different data subsets",
         "Performance Metrics - Comprehensive evaluation using industry-standard metrics",
         "Error Analysis - Detailed investigation of model behavior and edge cases",
         "Bias Testing - Ensure fair and unbiased model predictions"
-       ]
+      ]
     },
     {
+      bgColor:"bg-[#EABFD4]",
       title: "Model Deployment",
-      desc:"Seamlessly transition from development to production:",
+      desc: "Seamlessly transition from development to production:",
       icon: "🚀",
       color: "bg-green-100",
       points: [
-       "Infrastructure Setup - Configure scalable deployment environments",
-       "API Development - Create robust APIs for model integration",
-       "Performance Optimization - Fine-tune model efficiency for production",
-       "Monitoring Systems - Implement real-time performance tracking"
+        "Infrastructure Setup - Configure scalable deployment environments",
+        "API Development - Create robust APIs for model integration",
+        "Performance Optimization - Fine-tune model efficiency for production",
+        "Monitoring Systems - Implement real-time performance tracking"
       ]
     },
-     
-      
+
+
   ];
 
   return (
     <>
 
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-     
-        {/* Main Heading */}
-        <div className="text-center mb-16">
-          <h1 className='single_tenant_sec_heading text-balance'>
-            Custom <span style={{color:"#666AE5"}}> AI Model Development</span> Services
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
 
-          </h1>
-         <p className=' single_tenant_sec_para'>
-         Transform your business with our end-to-end custom AI model development solutions. We specialize in creating, training, and deploying tailored AI models that address your unique business challenges.
-         </p>
-        </div>
-       
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <div 
-              key={index}
-              className="relative group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
-            >
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-             
-              <div className={`${step.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
-                <span className="text-3xl">{step.icon}</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                <span className="mr-2 text-blue-600">{index + 1}.</span>
-                {step.title}
-              </h3>
-              <p className=' mb-4'>{step.desc}</p>
+          {/* Main Heading */}
+          <div className="text-center mb-16">
+            <h1 className='single_tenant_sec_heading text-balance'>
+              Custom <span style={{ color: "#666AE5" }}> AI Model Development</span> Services
 
-              <ul className="space-y-3">
-                {step.points.map((point, i) => (
-                  <li key={i} className="flex items-start text-gray-600">
-                    <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    {point}
-                  </li>
-                ))}
-              </ul>
+            </h1>
+            <p className=' single_tenant_sec_para'>
+              Transform your business with our end-to-end custom AI model development solutions. We specialize in creating, training, and deploying tailored AI models that address your unique business challenges.
+            </p>
+          </div>
 
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-medium">{index + 1}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className={`relative group  ${step.bgColor} rounded-2xl p-6 hover:shadow-lg   transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              >
+ 
+                <div className={`bg-white m-auto w-14 h-14 rounded-xl  flex items-center justify-center mb-6`}>
+                  <span className="text-3xl">{step.icon}</span>
                 </div>
+                <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                   {step.title}
+                </h3>
+                <p className=' mb-4'>{step.desc}</p>
+
+                <ul className="space-y-3">
+                  {step.points.map((point, i) => (
+                    <li key={i} className="flex items-start text-gray-600">
+                      <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+
+
+         
+
+          <p className='single_tenant_sec_para pt-20 text-balance'>
+            Ready to develop custom AI models for your business? Contact our team to discuss your requirements and start building intelligent solutions today. 🚀           </p>
         </div>
+      </div>
+
+
+
+      <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
+<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000]  font-[poppins] '>Ongoing Support</h2>
+<p className='single_tenant_sec_para z-10 relative text-balance mb-[30px]'>Ensure long-term model success with our maintenance services:</p>
+
+
+
+<Grid className='flex gap-3 justify-between z-10 relative'   >
+  <Grid className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Model Updates</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Regular retraining with new data</p>
+   </div>
+  </Grid>
 
  
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Performance Monitoring</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Continuous tracking of model accuracy</p>
+   </div>
+  </Grid>
+  
+ 
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Technical Support</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Expert assistance for any issues</p>
+   </div>
+  </Grid>
 
-        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Ongoing  <span style={{color:"#666AE5"}}>Support</span>
-          </h2>
-<p className=' text-gray-600  '>Ensure long-term model success with our maintenance services:</p>
-          <ul className="space-y-3 items-center flex  flex gap-4 mb-3">
-                   <li   className="flex items-center  w-[24%] text-gray-600">
-                   Model Updates <br /> Regular retraining with new data
-                  </li>
 
-                  <li   className="flex items-start w-[24%] text-gray-600">
-                  Performance Monitoring <br /> Continuous tracking of model accuracy                    
-                   </li>
+  
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Documentation</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Comprehensive technical documentation and usage guides</p>
+   </div>
+  </Grid>
+   
+</Grid>
 
-                  <li   className="flex items-start w-[24%] text-gray-600">
-                  Technical Support <br /> Expert assistance for any issues                  
-                                      </li>
-
-                  <li   className="flex items-start w-[24%] text-gray-600">
-                    
-                  Documentation <br /> Comprehensive technical documentation and usage guides                                     </li>
-               </ul>
-        </div>
-
-         <p className='single_tenant_sec_para pt-20 text-balance'>
-         Ready to develop custom AI models for your business? Contact our team to discuss your requirements and start building intelligent solutions today. 🚀           </p>
-      </div>
-    </div>
-    
+ 
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+</div>
     </>
   );
 };

@@ -352,8 +352,11 @@
 
 
 
+import { Grid } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
  const Index = () => {
   const navigate = useNavigate()
   const steps = [
@@ -427,14 +430,13 @@ import { useNavigate } from 'react-router-dom';
          <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
         </div>
        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`relative group  ${step.background}  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              className={`relative group  ${step.background}  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
             >
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-             
+              
               <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
                 <span className="text-3xl">{step.icon}</span>
               </div>
@@ -455,50 +457,66 @@ import { useNavigate } from 'react-router-dom';
                 ))}
               </ul>
 
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-medium">{index + 1}</span>
-                </div>
-              </div>
+            
             </div>
           ))}
         </div>
 
 <p className='single_tenant_sec_para text-balance pt-20 '>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
-
-
-        <div className="mt-20 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-           Benefits  of  <span style={{color:"#666AE5"}}>AI-Powered</span> Data Solutions
-          </h2>
-<p>Leverage the full potential of your data assets with our advanced AI solutions:</p>
-          <ul className="space-y-3 items-center flex  flex gap-2 mb-3">
-                   <li   className="flex items-center  text-gray-600">
-                   Enhanced Decision Making <br /> Make informed decisions backed by sophisticated data analysis and predictive insights
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                     
-                  Competitive Advantage <br /> Stay ahead of market trends with real-time analytics and predictive modeling
-                  </li>
-
-                  <li   className="flex items-start text-gray-600">
-                   
-                  Operational Excellence <br /> Optimize processes and reduce costs through data-driven insights
-                                     </li>
-
-                  <li   className="flex items-start text-gray-600">
-                    
-                  Scalable Growth <br /> Future-proof your business with AI solutions that grow with your needs                    
-                                     </li>
-               </ul>
-        </div>
-
-         <p className='single_tenant_sec_para pt-20 text-balance'>
-         Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀
-           </p>
+ 
       </div>
     </div>
+
+
+    <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
+<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Benefits of ai-powered data Solutions</h2>
+
+
+
+<Grid className='flex gap-3 justify-between z-10 relative'   >
+  <Grid className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
+   </div>
+  </Grid>
+
+ 
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Competitive Advantage</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Stay ahead of market trends with real-time analytics and predictive modeling</p>
+   </div>
+  </Grid>
+  
+ 
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
+   </div>
+  </Grid>
+
+
+  
+  <Grid   className='w-[400px]'>
+    <div className='flex  flex-col items-center gap-4'>
+   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
+   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
+   </div>
+  </Grid>
+   
+</Grid>
+
+<p className='single_tenant_sec_para z-10 relative text-balance pt-10'>Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀</p>
+
+<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+</div>
+    
     </>
   );
 };

@@ -10,7 +10,10 @@ import { Modal ,Box} from '@mui/material';
 // import { Modal ,Box, Paper } from '@mui/material';
 // import Slider from 'react-slick';
 // import Ecomnmerce from "../../../../Assets/Images/Home-page.jpg"
- 
+
+import marketingGirlImage from "../../../../Assets/Images/marketing.png"
+import leftImg from "../../../../Assets/Images/marketingSectionImg.svg"
+
 import pos1 from "../../../../Assets/Images/Pos Svg/01.svg"
 import pos2 from "../../../../Assets/Images/Pos Svg/02.svg"
 import pos3 from "../../../../Assets/Images/Pos Svg/03.svg"
@@ -811,20 +814,22 @@ const MarketingSection = () => {
 {/* left  */}
 <div className='w-[50%] relative flex-col flex justify-center items-start'> 
 
+<img className='mb-3' src={leftImg} style={{width:"430px" , marginLeft:"auto" , marginRight:"auto"}} alt="" />
+
   <div className='bg-[#674FA31A] flex items-center gap-2 pl-4 pr-4 pr pt-2 pb-2 rounded-2xl mb-3'>
     <Sparkles className='text-[#666AE5] w-5 h-5'/>
     <span className='text-[#666AE5] font-bold text-[24px] leading-[30px]'>Revolutionizing Supply Chain Management</span>
   </div>
-  <h2 className='mb-3 font-[poppins] font-bold text-[48px] leading-[70px] tracking-normal capitalize'>Our <span style={{color:"#666AE5"}}>AI-Native Ecommerce</span> & <span style={{color:"#666AE5"}}>Supply Chain</span> Platform</h2>
+  <h2 className='mb-3 font-[poppins] font-bold text-[2.7rem] leading-[70px] tracking-normal capitalize'>Our <span style={{color:"#666AE5"}}>AI-Native Ecommerce</span> & <span style={{color:"#666AE5"}}>Supply Chain</span> Platform</h2>
 
-  <div  onClick={() => handleScroll('ai-native-products')} className="bg-[#666AE51A] animate-bounce rounded-full flex items-center justify-center w-[50px] h-[50px] absolute   cursor-pointer bottom-20 left-1/2 transform -translate-x-1/2">
+  <div  onClick={() => handleScroll('ai-native-products')} className="bg-[#666AE51A] animate-bounce rounded-full flex items-center justify-center w-[50px] h-[50px] absolute   cursor-pointer bottom-0 left-1/2 transform -translate-x-1/2">
                           <ArrowDown className="w-9 h-9 text-[#666AE5] " />
                       </div>
 </div>
 
 {/* right  */}
 <div className='w-[50%] o flex justify-end items-center'>
-<img style={{width:"90%"}} src="images/marketing.png" alt="" />
+<img style={{width:"90%"}} src={marketingGirlImage} alt="" />
 
 </div>
 
@@ -834,7 +839,7 @@ const MarketingSection = () => {
 
 {/* products */}
 <div id='ai-native-products' className='grid pt-[70px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'>  
-             <ServiceCard  OnClick={()=> setProcurement(true)} bg="#ABCBCD" navigateTo="/" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
+             <ServiceCard bg="#ABCBCD" OnClick={()=> setProcurement(true)}navigateTo="/" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
              <ServiceCard  OnClick={()=> setInventory(true)} bg="#D1D6E8" navigateTo="https://inventory.promodeagro.com" icon="Images/Inventry.png" title={"Inventory"} subtitle={"Optimizing inventory management for accuracy, efficiency, and real-time control"} />
              <ServiceCard OnClick={()=> setEcom(true)} bg="#EABFD4" navigateTo="https://www.promodeagro.com" icon="Images/ecommerce.png" title={"Ecommerce"} subtitle={"Empowering ecommerce operations with seamless integration and customer-focused solutions."} />
              <ServiceCard   bg="#A7D6EB" navigateTo="/" icon="Images/Logistics.png" title={"Logistics"} subtitle={"Enhancing logistics operations for faster delivery, better tracking, and end-to-end visibility."} />
