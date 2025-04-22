@@ -1,7 +1,7 @@
 import React from 'react'
 
-import image1 from "../../../../Assets/Images/AIEngeneer.svg"
-import image2 from "../../../../Assets/Images/MLEngeneer.svg"
+import image1 from "../../../../Assets/Images/AIEngeneer.png"
+import image2 from "../../../../Assets/Images/MLEngeneer.png"
 
 import { useNavigate } from 'react-router-dom'
 const AINativecapabilities = () => {
@@ -45,7 +45,7 @@ export default AINativecapabilities
 const ServiceCard = ({ icon, title, subtitle ,bg , Navigate }) => {
     const navigate = useNavigate()
     return (
-      <div className={`bg-[${bg}] rounded-xl p-6  text-center max-w-sm mx-auto shadow-md`}>
+      <div className={`bg-[${bg}] rounded-xl p-6  text-center max-w-sm mx-auto shadow-md transition-all duration-300 hover:-translate-y-2`}>
       {/* Icon */}
       <div className="flex bg-white w-[75px] h-[70px] items-center rounded-md m-auto justify-center mb-4">
       <img src={icon} alt="" />
