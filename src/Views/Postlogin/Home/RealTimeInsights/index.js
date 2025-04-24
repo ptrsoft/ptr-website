@@ -60,7 +60,7 @@
 //                         <img className='single_tenant_sec_img' style={{
 //                         }} src={PerformanceAnalytics} alt="unable to load image check your internet connection" />
 //                     </div>
-                       
+
 //                        <div className='right_aside_box'>
 //                     <ul>
 //                         <li ><span className='single_tenant_sec_para'>Operational Efficiency</span><br /> Track and improve business processes</li>
@@ -103,7 +103,7 @@
 //                         <img className='single_tenant_sec_img' style={{ width:"100%" , maxWidth:"470px"
 //                         }} src={PiplineAutomation} alt="unable to load image check your internet connection" />
 //                     </div>
-                       
+
 //                        <div className='right_aside_box'>
 //                     <ul>
 //                         <li ><span className='single_tenant_sec_para'>Automated ETL Processes</span><br />Seamless extraction, transformation, and loading of data</li>
@@ -359,29 +359,29 @@ import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
 import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
 
 import EfficiencyIcon from "../../../../Assets/Images/EfficiencyIcon.svg"
- import growthIcon from "../../../../Assets/Images/growthIcon.svg"
+import growthIcon from "../../../../Assets/Images/growthIcon.svg"
 import operationsIcon from "../../../../Assets/Images/Operations.svg"
- 
- const Index = () => {
+
+const Index = () => {
   const navigate = useNavigate()
   const steps = [
     {
-      background:"bg-[#EABFD4]",
+      background: "bg-[#EABFD4]",
       title: "Predictive Analytics",
-      desc:"Anticipate future trends and make proactive decisions:",
+      desc: "Anticipate future trends and make proactive decisions:",
       icon: "📊",
       color: "bg-purple-100",
       points: [
         "Demand Forecasting - Predict future market demands and trends",
-          "Risk Analysis - Identify and mitigate potential business risks",
-          "Customer Behavior Prediction - Anticipate customer needs and preferences"
-          ,"Market Trend Analysis - Stay ahead of market changes and opportunities"
+        "Risk Analysis - Identify and mitigate potential business risks",
+        "Customer Behavior Prediction - Anticipate customer needs and preferences"
+        , "Market Trend Analysis - Stay ahead of market changes and opportunities"
       ]
     },
-    {      
-      background:"bg-[#D1D6E8]",
+    {
+      background: "bg-[#D1D6E8]",
       title: "Performance Analytics",
-      desc:"Optimize operations with data-driven insights:",
+      desc: "Optimize operations with data-driven insights:",
       icon: "🚀",
       color: "bg-blue-100",
       points: [
@@ -389,59 +389,59 @@ import operationsIcon from "../../../../Assets/Images/Operations.svg"
         "Resource Optimization - Maximize resource allocation and utilization",
         "Quality Analytics - Monitor and enhance service quality",
         "Cost Analysis - Identify cost-saving opportunities"
-       ]
+      ]
     },
-    {      
-      background:"bg-[#EABFD4]",
+    {
+      background: "bg-[#EABFD4]",
       title: "Feature Engineering & Data Transformation",
-      desc:"Transform raw data into AI-ready formats with our advanced preprocessing solutions:",
+      desc: "Transform raw data into AI-ready formats with our advanced preprocessing solutions:",
       icon: "💻",
       color: "bg-green-100",
       points: [
-       "Automated Feature Selection - Identify and extract the most relevant features for your ML models",
-       "Data Cleansing - Intelligent handling of missing values, outliers, and inconsistencies",
-       "Feature Creation - Generate sophisticated derived features to enhance model performance",
-       "Data Normalization - Standardize data formats for optimal AI processing"
+        "Automated Feature Selection - Identify and extract the most relevant features for your ML models",
+        "Data Cleansing - Intelligent handling of missing values, outliers, and inconsistencies",
+        "Feature Creation - Generate sophisticated derived features to enhance model performance",
+        "Data Normalization - Standardize data formats for optimal AI processing"
       ]
     },
-    {      
-      background:"bg-[#A7D6EB]",
-      title: "AI Data Pipeline Automation",
-      desc:"Streamline your data preparation workflow:",
-      icon: "🤖",
-      color: "bg-yellow-100",
-      points: [
-        "Automated ETL Processes - Seamless extraction, transformation, and loading of data",
-        "Real-time Data Processing - Process and transform data streams in real-time",
-        "Data Quality Monitoring - Continuous validation and quality assurance",
-        "Scalable Infrastructure - Cloud-ready solutions that grow with your data needs"
-      ]
-    },
-      
+    // {
+    //   background: "bg-[#A7D6EB]",
+    //   title: "AI Data Pipeline Automation",
+    //   desc: "Streamline your data preparation workflow:",
+    //   icon: "🤖",
+    //   color: "bg-yellow-100",
+    //   points: [
+    //     "Automated ETL Processes - Seamless extraction, transformation, and loading of data",
+    //     "Real-time Data Processing - Process and transform data streams in real-time",
+    //     "Data Quality Monitoring - Continuous validation and quality assurance",
+    //     "Scalable Infrastructure - Cloud-ready solutions that grow with your data needs"
+    //   ]
+    // },
+
   ];
 
   return (
     <>
 
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-     
-        {/* Main Heading */}
-        <div className="text-center mb-16">
-          <h1 className='single_tenant_sec_heading text-balance'>
-          <span style={{color:"#666AE5"}}>AI-Powered</span> Data  <span style={{color:"#666AE5"}}>Analytics</span> Solutions
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
 
-          </h1>
-         <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
-        </div>
-       
+          {/* Main Heading */}
+          <div className="text-center mb-16">
+            <h1 className='single_tenant_sec_heading text-balance'>
+              <span style={{ color: "#666AE5" }}>AI-Powered</span> Data  <span style={{ color: "#666AE5" }}>Analytics</span> Solutions
+
+            </h1>
+            <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
+          </div>
+
           <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
             {steps.map((step, index) => (
-              <div 
+              <div
                 key={index}
                 className={`relative group   ${step.background}  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
               >
-                
+
                 <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
                   <span className="text-3xl">{step.icon}</span>
                 </div>
@@ -461,67 +461,114 @@ import operationsIcon from "../../../../Assets/Images/Operations.svg"
                     </li>
                   ))}
                 </ul>
-
-              
               </div>
             ))}
           </div>
 
-<p className='single_tenant_sec_para text-balance pt-20 '>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
- 
+          <div className="grid mt-8  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
+
+{/* dami div for centeting the card */}
+<div></div>
+            <div
+
+              className={`relative group  bg-[#A7D6EB]  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+            >
+
+              <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+                <span className="text-3xl">🤖</span>
+              </div>
+              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
+                AI Data Pipeline Automation
+              </h3>
+
+              <p className=' mb-4'>Streamline your data preparation workflow:</p>
+
+              <ul className="space-y-3">
+                <li className="flex items-start text-gray-600">
+                  <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Automated ETL Processes - Seamless extraction, transformation, and loading of data
+                </li>
+                <li className="flex items-start text-gray-600">
+                  <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Real-time Data Processing - Process and transform data streams in real-time
+                </li>
+
+                <li className="flex items-start text-gray-600">
+                  <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Data Quality Monitoring - Continuous validation and quality assurance
+                </li> <li className="flex items-start text-gray-600">
+                  <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Scalable Infrastructure - Cloud-ready solutions that grow with your data needs
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <p className='single_tenant_sec_para text-balance pt-20 '>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
+
+        </div>
       </div>
-    </div>
 
 
-    <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
-<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Benefits of ai-powered data Solutions</h2>
+      <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
+        <h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Benefits of ai-powered data Solutions</h2>
 
 
 
-<Grid className='flex gap-3 justify-between z-10 relative'   >
-  <Grid className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
-   </div>
-  </Grid>
-
- 
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Competitive Advantage</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Stay ahead of market trends with real-time analytics and predictive modeling</p>
-   </div>
-  </Grid>
-  
- 
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
-   </div>
-  </Grid>
+        <Grid className='flex gap-3 justify-between z-10 relative'   >
+          <Grid className='w-[400px]'>
+            <div className='flex  flex-col items-center gap-4'>
+              <img className='w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
+              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
+            </div>
+          </Grid>
 
 
-  
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
-   </div>
-  </Grid>
-   
-</Grid>
+          <Grid className='w-[400px]'>
+            <div className='flex  flex-col items-center gap-4'>
+              <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Competitive Advantage</h2>
+              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Stay ahead of market trends with real-time analytics and predictive modeling</p>
+            </div>
+          </Grid>
 
-<p className='single_tenant_sec_para z-10 relative text-balance pt-10'>Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀</p>
 
-<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
-</div>
-    
+          <Grid className='w-[400px]'>
+            <div className='flex  flex-col items-center gap-4'>
+              <img className='w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
+              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
+            </div>
+          </Grid>
+
+
+
+          <Grid className='w-[400px]'>
+            <div className='flex  flex-col items-center gap-4'>
+              <img className='w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
+              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
+            </div>
+          </Grid>
+
+        </Grid>
+
+        <p className='single_tenant_sec_para z-10 relative text-balance pt-10'>Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀</p>
+
+        <img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+      </div>
+
     </>
   );
 };
