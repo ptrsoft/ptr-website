@@ -45,7 +45,7 @@ export default AINativecapabilities
 const ServiceCard = ({ icon, title, subtitle ,bg , Navigate }) => {
     const navigate = useNavigate()
     return (
-      <div className={`bg-[${bg}] rounded-xl p-6  text-center max-w-sm mx-auto shadow-md transition-all duration-300 hover:-translate-y-2`}>
+      <div style={{background:bg}} className={` rounded-xl p-6  text-center max-w-sm mx-auto hover:shadow-lg transition-all duration-300 hover:-translate-y-2`}>
       {/* Icon */}
       <div className="flex bg-white w-[75px] h-[70px] items-center rounded-md m-auto justify-center mb-4">
       <img src={icon} alt="" />

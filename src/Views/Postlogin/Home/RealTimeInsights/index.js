@@ -357,6 +357,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
 import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
+
+import EfficiencyIcon from "../../../../Assets/Images/EfficiencyIcon.svg"
+ import growthIcon from "../../../../Assets/Images/growthIcon.svg"
+import operationsIcon from "../../../../Assets/Images/Operations.svg"
+ 
  const Index = () => {
   const navigate = useNavigate()
   const steps = [
@@ -430,37 +435,37 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
          <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
         </div>
        
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <div 
-              key={index}
-              className={`relative group  ${step.background}  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
-            >
+          <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <div 
+                key={index}
+                className={`relative group   ${step.background}  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+              >
+                
+                <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+                  <span className="text-3xl">{step.icon}</span>
+                </div>
+                <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
+                  {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
+                  {step.title}
+                </h3>
+                <p className=' mb-4'>{step.desc}</p>
+
+                <ul className="space-y-3">
+                  {step.points.map((point, i) => (
+                    <li key={i} className="flex items-start text-gray-600">
+                      <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+
               
-              <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
-                <span className="text-3xl">{step.icon}</span>
               </div>
-              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
-                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
-                {step.title}
-              </h3>
-              <p className=' mb-4'>{step.desc}</p>
-
-              <ul className="space-y-3">
-                {step.points.map((point, i) => (
-                  <li key={i} className="flex items-start text-gray-600">
-                    <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-
-            
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
 <p className='single_tenant_sec_para text-balance pt-20 '>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
  
@@ -476,7 +481,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
 <Grid className='flex gap-3 justify-between z-10 relative'   >
   <Grid className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
    </div>
@@ -494,7 +499,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
  
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
    </div>
@@ -504,7 +509,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
   
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
    </div>

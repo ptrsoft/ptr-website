@@ -747,7 +747,7 @@ import pos12 from "../../../../Assets/Images/Pos Svg/12.svg"
 
 const ServiceCard = ({ icon, title, subtitle ,bg , navigateTo , OnClick }) => {
   return (
-   <div className={`bg-[${bg}] rounded-xl p-6 text-center max-w-sm mx-auto hover:shadow-lg transition-all duration-300 hover:-translate-y-2`}>
+   <div style={{background:bg}} className={`rounded-xl p-6 text-center max-w-sm mx-auto hover:shadow-lg transition-all duration-300 hover:-translate-y-2`}>
    {/* Icon */}
    <div className="flex bg-white w-[75px] h-[70px] items-center rounded-md m-auto justify-center mb-4 ">
    <img src={icon} alt="" />
@@ -839,24 +839,13 @@ const MarketingSection = () => {
 
 {/* products */}
 <div id='ai-native-products' className='grid pt-[70px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6'>  
-             <ServiceCard bg="#ABCBCD" OnClick={()=> setProcurement(true)}navigateTo="/" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
+             <ServiceCard bg="#B0C3C4" OnClick={()=> setProcurement(true)}navigateTo="/" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
              <ServiceCard  OnClick={()=> setInventory(true)} bg="#D1D6E8" navigateTo="https://inventory.promodeagro.com" icon="Images/Inventry.png" title={"Inventory"} subtitle={"Optimizing inventory management for accuracy, efficiency, and real-time control"} />
              <ServiceCard OnClick={()=> setEcom(true)} bg="#EABFD4" navigateTo="https://www.promodeagro.com" icon="Images/ecommerce.png" title={"Ecommerce"} subtitle={"Empowering ecommerce operations with seamless integration and customer-focused solutions."} />
              <ServiceCard   bg="#A7D6EB" navigateTo="/" icon="Images/Logistics.png" title={"Logistics"} subtitle={"Enhancing logistics operations for faster delivery, better tracking, and end-to-end visibility."} />
              <ServiceCard bg="#C0E8F3" navigateTo="/" icon="Images/CRM.png" title={"CRM"} subtitle={"Driving customer relationships with smart CRM solutions that boost engagement and retention."} />
-             {/* <ServiceCard OnClick={()=> setAccounting(true)} bg="#A7D6EB" navigateTo="/" icon="Images/accounting.png" title={"Accounting"} subtitle={"Simplifying accounting processes with accurate, automated, and compliant financial management."} /> */}
-             <ServiceCard OnClick={()=> setPos(true)} bg="#EABFD4" navigateTo="/" icon="Images/POS.png" title={"POS"} subtitle={"Streamlining transactions with advanced POS systems to boost sales and service."} />
-             {/* <ServiceCard bg="#D1D6E8" navigateTo="/" icon="Images/WhatsappEcommerce.png" title={"Whatsapp Commerce"} subtitle={"Driving sales and customer engagement through seamless WhatsApp Commerce solutions."} /> */}
-             {/* <ServiceCard bg="#ABCBCD" navigateTo="/" icon="Images/SubscriptionManagement.png" title={"Subscriptions"} subtitle={"Simplifying customer subscriptions for seamless recurring services and billing."} /> */}  <ServiceCard bg="#ABCBCD" OnClick={()=> setProcurement(true)}navigateTo="/" icon="Images/Procurement.png" title={"Procurement"} subtitle={"Streamlining procurement processes to ensure timely and cost-effective sourcing."} />
-             <ServiceCard  OnClick={()=> setInventory(true)} bg="#D1D6E8" navigateTo="https://inventory.promodeagro.com" icon="Images/Inventry.png" title={"Inventory"} subtitle={"Optimizing inventory management for accuracy, efficiency, and real-time control"} />
-             <ServiceCard OnClick={()=> setEcom(true)} bg="#EABFD4" navigateTo="https://www.promodeagro.com" icon="Images/ecommerce.png" title={"Ecommerce"} subtitle={"Empowering ecommerce operations with seamless integration and customer-focused solutions."} />
-             <ServiceCard   bg="#A7D6EB" navigateTo="/" icon="Images/Logistics.png" title={"Logistics"} subtitle={"Enhancing logistics operations for faster delivery, better tracking, and end-to-end visibility."} />
-             <ServiceCard bg="#C0E8F3" navigateTo="/" icon="Images/CRM.png" title={"CRM"} subtitle={"Driving customer relationships with smart CRM solutions that boost engagement and retention."} />
-             {/* <ServiceCard OnClick={()=> setAccounting(true)} bg="#A7D6EB" navigateTo="/" icon="Images/accounting.png" title={"Accounting"} subtitle={"Simplifying accounting processes with accurate, automated, and compliant financial management."} /> */}
-             <ServiceCard OnClick={()=> setPos(true)} bg="#EABFD4" navigateTo="/" icon="Images/POS.png" title={"POS"} subtitle={"Streamlining transactions with advanced POS systems to boost sales and service."} />
-             {/* <ServiceCard bg="#D1D6E8" navigateTo="/" icon="Images/WhatsappEcommerce.png" title={"Whatsapp Commerce"} subtitle={"Driving sales and customer engagement through seamless WhatsApp Commerce solutions."} /> */}
-             {/* <ServiceCard bg="#ABCBCD" navigateTo="/" icon="Images/SubscriptionManagement.png" title={"Subscriptions"} subtitle={"Simplifying customer subscriptions for seamless recurring services and billing."} /> */}
-             </div>
+              <ServiceCard OnClick={()=> setPos(true)} bg="#EABFD4" navigateTo="/" icon="Images/POS.png" title={"POS"} subtitle={"Streamlining transactions with advanced POS systems to boost sales and service."} />
+                </div>
 </div>
 
     

@@ -45,7 +45,7 @@ const OffersSection = () => {
       <div className='mobile_accordian'>
 
         {/*mobile accordians  */}
-
+    
         <Accordion >
           <AccordionSummary id="panel-header"
             expandIcon={<ExpandMoreIcon />} style={{ background: '#F39CAD' }} aria-controls="panel-content">

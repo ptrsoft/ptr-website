@@ -136,6 +136,10 @@ import { Grid } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import modelupdateIcon from "../../../../Assets/Images/modelupdateIcon.svg"
+import performanceIcon from "../../../../Assets/Images/performanceIcon.svg"
+import technicalSupportIcon from "../../../../Assets/Images/technicalSupportIcon.svg"
+import documentationIcon from "../../../../Assets/Images/documentationIcon.svg"
 import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
 const Index = () => {
   const navigate = useNavigate()
@@ -250,7 +254,7 @@ const Index = () => {
 <Grid className='flex gap-3 justify-between z-10 relative'   >
   <Grid className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={modelupdateIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Model Updates</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Regular retraining with new data</p>
    </div>
@@ -259,7 +263,7 @@ const Index = () => {
  
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={performanceIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Performance Monitoring</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Continuous tracking of model accuracy</p>
    </div>
@@ -268,7 +272,7 @@ const Index = () => {
  
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={technicalSupportIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Technical Support</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Expert assistance for any issues</p>
    </div>
@@ -278,7 +282,7 @@ const Index = () => {
   
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={documentationIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Documentation</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Comprehensive technical documentation and usage guides</p>
    </div>

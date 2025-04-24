@@ -119,6 +119,13 @@ import { useNavigate } from 'react-router-dom';
 
 import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
 import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
+
+import EfficiencyIcon from "../../../../Assets/Images/EfficiencyIcon.svg" 
+import solutionsIcon from "../../../../Assets/Images/solutionsIcon.svg" 
+import scalableSolutionIcon from "../../../../Assets/Images/scalableSolutionIcon.svg" 
+import deployementIcon from "../../../../Assets/Images/deployementIcon.svg" 
+import architectureIcon from "../../../../Assets/Images/architecture.svg"
+import aiIntigrationEnhanceIcon from "../../../../Assets/Images/aiIntigrationEnhanceIcon.svg"
  const Index = () => {
   const navigate = useNavigate()
   const steps = [
@@ -226,7 +233,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
 <Grid className='flex gap-3 justify-between z-10 relative'   >
   <Grid className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={aiIntigrationEnhanceIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Efficiency</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Automate complex tasks and streamline operations</p>
    </div>
@@ -235,7 +242,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
  
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={scalableSolutionIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Solutions</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Grow your AI capabilities alongside your business</p>
    </div>
@@ -244,7 +251,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
  
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={deployementIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Seamless Deployment</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Minimize disruption during integration</p>
    </div>
@@ -254,7 +261,7 @@ import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
   
   <Grid   className='w-[400px]'>
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={architectureIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Future-Ready Architecture</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Build a foundation for ongoing AI innovation</p>
    </div>
