@@ -208,6 +208,11 @@ import { useNavigate } from 'react-router-dom';
 import AboutUsBox from '../../AboutUs/components/AboutUsBox';
 import backgroundImage from "../../../../Assets/Images/benifitsBackground.png"
 import MissionIcon from "../../../../Assets/Images/MissionIcon.svg"
+import EfficiencyIcon from "../../../../Assets/Images/EfficiencyIcon.svg"
+import AccuracyIcon from "../../../../Assets/Images/Accuracy.svg"
+import growthIcon from "../../../../Assets/Images/growthIcon.svg"
+import operationsIcon from "../../../../Assets/Images/Operations.svg"
+import optimazationIcon from "../../../../Assets/Images/optimazationIcon.svg"
 import { Grid } from '@mui/material';
 
 
@@ -356,7 +361,7 @@ import { Grid } from '@mui/material';
 <Grid className='flex gap-3 justify-between z-10 relative'   >
   <Grid >
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Increased Efficiency</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Reduce manual tasks by up to 80%</p>
    </div>
@@ -365,7 +370,7 @@ import { Grid } from '@mui/material';
 
   <Grid >
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={AccuracyIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Enhanced Accuracy</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Minimize human errors in routine operations</p>
    </div>
@@ -373,7 +378,7 @@ import { Grid } from '@mui/material';
 
   <Grid >
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>24/7 Operations</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Maintain business continuity around the clock</p>
    </div>
@@ -381,7 +386,7 @@ import { Grid } from '@mui/material';
 
   <Grid >
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Scalable Growth</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Easily adapt to increasing business demands</p>
    </div>
@@ -389,7 +394,7 @@ import { Grid } from '@mui/material';
 
   <Grid >
     <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+   <img className='w-[90px]' src={optimazationIcon} alt="unable to load image check your internet connection" />
    <h2 className='text-[21px] font-bold font-[poppins] text-[#000000]'>Cost Optimization</h2>
    <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center'>Reduce operational costs while improving service quality</p>
    </div>
