@@ -32,11 +32,11 @@ const Footer = () => {
     </span>
   </div>
 
-  <div className="Column">
+  {/* <div className="Column">
     <h3>USA</h3>
     <span>601 HADDON AVENUE SUITE COLLINGSWOOD, NJ 08108 UNITED STATES</span>
    <span> <a href="tel:+1(909)726-7508">+1 (909)726-7508</a></span>
-  </div>
+  </div> */}
 
   <div className="Column">
     <h3>INDIA</h3>
@@ -78,15 +78,15 @@ const Footer = () => {
 
 </div>
 
-<div className='devider'></div>
+{/* <div className='devider'></div> */}
 <div className='rights'>
 <span>2025 All Rights Reserved</span>
 
-<ul>
+{/* <ul>
     <li>Privacy Policy</li>
     <li>Terms of Service</li>
     <li>Disclosure</li>
-</ul>
+</ul> */}
 </div>
     </footer>
   )
