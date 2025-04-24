@@ -145,7 +145,7 @@ const Header = () => {
               anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
             >
               <MenuItem component={Link} to="/technologies/ai-native" onClick={handleTechnologClose}>AI-native Devlopment</MenuItem>
-              <MenuItem component={Link} to="/technologies" onClick={handleTechnologClose}>Cloud Native Devlopment</MenuItem>
+              <MenuItem component={Link} to="technologies/cloud-native" onClick={handleTechnologClose}>Cloud Native Devlopment</MenuItem>
             </Menu>
           </li>
 
@@ -163,7 +163,7 @@ const Header = () => {
               anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
             >
               <MenuItem component={Link} to="/process/AI-Native" onClick={handleMenuClose}>AI-native Devlopment</MenuItem>
-              <MenuItem component={Link} to="/process" onClick={handleMenuClose}>Cloud Native Devlopment</MenuItem>
+              <MenuItem component={Link} to="/process/cloud-native" onClick={handleMenuClose}>Cloud Native Devlopment</MenuItem>
             </Menu>
           </li>
           {/* Other navigation items */}

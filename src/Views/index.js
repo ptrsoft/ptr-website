@@ -39,7 +39,13 @@ const Views = () => {
                         exact
                         path={"Technologies"}
                         element={<Technology />}
-                    />  <Route
+                    />  
+                      <Route
+                        exact
+                        path={"Technologies/cloud-native"}
+                        element={<Technology />}
+                    /> 
+                    <Route
                         exact
                         path={"technologies/ai-native"}
                         element={<AINative />}
@@ -47,6 +53,11 @@ const Views = () => {
                      <Route
                         exact
                         path={"process"}
+                        element={<Process />}
+                    />
+                     <Route
+                        exact
+                        path={"process/cloud-native"}
                         element={<Process />}
                     />
                     <Route
