@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../../../Assets/Styles/pages/Home/HowItsWorkSection.css"
 import { useNavigate } from 'react-router-dom'
+import image from "../../../../Assets/Images/howItWorks.svg"
 const HowItsWorkSection = () => {
   const navigate =  useNavigate()
   const handleNavigate = ()=>{
@@ -10,7 +11,7 @@ const HowItsWorkSection = () => {
         <div className='HowItsWork_sec'>
 
             <div className="HowItsWork_sec_left">
-                <img alt='unable to load Images' src='Images/HowItWorks.png' />
+                <img alt='unable to load Images' src={image} />
 
             </div>
 

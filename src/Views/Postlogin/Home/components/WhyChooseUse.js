@@ -1,6 +1,7 @@
 import React from 'react'
 import TextBox from './TextBox'
 
+import manImage from "../../../../Assets/Images/whyChooseUs.svg"
 const WhyChooseUse = () => {
   return (
    
@@ -23,7 +24,7 @@ const WhyChooseUse = () => {
 </div>
 
 <div className='w-full md:w-1/2 flex justify-center items-center p-6 bg-[#D4FADA] md:pr-[10%]'>
-  <img alt='Choose Us' className='max-w-full h-auto' src='Images/homechooseus.png'/>
+  <img alt='Choose Us' className='max-w-full h-auto' src={manImage} />
 </div>
 
 </section>
