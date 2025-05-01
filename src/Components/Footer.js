@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Assets/Styles/Components/Footer.css"
 import { Link, useNavigate } from 'react-router-dom'
+import LinkdinIcon from "../Assets/Images/LinkdinIcon.svg"
 const Footer = () => {
  const navigate = useNavigate()
  const handleNavigate= ()=>{
@@ -27,7 +28,7 @@ const Footer = () => {
     <span>we deliver fully open and customizable applications, empowering you to effortlessly add new features.</span>
     <span className='iiii'>
         <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies/">
-    <img src="Images/linkdin.png" alt="" className="linkdin_img" />
+    <img src={LinkdinIcon} alt="" className="linkdin_img" />
         </a>
     </span>
   </div>
