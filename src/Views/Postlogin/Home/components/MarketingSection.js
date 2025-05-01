@@ -12,7 +12,7 @@ import { Modal ,Box} from '@mui/material';
 // import Ecomnmerce from "../../../../Assets/Images/Home-page.jpg"
 
 import marketingGirlImage from "../../../../Assets/Images/marketing.png"
-import leftImg from "../../../../Assets/Images/marketingSectionImg.svg"
+import leftImg from "../../../../Assets/Images/marketingSecMan.svg"
 
 import pos1 from "../../../../Assets/Images/Pos Svg/01.svg"
 import pos2 from "../../../../Assets/Images/Pos Svg/02.svg"
