@@ -80,13 +80,29 @@ const Header = () => {
           </ListItemButton>
         </ListItem>
         <ListItem>
-          <ListItemButton component={Link} to="/technologies">
-            <ListItemText  className='mobile_links' primary="Technologies" />
-          </ListItemButton>
-        </ListItem> 
+          <ListItemText primary="Technologies" />
+        </ListItem>
         <ListItem>
-          <ListItemButton component={Link} to="/process">
-            <ListItemText  className='mobile_links' primary="Process" />
+          <ListItemButton component={Link} to="/technologies/ai-native">
+            <ListItemText className='mobile_links' primary="AI-native Development" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton component={Link} to="/technologies/cloud-native">
+            <ListItemText className='mobile_links' primary="Cloud Native Development" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemText primary="Process" />
+        </ListItem>
+        <ListItem>
+          <ListItemButton component={Link} to="/process/AI-Native">
+            <ListItemText className='mobile_links' primary="AI-native Development" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton component={Link} to="/process/cloud-native">
+            <ListItemText className='mobile_links' primary="Cloud Native Development" />
           </ListItemButton>
         </ListItem>
         <ListItem>
@@ -176,7 +192,7 @@ const Header = () => {
         <button>
           <Link to="/contact-us">Get In Touch</Link>
         </button>
-        <span className='responsive_menu' edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
+        <span className='responsive_menu cursor-pointer' edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
           <MenuIcon style={{fontSize:27}} />
         </span>
         <Drawer

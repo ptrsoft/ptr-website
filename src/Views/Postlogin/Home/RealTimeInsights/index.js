@@ -422,38 +422,33 @@ const Index = () => {
 
   return (
     <>
-
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-8 sm:py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-
           {/* Main Heading */}
-          <div className="text-center mb-16">
-            <h1 className='single_tenant_sec_heading text-balance'>
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 pt-8 sm:pt-0">
+            <h1 className='single_tenant_sec_heading text-2xl sm:text-3xl lg:text-4xl text-balance'>
               <span style={{ color: "#666AE5" }}>AI-Powered</span> Data  <span style={{ color: "#666AE5" }}>Analytics</span> Solutions
-
             </h1>
-            <p className=' single_tenant_sec_para'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
+            <p className='single_tenant_sec_para text-sm sm:text-base lg:text-lg mt-4'>Unlock actionable insights and drive data-driven decision-making with our comprehensive AI-powered analytics solutions. Transform raw data into strategic advantages through advanced machine learning and predictive modeling.</p>
           </div>
 
-          <div className="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`relative group   ${step.background}  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
+                className={`relative group ${step.background} rounded-2xl p-4 sm:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
               >
-
-                <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
-                  <span className="text-3xl">{step.icon}</span>
+                <div className={`bg-white m-auto w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6`}>
+                  <span className="text-2xl sm:text-3xl">{step.icon}</span>
                 </div>
-                <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
-                  {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
+                <h3 className="text-lg sm:text-xl text-center font-semibold text-gray-800 mb-3 sm:mb-4">
                   {step.title}
                 </h3>
-                <p className=' mb-4'>{step.desc}</p>
+                <p className='text-sm sm:text-base mb-3 sm:mb-4'>{step.desc}</p>
 
-                <ul className="space-y-3">
+                <ul className="space-y-2 sm:space-y-3">
                   {step.points.map((point, i) => (
-                    <li key={i} className="flex items-start text-gray-600">
+                    <li key={i} className="flex items-start text-sm sm:text-base text-gray-600">
                       <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
@@ -465,110 +460,90 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="grid mt-8  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
-
-{/* dami div for centeting the card */}
-<div></div>
-            <div
-
-              className={`relative group  bg-[#A7D6EB]  rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}
-            >
-
-              <div className={`bg-white m-auto  w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
-                <span className="text-3xl">🤖</span>
+          <div className="grid mt-6 sm:mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <div></div>
+            <div className={`relative group bg-[#A7D6EB] rounded-2xl p-4 sm:p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-100`}>
+              <div className={`bg-white m-auto w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-4 sm:mb-6`}>
+                <span className="text-2xl sm:text-3xl">🤖</span>
               </div>
-              <h3 className="text-xl text-center font-semibold text-gray-800 mb-4">
-                {/* <span className="mr-2 text-blue-600">{index + 1}.</span> */}
+              <h3 className="text-lg sm:text-xl text-center font-semibold text-gray-800 mb-3 sm:mb-4">
                 AI Data Pipeline Automation
               </h3>
+              <p className='text-sm sm:text-base mb-3 sm:mb-4'>Streamline your data preparation workflow:</p>
 
-              <p className=' mb-4'>Streamline your data preparation workflow:</p>
-
-              <ul className="space-y-3">
-                <li className="flex items-start text-gray-600">
+              <ul className="space-y-2 sm:space-y-3">
+                <li className="flex items-start text-sm sm:text-base text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Automated ETL Processes - Seamless extraction, transformation, and loading of data
                 </li>
-                <li className="flex items-start text-gray-600">
+                <li className="flex items-start text-sm sm:text-base text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Real-time Data Processing - Process and transform data streams in real-time
                 </li>
-
-                <li className="flex items-start text-gray-600">
+                <li className="flex items-start text-sm sm:text-base text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Data Quality Monitoring - Continuous validation and quality assurance
-                </li> <li className="flex items-start text-gray-600">
+                </li>
+                <li className="flex items-start text-sm sm:text-base text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   Scalable Infrastructure - Cloud-ready solutions that grow with your data needs
                 </li>
-
               </ul>
             </div>
-
           </div>
-          <p className='single_tenant_sec_para text-balance pt-20 '>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
-
+          <p className='single_tenant_sec_para text-sm sm:text-base lg:text-lg text-balance pt-10 sm:pt-16 lg:pt-20'>Transform your raw data into AI-ready assets with our comprehensive data engineering solutions. Contact us to learn how we can optimize your data for AI applications. 🚀</p>
         </div>
       </div>
 
+      <div className='pt-8 sm:pt-12 lg:pt-[50px] pb-8 sm:pb-12 lg:pb-[50px] w-full px-4 sm:px-6 lg:px-[30px] flex flex-col justify-center relative overflow-hidden'>
+        <h2 className='text-center relative z-10 text-xl sm:text-2xl lg:text-[2.50rem] font-bold leading-tight sm:leading-normal lg:leading-[40px] uppercase text-[#000000] mb-4 sm:mb-6 lg:mb-[30px] font-[poppins]'>Benefits of ai-powered data Solutions</h2>
 
-      <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
-        <h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000] mb-[30px] font-[poppins] '>Benefits of ai-powered data Solutions</h2>
-
-
-
-        <Grid className='flex gap-3 justify-between z-10 relative'   >
-          <Grid className='w-[400px]'>
-            <div className='flex  flex-col items-center gap-4'>
-              <img className='w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
-              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
-              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
+        <Grid className='flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 lg:gap-8 justify-between z-10 relative'>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-3 sm:gap-4'>
+              <img className='w-16 sm:w-20 lg:w-[90px]' src={EfficiencyIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-xl lg:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>enhances Decision Making</h2>
+              <p className='font-[poppins] text-xs sm:text-sm lg:text-[13px] font-[400] text-[#333333] text-center text-balance'>Make informed decisions backed by sophisticated data analysis and predictive insights</p>
             </div>
           </Grid>
 
-
-          <Grid className='w-[400px]'>
-            <div className='flex  flex-col items-center gap-4'>
-              <img className='w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
-              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Competitive Advantage</h2>
-              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Stay ahead of market trends with real-time analytics and predictive modeling</p>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-3 sm:gap-4'>
+              <img className='w-16 sm:w-20 lg:w-[90px]' src={MissionIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-xl lg:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Competitive Advantage</h2>
+              <p className='font-[poppins] text-xs sm:text-sm lg:text-[13px] font-[400] text-[#333333] text-center text-balance'>Stay ahead of market trends with real-time analytics and predictive modeling</p>
             </div>
           </Grid>
 
-
-          <Grid className='w-[400px]'>
-            <div className='flex  flex-col items-center gap-4'>
-              <img className='w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
-              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
-              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-3 sm:gap-4'>
+              <img className='w-16 sm:w-20 lg:w-[90px]' src={operationsIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-xl lg:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Operational Excellence</h2>
+              <p className='font-[poppins] text-xs sm:text-sm lg:text-[13px] font-[400] text-[#333333] text-center text-balance'>Optimize processes and reduce costs through data-driven insights</p>
             </div>
           </Grid>
 
-
-
-          <Grid className='w-[400px]'>
-            <div className='flex  flex-col items-center gap-4'>
-              <img className='w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
-              <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
-              <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-3 sm:gap-4'>
+              <img className='w-16 sm:w-20 lg:w-[90px]' src={growthIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-xl lg:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Scalable Growth</h2>
+              <p className='font-[poppins] text-xs sm:text-sm lg:text-[13px] font-[400] text-[#333333] text-center text-balance'>Future-proof your business with AI solutions that grow with your needs</p>
             </div>
           </Grid>
-
         </Grid>
 
-        <p className='single_tenant_sec_para z-10 relative text-balance pt-10'>Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀</p>
+        <p className='single_tenant_sec_para z-10 relative text-sm sm:text-base lg:text-lg text-balance pt-6 sm:pt-8 lg:pt-10'>Ready to harness the power of AI for your data transformation journey? Contact us today to explore how our AI-powered data solutions can drive your business forward. 🚀</p>
 
-        <img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
+        <img className='absolute z-0 top-0 left-0 right-0 bottom-0 w-full h-full object-cover' src={backgroundImage} alt="" />
       </div>
-
     </>
   );
 };

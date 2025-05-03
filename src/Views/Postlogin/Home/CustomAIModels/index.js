@@ -190,21 +190,20 @@ const Index = () => {
   return (
     <>
 
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
 
           {/* Main Heading */}
-          <div className="text-center mb-16">
-            <h1 className='single_tenant_sec_heading text-balance'>
+          <div className="text-center mb-8 sm:mb-16 pt-8 sm:pt-16">
+            <h1 className='single_tenant_sec_heading text-balance text-2xl sm:text-3xl lg:text-4xl'>
               Custom <span style={{ color: "#666AE5" }}> AI Model Development</span> Services
-
             </h1>
-            <p className=' single_tenant_sec_para'>
+            <p className='single_tenant_sec_para text-sm sm:text-base'>
               Transform your business with our end-to-end custom AI model development solutions. We specialize in creating, training, and deploying tailored AI models that address your unique business challenges.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {steps.map((step, index) => (
               <div
                 key={index}
@@ -245,54 +244,50 @@ const Index = () => {
 
 
 
-      <div className='pt-[50px] pb-[50px] w-full pl-[30px] pr-[30px] flex flex-col  justify-center  relative overflow-hidden'>
-<h2 className='text-center relative z-10  text-[2.50rem] font-bold leading-[40px] uppercase text-[#000000]  font-[poppins] '>Ongoing Support</h2>
-<p className='single_tenant_sec_para z-10 relative text-balance mb-[30px]'>Ensure long-term model success with our maintenance services:</p>
+      <div className='pt-[30px] sm:pt-[50px] pb-[30px] sm:pb-[50px] w-full px-2 sm:px-[30px] flex flex-col justify-center relative overflow-hidden'>
+        <h2 className='text-center relative z-10 text-xl sm:text-2xl lg:text-[2.50rem] font-bold leading-normal sm:leading-[40px] uppercase text-[#000000] font-[poppins]'>
+          Ongoing Support
+        </h2>
+        <p className='single_tenant_sec_para z-10 relative text-balance mb-4 sm:mb-[30px] text-sm sm:text-base'>
+          Ensure long-term model success with our maintenance services:
+        </p>
 
+        <Grid className='flex flex-wrap gap-4 sm:gap-3 justify-center sm:justify-between z-10 relative'>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-2 sm:gap-4 p-4 sm:p-0'>
+              <img className='w-[70px] sm:w-[90px]' src={modelupdateIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Model Updates</h2>
+              <p className='font-[poppins] text-xs sm:text-[13px] font-[400] text-[#333333] text-center text-balance'>Regular retraining with new data</p>
+            </div>
+          </Grid>
 
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-2 sm:gap-4 p-4 sm:p-0'>
+              <img className='w-[70px] sm:w-[90px]' src={performanceIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Performance Monitoring</h2>
+              <p className='font-[poppins] text-xs sm:text-[13px] font-[400] text-[#333333] text-center text-balance'>Continuous tracking of model accuracy</p>
+            </div>
+          </Grid>
 
-<Grid className='flex gap-3 justify-between z-10 relative'   >
-  <Grid className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={modelupdateIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Model Updates</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Regular retraining with new data</p>
-   </div>
-  </Grid>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-2 sm:gap-4 p-4 sm:p-0'>
+              <img className='w-[70px] sm:w-[90px]' src={technicalSupportIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Technical Support</h2>
+              <p className='font-[poppins] text-xs sm:text-[13px] font-[400] text-[#333333] text-center text-balance'>Expert assistance for any issues</p>
+            </div>
+          </Grid>
 
- 
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={performanceIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Performance Monitoring</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Continuous tracking of model accuracy</p>
-   </div>
-  </Grid>
-  
- 
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={technicalSupportIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Technical Support</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Expert assistance for any issues</p>
-   </div>
-  </Grid>
+          <Grid className='w-full sm:w-[45%] lg:w-[400px]'>
+            <div className='flex flex-col items-center gap-2 sm:gap-4 p-4 sm:p-0'>
+              <img className='w-[70px] sm:w-[90px]' src={documentationIcon} alt="unable to load image check your internet connection" />
+              <h2 className='text-lg sm:text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Documentation</h2>
+              <p className='font-[poppins] text-xs sm:text-[13px] font-[400] text-[#333333] text-center text-balance'>Comprehensive technical documentation and usage guides</p>
+            </div>
+          </Grid>
+        </Grid>
 
-
-  
-  <Grid   className='w-[400px]'>
-    <div className='flex  flex-col items-center gap-4'>
-   <img className='w-[90px]' src={documentationIcon} alt="unable to load image check your internet connection" />
-   <h2 className='text-[21px] font-bold font-[poppins] uppercase text-[#000000]'>Documentation</h2>
-   <p className='font-[poppins] text-[13px] font-[400] text-[#333333] text-center text-balance'>Comprehensive technical documentation and usage guides</p>
-   </div>
-  </Grid>
-   
-</Grid>
-
- 
-<img className='absolute z-0 top-0 left-0 right-0 bottom-0' src={backgroundImage} alt="" />
-</div>
+        <img className='absolute z-0 top-0 left-0 right-0 bottom-0 w-full h-full object-cover' src={backgroundImage} alt="" />
+      </div>
     </>
   );
 };
