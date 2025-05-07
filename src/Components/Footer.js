@@ -25,7 +25,7 @@ const Footer = () => {
 
   <div className="Column">
     <img className='footer_logo' src="Images/WhiteLogo.png" alt="" />
-    <span>we deliver fully open and customizable applications, empowering you to effortlessly add new features.</span>
+    <span>We deliver fully open and customizable applications, empowering you to effortlessly add new features.</span>
     <span className='iiii'>
         <a target='_blank' href="https://www.linkedin.com/company/ptr-technologies/">
     <img src={LinkdinIcon} alt="" className="linkdin_img" />
